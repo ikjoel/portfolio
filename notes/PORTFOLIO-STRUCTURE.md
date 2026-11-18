@@ -40,7 +40,7 @@ Rules: say "I", name the trade-off, never claim what is not done (Chuvor Client 
 
 **StudyPat (the headline project).** "Schools told me they could not find what to do after registering. I replaced a seven-step wizard with one card that always shows the next step, wrote help into the interface as reusable components, and made report cards print-first so parents on cheap phones never wait for a server-made PDF. Each school gets an installable app in its own colours, and page HTML is never cached, so personal data is never stale."
 
-**Chuvor CBT.** "An exam hall is stressful, so the candidate sees one large question, a numbered palette and a clear 'saved' note, and the person in the hall sees every candidate's status as a word, not only a colour. It runs offline and was load-tested before use."
+**Chuvor CBT.** "An exam hall is stressful, so the candidate sees one large question, a numbered palette and a clear 'saved' note, and the person in the hall sees every candidate's status as a word, not only a colour. It runs offline and was load-tested before release."
 
 **CBT Licence Shop.** "A buyer paying from a phone needs to know three things the moment they pay: did it work, where is my licence, what do I do next. The confirmation page answers all three, and a nightly job guarantees no paid order is lost."
 

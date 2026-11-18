@@ -1,6 +1,6 @@
 # Chuvor CBT: offline computer-based exams
 
-**Live:** in use at exam halls · https://chuvorint.com · **Role:** designer-developer, owner
+**Status:** released · https://chuvorint.com · **Role:** designer-developer, owner
 
 Software that runs an exam on a local network with no internet: a calm screen for the candidate, and a live monitor for the person in the hall.
 
