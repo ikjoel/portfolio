@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Candidate sign-in and photo check (mockup)">
+<title>Candidate sign-in and photo check (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1440" height="900" fill="#F4F7FB"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#0f2f57"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="start">CHUVOR</text>
+<text x="124" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#c9a24a" text-anchor="start">CBT</text>
+<rect x="400" y="110" width="640" height="700" rx="20" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<text x="720" y="180" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="800" fill="#0f2f57" text-anchor="middle">Welcome, candidate</text>
+<text x="720" y="208" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="middle">Enter your details to start. Ask the invigilator if you need help.</text>
+<text x="456" y="250" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Exam code</text>
+<rect x="456" y="258" width="528" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="470" y="283" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">MTH-JSS3-MOCK</text>
+<text x="456" y="346" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Candidate number</text>
+<rect x="456" y="354" width="528" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="470" y="379" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">2026/0143</text>
+<rect x="456" y="446" width="528" height="52" rx="10" fill="#0f2f57"    />
+<text x="720" y="477.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Find me</text>
+<line x1="456" y1="530" x2="984" y2="530" stroke="#DCE4EF" stroke-width="1"/>
+<text x="720" y="570" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#0f2f57" text-anchor="middle">Is this you?</text>
+<defs><linearGradient id="gap1wq" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f2f57"/><stop offset="1" stop-color="#2f6fb5"/></linearGradient></defs>
+<rect x="630" y="590" width="120" height="140" rx="10" fill="url(#gap1wq)" opacity="0.92"/>
+<text x="690" y="664" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">photo</text>
+<text x="800" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#0f2f57" text-anchor="start">Chinedu Obi</text>
+<text x="800" y="664" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="start">JSS 3 · Seat B-01</text>
+<rect x="456" y="764" width="250" height="50" rx="10" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="581" y="793.725" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#0f2f57" text-anchor="middle">No, tell the invigilator</text>
+<rect x="734" y="764" width="250" height="50" rx="10" fill="#c9a24a"    />
+<text x="859" y="794.075" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#0f2f57" text-anchor="middle">Yes, that is me</text>
+</svg>

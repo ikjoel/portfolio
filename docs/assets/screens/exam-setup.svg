@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Exam setup (mockup)">
+<title>Exam setup (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1440" height="900" fill="#F4F7FB"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#0f2f57"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="start">CHUVOR</text>
+<text x="126" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#c9a24a" text-anchor="start">CBT</text>
+<text x="420" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="800" fill="#c9a24a" text-anchor="start">Exams</text>
+<text x="570" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#FFFFFF" text-anchor="start">Question sets</text>
+<text x="720" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#FFFFFF" text-anchor="start">Candidates</text>
+<text x="870" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#FFFFFF" text-anchor="start">Results</text>
+<text x="1020" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#FFFFFF" text-anchor="start">Licence</text>
+<text x="1408" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#FFFFFF" text-anchor="end">Exam officer ▾</text>
+<text x="32" y="120" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#0f2f57" text-anchor="start">New exam</text>
+<text x="32" y="146" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#5B7090" text-anchor="start">Choose what, who and when. You can change it until the exam starts.</text>
+<rect x="32" y="176" width="860" height="660" rx="16" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<text x="60" y="214" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Exam title</text>
+<rect x="60" y="222" width="804" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="74" y="247" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Mathematics · JSS 3 Mock</text>
+<text x="60" y="310" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Class</text>
+<rect x="60" y="318" width="260" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="74" y="343" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">JSS 3</text>
+<text x="298" y="343" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="start">▾</text>
+<text x="340" y="310" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Subject</text>
+<rect x="340" y="318" width="260" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="354" y="343" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Mathematics</text>
+<text x="578" y="343" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="start">▾</text>
+<text x="620" y="306" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Duration (minutes)</text>
+<rect x="620" y="314" width="244" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="634" y="339" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">60</text>
+<text x="60" y="406" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Question set</text>
+<rect x="60" y="414" width="400" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="74" y="439" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Maths JSS 3 · Term 1 (approved)</text>
+<text x="438" y="439" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="start">▾</text>
+<text x="480" y="402" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Questions to use</text>
+<rect x="480" y="410" width="384" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="494" y="435" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">40 of 120</text>
+<text x="480" y="468" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#5B7090" text-anchor="start">Random pick, different for each candidate</text>
+<text x="60" y="502" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Hall</text>
+<rect x="60" y="510" width="260" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="74" y="535" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Hall B (120 seats)</text>
+<text x="298" y="535" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="start">▾</text>
+<text x="340" y="498" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Date</text>
+<rect x="340" y="506" width="260" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="354" y="531" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">02 Dec 2026</text>
+<text x="620" y="498" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Start time</text>
+<rect x="620" y="506" width="244" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="634" y="531" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">09:00</text>
+<rect x="60" y="750" width="220" height="54" rx="10" fill="#c9a24a"    />
+<text x="170" y="782.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#0f2f57" text-anchor="middle">Save and schedule</text>
+<rect x="296" y="750" width="160" height="54" rx="10" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="376" y="782.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#0f2f57" text-anchor="middle">Cancel</text>
+<rect x="920" y="176" width="456" height="660" rx="16" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<text x="944" y="214" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#0f2f57" text-anchor="start">Fairness options</text>
+<text x="944" y="272" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Shuffle questions for each candidate</text>
+<rect x="1300" y="254" width="44" height="24" rx="12" fill="#0f2f57"    />
+<circle cx="1332" cy="266" r="9" fill="#FFFFFF" />
+<line x1="944" y1="294" x2="1352" y2="294" stroke="#E8EFF8" stroke-width="1"/>
+<text x="944" y="338" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Shuffle the answer options</text>
+<rect x="1300" y="320" width="44" height="24" rx="12" fill="#0f2f57"    />
+<circle cx="1332" cy="332" r="9" fill="#FFFFFF" />
+<line x1="944" y1="360" x2="1352" y2="360" stroke="#E8EFF8" stroke-width="1"/>
+<text x="944" y="404" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Show one question at a time</text>
+<rect x="1300" y="386" width="44" height="24" rx="12" fill="#0f2f57"    />
+<circle cx="1332" cy="398" r="9" fill="#FFFFFF" />
+<line x1="944" y1="426" x2="1352" y2="426" stroke="#E8EFF8" stroke-width="1"/>
+<text x="944" y="470" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Allow going back</text>
+<rect x="1300" y="452" width="44" height="24" rx="12" fill="#0f2f57"    />
+<circle cx="1332" cy="464" r="9" fill="#FFFFFF" />
+<line x1="944" y1="492" x2="1352" y2="492" stroke="#E8EFF8" stroke-width="1"/>
+<text x="944" y="536" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Warn if candidate leaves the tab</text>
+<rect x="1300" y="518" width="44" height="24" rx="12" fill="#0f2f57"    />
+<circle cx="1332" cy="530" r="9" fill="#FFFFFF" />
+<line x1="944" y1="558" x2="1352" y2="558" stroke="#E8EFF8" stroke-width="1"/>
+<text x="944" y="602" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">Show the score at the end</text>
+<rect x="1300" y="584" width="44" height="24" rx="12" fill="#E8EFF8"    />
+<circle cx="1312" cy="596" r="9" fill="#FFFFFF" />
+<line x1="944" y1="624" x2="1352" y2="624" stroke="#E8EFF8" stroke-width="1"/>
+</svg>

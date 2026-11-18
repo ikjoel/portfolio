@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1160" viewBox="0 0 1260 1160" role="img" aria-label="Transcript with GPA / CGPA (mockup)">
+<title>Transcript with GPA / CGPA (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1260" height="1160" fill="#F7F6FC"/>
+<rect x="0" y="0" width="1260" height="1160" rx="0" fill="#EEEDFB"    />
+<rect x="40" y="30" width="840" height="1100" rx="4" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
+<text x="460" y="84" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="26" font-weight="800" fill="#4F46E5" text-anchor="middle">SAMPLE UNIVERSITY</text>
+<text x="460" y="110" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#6B6890" text-anchor="middle">OFFICIAL ACADEMIC TRANSCRIPT</text>
+<line x1="70" y1="130" x2="850" y2="130" stroke="#E8E6F2" stroke-width="1"/>
+<text x="70" y="166" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#1B1740" text-anchor="start">Name:  Ada Okafor</text>
+<text x="70" y="190" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Matric no.:  SU/22/0148</text>
+<text x="850" y="166" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#1B1740" text-anchor="end">Programme:  B.Sc Mathematics and Computer Science</text>
+<text x="850" y="190" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="end">Scale:  5-point</text>
+<rect x="70" y="230" width="780" height="34" rx="6" fill="#EEEDFB"    />
+<text x="86" y="253" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#1B1740" text-anchor="start">2025/2026 · First Semester</text>
+<text x="86" y="286" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">CODE</text>
+<text x="190" y="286" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">COURSE</text>
+<text x="560" y="286" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">UNITS</text>
+<text x="640" y="286" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">SCORE</text>
+<text x="720" y="286" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">GRADE</text>
+<text x="800" y="286" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">GP</text>
+<text x="86" y="312" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">MTH 201</text>
+<text x="190" y="312" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Linear Algebra I</text>
+<text x="560" y="312" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3</text>
+<text x="640" y="312" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">78</text>
+<text x="720" y="312" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">A</text>
+<text x="800" y="312" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">5.0</text>
+<text x="86" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">CSC 201</text>
+<text x="190" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Data Structures</text>
+<text x="560" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3</text>
+<text x="640" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">71</text>
+<text x="720" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">A</text>
+<text x="800" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">5.0</text>
+<text x="86" y="368" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">STA 201</text>
+<text x="190" y="368" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Statistics I</text>
+<text x="560" y="368" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3</text>
+<text x="640" y="368" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">64</text>
+<text x="720" y="368" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">B</text>
+<text x="800" y="368" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">4.0</text>
+<text x="86" y="396" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">GST 201</text>
+<text x="190" y="396" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Entrepreneurship</text>
+<text x="560" y="396" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">2</text>
+<text x="640" y="396" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">58</text>
+<text x="720" y="396" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">C</text>
+<text x="800" y="396" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3.0</text>
+<text x="850" y="448" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#4F46E5" text-anchor="end">GPA 4.58   CGPA 4.58</text>
+<rect x="70" y="530" width="780" height="34" rx="6" fill="#EEEDFB"    />
+<text x="86" y="553" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#1B1740" text-anchor="start">2025/2026 · Second Semester</text>
+<text x="86" y="586" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">CODE</text>
+<text x="190" y="586" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">COURSE</text>
+<text x="560" y="586" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">UNITS</text>
+<text x="640" y="586" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">SCORE</text>
+<text x="720" y="586" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">GRADE</text>
+<text x="800" y="586" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="800" fill="#6B6890" text-anchor="start">GP</text>
+<text x="86" y="612" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">MTH 201</text>
+<text x="190" y="612" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Linear Algebra I</text>
+<text x="560" y="612" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3</text>
+<text x="640" y="612" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">78</text>
+<text x="720" y="612" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">A</text>
+<text x="800" y="612" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">5.0</text>
+<text x="86" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">CSC 201</text>
+<text x="190" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Data Structures</text>
+<text x="560" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3</text>
+<text x="640" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">71</text>
+<text x="720" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">A</text>
+<text x="800" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">5.0</text>
+<text x="86" y="668" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">STA 201</text>
+<text x="190" y="668" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Statistics I</text>
+<text x="560" y="668" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3</text>
+<text x="640" y="668" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">64</text>
+<text x="720" y="668" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">B</text>
+<text x="800" y="668" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">4.0</text>
+<text x="86" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">GST 201</text>
+<text x="190" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">Entrepreneurship</text>
+<text x="560" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">2</text>
+<text x="640" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">58</text>
+<text x="720" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">C</text>
+<text x="800" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#1B1740" text-anchor="start">3.0</text>
+<text x="850" y="748" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#4F46E5" text-anchor="end">GPA 4.46   CGPA 4.52</text>
+<rect x="70" y="860" width="780" height="70" rx="10" fill="#F7F6FC" stroke="#E8E6F2" stroke-width="1"   />
+<text x="90" y="890" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#1B1740" text-anchor="start">Cumulative GPA: 4.52</text>
+<text x="90" y="912" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#6B6890" text-anchor="start">Class of degree so far: First Class (on track)</text>
+<line x1="540" y1="1060" x2="800" y2="1060" stroke="#E8E6F2" stroke-width="1"/>
+<text x="670" y="1082" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#6B6890" text-anchor="middle">Registrar</text>
+<rect x="900" y="30" width="320" height="180" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
+<text x="924" y="70" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#1B1740" text-anchor="start">GPA done for you</text>
+<text x="924" y="98" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#6B6890" text-anchor="start">5-point, 4-point and other scales,</text>
+<text x="924" y="118" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#6B6890" text-anchor="start">with class and standing.</text>
+</svg>

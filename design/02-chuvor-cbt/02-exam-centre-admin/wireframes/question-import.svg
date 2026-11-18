@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Question import and check (wireframe)">
+<title>Question import and check (wireframe)</title>
+<rect width="1440" height="900" fill="#ffffff"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#e2e2e2"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CHUVOR</text>
+<text x="126" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CBT</text>
+<text x="420" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Exams</text>
+<text x="570" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="800" fill="#2b2b2b" text-anchor="start">Question sets</text>
+<text x="720" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Candidates</text>
+<text x="870" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Results</text>
+<text x="1020" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Licence</text>
+<text x="1408" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#2b2b2b" text-anchor="end">Exam officer ▾</text>
+<text x="32" y="120" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#333333" text-anchor="start">Import questions</text>
+<text x="32" y="146" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#8a8a8a" text-anchor="start">Upload a Word or Excel file. We check every row before saving.</text>
+<rect x="32" y="176" width="1376" height="120" rx="4" fill="#f0f0f0" stroke="#d6d6d6" stroke-width="2"  stroke-dasharray="8 6" />
+<text x="720" y="232" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#2b2b2b" text-anchor="middle">Drop your file here, or click to choose</text>
+<text x="720" y="260" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="middle">maths-jss3.xlsx · 120 rows found</text>
+<rect x="32" y="320" width="1376" height="52" rx="4" fill="#ececec"    />
+<text x="56" y="352" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#2b2b2b" text-anchor="start">118 questions are ready. 2 need a fix before they can be saved.</text>
+<rect x="1208" y="326" width="180" height="40" rx="4" fill="#a8a8a8" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1298" y="350.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">Save 118 good ones</text>
+<rect x="32" y="392" width="1376" height="336" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="56" y="420" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">ROW</text>
+<text x="126" y="420" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">QUESTION</text>
+<text x="716" y="420" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">CORRECT</text>
+<text x="816" y="420" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">CHECK</text>
+<text x="1236" y="420" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start"></text>
+<line x1="56" y1="430" x2="1384" y2="430" stroke="#b5b5b5" stroke-width="1"/>
+<text x="56" y="469" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">14</text>
+<text x="126" y="469" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">If 3x + 5 = 20, find x</text>
+<text x="716" y="469" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">B</text>
+<rect x="816" y="449" width="55" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="843.5" y="464" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Ready</text>
+<rect x="1236" y="450" width="90" height="34" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1281" y="471.375" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#333333" text-anchor="middle">Preview</text>
+<line x1="56" y1="492" x2="1384" y2="492" stroke="#f0f0f0" stroke-width="1"/>
+<text x="56" y="525" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">15</text>
+<text x="126" y="525" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">A rectangle has length 12 and width 5…</text>
+<text x="716" y="525" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">C</text>
+<rect x="816" y="505" width="55" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="843.5" y="520" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Ready</text>
+<rect x="1236" y="506" width="90" height="34" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1281" y="527.375" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#333333" text-anchor="middle">Preview</text>
+<line x1="56" y1="548" x2="1384" y2="548" stroke="#f0f0f0" stroke-width="1"/>
+<text x="56" y="581" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">16</text>
+<text x="126" y="581" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Simplify 2(x + 3) − x</text>
+<text x="716" y="581" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">—</text>
+<rect x="816" y="561" width="180" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="906" y="576" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">No correct answer marked</text>
+<rect x="1236" y="562" width="90" height="34" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1281" y="583.375" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Fix</text>
+<line x1="56" y1="604" x2="1384" y2="604" stroke="#f0f0f0" stroke-width="1"/>
+<text x="56" y="637" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">17</text>
+<text x="126" y="637" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">The mean of 4, 8 and 12 is…</text>
+<text x="716" y="637" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">E</text>
+<rect x="816" y="617" width="213" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="922.5" y="632" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Answer E does not exist (A–D)</text>
+<rect x="1236" y="618" width="90" height="34" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1281" y="639.375" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Fix</text>
+<line x1="56" y1="660" x2="1384" y2="660" stroke="#f0f0f0" stroke-width="1"/>
+<text x="56" y="693" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">18</text>
+<text x="126" y="693" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Convert 0.75 to a fraction</text>
+<text x="716" y="693" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">A</text>
+<rect x="816" y="673" width="55" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="843.5" y="688" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Ready</text>
+<rect x="1236" y="674" width="90" height="34" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1281" y="695.375" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#333333" text-anchor="middle">Preview</text>
+<circle cx="760" cy="608" r="5" fill="#c0392b"/>
+<path d="M760 608 L800 678" stroke="#c0392b" stroke-width="1.2"/>
+<text x="804" y="682" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#c0392b" text-anchor="start">Errors are named in plain words, per row</text>
+</svg>

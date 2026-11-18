@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Review before submitting (mockup)">
+<title>Review before submitting (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1440" height="900" fill="#F4F7FB"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#0f2f57"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#c9a24a" text-anchor="start">CHUVOR CBT</text>
+<rect x="1052" y="18" width="128" height="36" rx="18" fill="#c9a24a"    />
+<text x="1116" y="42" font-family="Consolas,monospace" font-size="17" font-weight="800" fill="#0f2f57" text-anchor="middle">00:08:41</text>
+<rect x="230" y="100" width="980" height="740" rx="20" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<text x="278" y="160" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="800" fill="#0f2f57" text-anchor="start">Before you submit</text>
+<text x="278" y="190" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#5B7090" text-anchor="start">You cannot change answers after this.</text>
+<rect x="278" y="220" width="272" height="90" rx="14" fill="#E3F4EA"    />
+<text x="300" y="252" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#1E7A4C" text-anchor="start">Answered</text>
+<text x="300" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="32" font-weight="800" fill="#1E7A4C" text-anchor="start">36</text>
+<rect x="570" y="220" width="272" height="90" rx="14" fill="#FBE6E3"    />
+<text x="592" y="252" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#B3372B" text-anchor="start">Not answered</text>
+<text x="592" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="32" font-weight="800" fill="#B3372B" text-anchor="start">3</text>
+<rect x="862" y="220" width="272" height="90" rx="14" fill="#FBF1D6"    />
+<text x="884" y="252" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#8A6A12" text-anchor="start">Flagged</text>
+<text x="884" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="32" font-weight="800" fill="#8A6A12" text-anchor="start">1</text>
+<text x="278" y="356" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#0f2f57" text-anchor="start">Questions not answered</text>
+<rect x="278" y="372" width="58" height="52" rx="10" fill="#FBE6E3" stroke="#B3372B" stroke-width="2"   />
+<text x="307" y="406" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#B3372B" text-anchor="middle">12</text>
+<rect x="348" y="372" width="58" height="52" rx="10" fill="#FBE6E3" stroke="#B3372B" stroke-width="2"   />
+<text x="377" y="406" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#B3372B" text-anchor="middle">19</text>
+<rect x="418" y="372" width="58" height="52" rx="10" fill="#FBE6E3" stroke="#B3372B" stroke-width="2"   />
+<text x="447" y="406" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#B3372B" text-anchor="middle">27</text>
+<text x="278" y="470" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#0f2f57" text-anchor="start">Flagged for review</text>
+<rect x="278" y="486" width="58" height="52" rx="10" fill="#FBF1D6" stroke="#8A6A12" stroke-width="2"   />
+<text x="307" y="520" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#8A6A12" text-anchor="middle">31</text>
+<rect x="278" y="580" width="884" height="64" rx="14" fill="#E3EEF9"    />
+<text x="302" y="618" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#2f6fb5" text-anchor="start">Tip: click a number to go back to that question, then return here.</text>
+<rect x="278" y="672" width="300" height="56" rx="10" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="428" y="705.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#0f2f57" text-anchor="middle">← Go back to questions</text>
+<rect x="862" y="672" width="300" height="56" rx="10" fill="#c9a24a"    />
+<text x="1012" y="705.6" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="600" fill="#0f2f57" text-anchor="middle">Submit my exam</text>
+</svg>

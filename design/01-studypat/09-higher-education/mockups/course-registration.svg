@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Course registration (mockup)">
+<title>Course registration (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1440" height="900" fill="#F7F6FC"/>
+<rect x="0" y="0" width="248" height="900" rx="0" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<rect x="28" y="24" width="34" height="34" rx="10" fill="#4F46E5"    />
+<text x="76" y="49" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#1B1740" text-anchor="start">StudyPat</text>
+<rect x="30" y="97" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="111" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Dashboard</text>
+<rect x="14" y="134" width="220" height="40" rx="10" fill="#EEEDFB"    />
+<rect x="30" y="143" width="18" height="18" rx="5" fill="#4F46E5"    />
+<text x="62" y="157" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#4F46E5" text-anchor="start">Courses</text>
+<rect x="30" y="189" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="203" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Results</text>
+<rect x="30" y="235" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="249" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Fees</text>
+<rect x="30" y="281" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="295" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Transcript</text>
+<rect x="30" y="327" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="341" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Profile</text>
+<rect x="248" y="0" width="1192" height="72" rx="0" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="284" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#1B1740" text-anchor="start">Course registration</text>
+<rect x="1090" y="25" width="114" height="22" rx="11" fill="#E6F1FB"    />
+<text x="1147" y="40" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#185FA5" text-anchor="middle">First Semester</text>
+<circle cx="1368" cy="36" r="18" fill="#EEEDFB" />
+<text x="1368" y="41.4" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15.299999999999999" font-weight="700" fill="#4F46E5" text-anchor="middle">MO</text>
+<text x="284" y="112" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#6B6890" text-anchor="start">Mathematics and Computer Science · 200 level</text>
+<rect x="284" y="150" width="1120" height="56" rx="14" fill="#E6F1FB"    />
+<text x="308" y="184" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#185FA5" text-anchor="start">Units chosen: 18 of 24 allowed</text>
+<rect x="560" y="176" width="260" height="10" rx="5" fill="#EEEDFB"    />
+<rect x="560" y="176" width="195" height="10" rx="5" fill="#4F46E5"    />
+<rect x="284" y="226" width="1120" height="434" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
+<text x="308" y="254" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#6B6890" text-anchor="start"></text>
+<text x="358" y="254" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#6B6890" text-anchor="start">CODE</text>
+<text x="488" y="254" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#6B6890" text-anchor="start">COURSE</text>
+<text x="948" y="254" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#6B6890" text-anchor="start">UNITS</text>
+<text x="1048" y="254" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#6B6890" text-anchor="start">TYPE</text>
+<text x="1168" y="254" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#6B6890" text-anchor="start">LECTURER</text>
+<line x1="308" y1="264" x2="1380" y2="264" stroke="#E8E6F2" stroke-width="1"/>
+<rect x="308" y="287" width="20" height="20" rx="5" fill="#4F46E5" stroke="#E8E6F2" stroke-width="1"   />
+<text x="318" y="302" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+<text x="358" y="302" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">MTH 201</text>
+<text x="488" y="302" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Linear Algebra I</text>
+<text x="948" y="302" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">3</text>
+<rect x="1048" y="282" width="48" height="22" rx="11" fill="#E6F1FB"    />
+<text x="1072" y="297" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#185FA5" text-anchor="middle">Core</text>
+<text x="1168" y="302" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Dr Okoro</text>
+<line x1="308" y1="324" x2="1380" y2="324" stroke="#EEEDFB" stroke-width="1"/>
+<rect x="308" y="341" width="20" height="20" rx="5" fill="#4F46E5" stroke="#E8E6F2" stroke-width="1"   />
+<text x="318" y="356" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+<text x="358" y="356" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">MTH 203</text>
+<text x="488" y="356" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Real Analysis I</text>
+<text x="948" y="356" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">3</text>
+<rect x="1048" y="336" width="48" height="22" rx="11" fill="#E6F1FB"    />
+<text x="1072" y="351" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#185FA5" text-anchor="middle">Core</text>
+<text x="1168" y="356" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Prof Bello</text>
+<line x1="308" y1="378" x2="1380" y2="378" stroke="#EEEDFB" stroke-width="1"/>
+<rect x="308" y="395" width="20" height="20" rx="5" fill="#4F46E5" stroke="#E8E6F2" stroke-width="1"   />
+<text x="318" y="410" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+<text x="358" y="410" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">CSC 201</text>
+<text x="488" y="410" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Data Structures</text>
+<text x="948" y="410" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">3</text>
+<rect x="1048" y="390" width="48" height="22" rx="11" fill="#E6F1FB"    />
+<text x="1072" y="405" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#185FA5" text-anchor="middle">Core</text>
+<text x="1168" y="410" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Dr Eze</text>
+<line x1="308" y1="432" x2="1380" y2="432" stroke="#EEEDFB" stroke-width="1"/>
+<rect x="308" y="449" width="20" height="20" rx="5" fill="#4F46E5" stroke="#E8E6F2" stroke-width="1"   />
+<text x="318" y="464" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+<text x="358" y="464" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">CSC 203</text>
+<text x="488" y="464" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Computer Architecture</text>
+<text x="948" y="464" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">3</text>
+<rect x="1048" y="444" width="48" height="22" rx="11" fill="#E6F1FB"    />
+<text x="1072" y="459" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#185FA5" text-anchor="middle">Core</text>
+<text x="1168" y="464" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Dr Musa</text>
+<line x1="308" y1="486" x2="1380" y2="486" stroke="#EEEDFB" stroke-width="1"/>
+<rect x="308" y="503" width="20" height="20" rx="5" fill="#4F46E5" stroke="#E8E6F2" stroke-width="1"   />
+<text x="318" y="518" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+<text x="358" y="518" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">STA 201</text>
+<text x="488" y="518" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Statistics I</text>
+<text x="948" y="518" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">3</text>
+<rect x="1048" y="498" width="48" height="22" rx="11" fill="#E6F1FB"    />
+<text x="1072" y="513" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#185FA5" text-anchor="middle">Core</text>
+<text x="1168" y="518" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Dr Udo</text>
+<line x1="308" y1="540" x2="1380" y2="540" stroke="#EEEDFB" stroke-width="1"/>
+<rect x="308" y="557" width="20" height="20" rx="5" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="358" y="572" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">GST 201</text>
+<text x="488" y="572" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Entrepreneurship</text>
+<text x="948" y="572" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">2</text>
+<rect x="1048" y="552" width="75" height="22" rx="11" fill="#EEEDFB"    />
+<text x="1085.5" y="567" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#6B6890" text-anchor="middle">Elective</text>
+<text x="1168" y="572" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Mrs Ade</text>
+<line x1="308" y1="594" x2="1380" y2="594" stroke="#EEEDFB" stroke-width="1"/>
+<rect x="308" y="611" width="20" height="20" rx="5" fill="#4F46E5" stroke="#E8E6F2" stroke-width="1"   />
+<text x="318" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+<text x="358" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">MTH 205</text>
+<text x="488" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Numerical Methods</text>
+<text x="948" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">3</text>
+<rect x="1048" y="606" width="75" height="22" rx="11" fill="#EEEDFB"    />
+<text x="1085.5" y="621" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#6B6890" text-anchor="middle">Elective</text>
+<text x="1168" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#6B6890" text-anchor="start">Dr Nwosu</text>
+<rect x="1224" y="790" width="180" height="54" rx="10" fill="#EF9F27"    />
+<text x="1314" y="822.075" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#1B1740" text-anchor="middle">Submit registration</text>
+</svg>

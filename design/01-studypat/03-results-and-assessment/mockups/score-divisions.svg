@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Score divisions (mockup)">
+<title>Score divisions (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1440" height="900" fill="#F7F6FC"/>
+<rect x="0" y="0" width="248" height="900" rx="0" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<rect x="28" y="24" width="34" height="34" rx="10" fill="#4F46E5"    />
+<text x="76" y="49" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#1B1740" text-anchor="start">StudyPat</text>
+<rect x="30" y="97" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="111" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Dashboard</text>
+<rect x="30" y="143" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="157" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Start here</text>
+<rect x="30" y="189" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="203" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Students</text>
+<rect x="30" y="235" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="249" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Academics</text>
+<rect x="14" y="272" width="220" height="40" rx="10" fill="#EEEDFB"    />
+<rect x="30" y="281" width="18" height="18" rx="5" fill="#4F46E5"    />
+<text x="62" y="295" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#4F46E5" text-anchor="start">Results</text>
+<rect x="30" y="327" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="341" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Finance</text>
+<rect x="30" y="373" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="387" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">E-Class</text>
+<rect x="30" y="419" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="433" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">CBT exams</text>
+<rect x="30" y="465" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="479" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">School website</text>
+<rect x="30" y="511" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="525" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Billing</text>
+<rect x="30" y="557" width="18" height="18" rx="5" fill="#EEEDFB"    />
+<text x="62" y="571" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#1B1740" text-anchor="start">Help</text>
+<rect x="248" y="0" width="1192" height="72" rx="0" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="284" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#1B1740" text-anchor="start">Score divisions</text>
+<rect x="1090" y="25" width="167" height="22" rx="11" fill="#E6F1FB"    />
+<text x="1173.5" y="40" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#185FA5" text-anchor="middle">2026/2027 · First Term</text>
+<circle cx="1368" cy="36" r="18" fill="#EEEDFB" />
+<text x="1368" y="41.4" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15.299999999999999" font-weight="700" fill="#4F46E5" text-anchor="middle">MO</text>
+<text x="284" y="112" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#6B6890" text-anchor="start">Decide how marks are split between continuous assessment and exam.</text>
+<rect x="284" y="150" width="1120" height="56" rx="14" fill="#EAF3DE"    />
+<text x="308" y="184" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#3B6D11" text-anchor="start">✓  Active divisions add up to 100</text>
+<text x="1380" y="184" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#3B6D11" text-anchor="end">CA 40 + Examination 60</text>
+<rect x="284" y="230" width="540" height="330" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
+<text x="308" y="268" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#1B1740" text-anchor="start">Continuous assessment · 40</text>
+<text x="308" y="290" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">Split it into named parts if you like</text>
+<rect x="308" y="320" width="492" height="50" rx="12" fill="#F7F6FC" stroke="#E8E6F2" stroke-width="1"   />
+<text x="330" y="351" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#1B1740" text-anchor="start">Craft work</text>
+<rect x="700" y="328" width="80" height="34" rx="8" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="740" y="351" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#1B1740" text-anchor="middle">5</text>
+<rect x="308" y="382" width="492" height="50" rx="12" fill="#F7F6FC" stroke="#E8E6F2" stroke-width="1"   />
+<text x="330" y="413" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#1B1740" text-anchor="start">Cognitive test</text>
+<rect x="700" y="390" width="80" height="34" rx="8" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="740" y="413" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#1B1740" text-anchor="middle">15</text>
+<rect x="308" y="444" width="492" height="50" rx="12" fill="#F7F6FC" stroke="#E8E6F2" stroke-width="1"   />
+<text x="330" y="475" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#1B1740" text-anchor="start">CA 2</text>
+<rect x="700" y="452" width="80" height="34" rx="8" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="740" y="475" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#1B1740" text-anchor="middle">20</text>
+<rect x="308" y="512" width="160" height="36" rx="10" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="388" y="534.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#1B1740" text-anchor="middle">+ Add a part</text>
+<rect x="850" y="230" width="554" height="330" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
+<text x="874" y="268" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#1B1740" text-anchor="start">Examination · 60</text>
+<text x="874" y="290" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">One exam score</text>
+<rect x="874" y="320" width="506" height="50" rx="12" fill="#F7F6FC" stroke="#E8E6F2" stroke-width="1"   />
+<text x="896" y="351" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#1B1740" text-anchor="start">Examination</text>
+<rect x="1280" y="328" width="80" height="34" rx="8" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
+<text x="1320" y="351" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#1B1740" text-anchor="middle">60</text>
+<rect x="284" y="584" width="1120" height="150" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
+<text x="308" y="624" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">Switch parts on or off</text>
+<text x="308" y="648" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#6B6890" text-anchor="start">Off keeps single-number scores and the parts you already set up.</text>
+<rect x="1320" y="610" width="44" height="24" rx="12" fill="#4F46E5"    />
+<circle cx="1352" cy="622" r="9" fill="#FFFFFF" />
+<text x="308" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#1B1740" text-anchor="start">Show a CA total column on the report card</text>
+<rect x="1320" y="676" width="44" height="24" rx="12" fill="#EEEDFB"    />
+<circle cx="1332" cy="688" r="9" fill="#FFFFFF" />
+</svg>

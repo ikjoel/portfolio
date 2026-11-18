@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Candidate sign-in and photo check (wireframe)">
+<title>Candidate sign-in and photo check (wireframe)</title>
+<rect width="1440" height="900" fill="#ffffff"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#e2e2e2"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CHUVOR</text>
+<text x="124" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CBT</text>
+<rect x="400" y="110" width="640" height="700" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="720" y="180" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="800" fill="#333333" text-anchor="middle">Welcome, candidate</text>
+<text x="720" y="208" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="middle">Enter your details to start. Ask the invigilator if you need help.</text>
+<text x="456" y="250" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Exam code</text>
+<rect x="456" y="258" width="528" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="470" y="283" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">MTH-JSS3-MOCK</text>
+<text x="456" y="346" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Candidate number</text>
+<rect x="456" y="354" width="528" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="470" y="379" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">2026/0143</text>
+<rect x="456" y="446" width="528" height="52" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="720" y="477.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#2b2b2b" text-anchor="middle">Find me</text>
+<line x1="456" y1="530" x2="984" y2="530" stroke="#b5b5b5" stroke-width="1"/>
+<text x="720" y="570" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#333333" text-anchor="middle">Is this you?</text>
+<rect x="630" y="590" width="120" height="140" rx="4" fill="#f6f6f6" stroke="#b5b5b5" stroke-width="1.5"/>
+<line x1="630" y1="590" x2="750" y2="730" stroke="#cfcfcf"/><line x1="750" y1="590" x2="630" y2="730" stroke="#cfcfcf"/>
+<text x="690" y="664" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#8a8a8a" text-anchor="middle">photo</text>
+<text x="800" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#333333" text-anchor="start">Chinedu Obi</text>
+<text x="800" y="664" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">JSS 3 · Seat B-01</text>
+<rect x="456" y="764" width="250" height="50" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="581" y="793.725" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#333333" text-anchor="middle">No, tell the invigilator</text>
+<rect x="734" y="764" width="250" height="50" rx="4" fill="#a8a8a8" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="859" y="794.075" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#333333" text-anchor="middle">Yes, that is me</text>
+<circle cx="750" cy="660" r="5" fill="#c0392b"/>
+<path d="M750 660 L770 704" stroke="#c0392b" stroke-width="1.2"/>
+<text x="774" y="708" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#c0392b" text-anchor="start">Photo check stops one candidate sitting for another</text>
+</svg>

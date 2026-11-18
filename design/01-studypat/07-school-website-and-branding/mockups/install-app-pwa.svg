@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-label="Install as an app (PWA) (mockup)">
+<title>Install as an app (PWA) (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="390" height="844" fill="#F7F6FC"/>
+<rect x="0" y="0" width="390" height="844" rx="0" fill="#FFFFFF"    />
+<text x="20" y="34" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#1B1740" text-anchor="start">9:41</text>
+<rect x="16" y="56" width="358" height="44" rx="22" fill="#EEEDFB"    />
+<text x="195" y="84" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="middle">sample-academy.studypat.com</text>
+<rect x="0" y="120" width="390" height="110" rx="0" fill="#4F46E5"    />
+<text x="20" y="168" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="start">Sample Academy</text>
+<text x="20" y="194" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#FFFFFF" text-anchor="start" opacity="0.85">Parent portal</text>
+<rect x="16" y="252" width="358" height="250" rx="18" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
+<rect x="34" y="272" width="56" height="56" rx="14" fill="#4F46E5"    />
+<text x="62" y="308" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">SA</text>
+<text x="104" y="296" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">Install Sample Academy</text>
+<text x="104" y="318" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">Open it like any app. Works on a slow line.</text>
+<rect x="34" y="354" width="322" height="50" rx="10" fill="#EF9F27"    />
+<text x="195" y="384.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#1B1740" text-anchor="middle">Install app</text>
+<text x="195" y="430" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="middle">On iPhone: tap Share, then “Add to Home Screen”</text>
+<text x="195" y="452" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="middle">No app store needed</text>
+<text x="20" y="560" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#1B1740" text-anchor="start">After installing</text>
+<rect x="40" y="590" width="60" height="60" rx="16" fill="#4F46E5"    />
+<text x="70" y="674" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B6890" text-anchor="middle">Sample</text>
+<rect x="124" y="590" width="60" height="60" rx="16" fill="#EEEDFB"    />
+<text x="154" y="674" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B6890" text-anchor="middle">Phone</text>
+<rect x="208" y="590" width="60" height="60" rx="16" fill="#EEEDFB"    />
+<text x="238" y="674" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B6890" text-anchor="middle">Camera</text>
+<rect x="292" y="590" width="60" height="60" rx="16" fill="#EEEDFB"    />
+<text x="322" y="674" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11" font-weight="400" fill="#6B6890" text-anchor="middle">Notes</text>
+<rect x="0" y="700" width="390" height="144" rx="0" fill="#F7F6FC"    />
+<text x="195" y="744" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1B1740" text-anchor="middle">Pages always load fresh.</text>
+<text x="195" y="768" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="middle">Personal data is never kept offline by mistake.</text>
+</svg>

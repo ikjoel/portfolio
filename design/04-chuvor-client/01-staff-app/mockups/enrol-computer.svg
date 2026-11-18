@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="840" viewBox="0 0 1000 840" role="img" aria-label="Enrol this computer (mockup)">
+<title>Enrol this computer (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1000" height="840" fill="#F4F7FB"/>
+<rect x="0" y="0" width="1000" height="840" rx="0" fill="#F4F7FB"    />
+<rect x="220" y="24" width="560" height="790" rx="12" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<rect x="220" y="24" width="560" height="44" rx="12" fill="#0f2f57"    />
+<rect x="220" y="48" width="560" height="20" rx="0" fill="#0f2f57"    />
+<text x="236" y="52" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="start">Chuvor Client</text>
+<rect x="256" y="94" width="44" height="44" rx="12" fill="#0f2f57"    />
+<circle cx="278" cy="116" r="12" fill="#F4F7FB" stroke="#c9a24a" stroke-width="3"/>
+<text x="316" y="122" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="24" font-weight="800" fill="#0f2f57" text-anchor="start">CHUVOR</text>
+<text x="436" y="122" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="24" font-weight="800" fill="#c9a24a" text-anchor="start">CLIENT</text>
+<text x="256" y="190" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="24" font-weight="800" fill="#0f2f57" text-anchor="start">Connect this computer</text>
+<text x="256" y="216" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="start">Ask your company administrator for a one-time code.</text>
+<text x="256" y="250" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Enrolment code</text>
+<rect x="256" y="258" width="488" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="270" y="283" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">K7Q4-M2XD-9PTA</text>
+<text x="256" y="316" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#5B7090" text-anchor="start">The code works once and expires in 24 hours.</text>
+<text x="256" y="354" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#5B7090" text-anchor="start">Name of this computer</text>
+<rect x="256" y="362" width="488" height="40" rx="9" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="270" y="387" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#0f2f57" text-anchor="start">ADA-LAPTOP</text>
+<text x="256" y="420" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#5B7090" text-anchor="start">Shown to your administrator when approving.</text>
+<rect x="256" y="464" width="488" height="58" rx="10" fill="#c9a24a"    />
+<text x="500" y="498.95" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="600" fill="#0f2f57" text-anchor="middle">Connect</text>
+<circle cx="272" cy="584" r="14" fill="#c9a24a" />
+<text x="272" y="589" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#0f2f57" text-anchor="middle">1</text>
+<text x="298" y="589" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="800" fill="#0f2f57" text-anchor="start">Enter the code</text>
+<circle cx="272" cy="638" r="14" fill="#E8EFF8" />
+<text x="272" y="643" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#0f2f57" text-anchor="middle">2</text>
+<text x="298" y="643" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#5B7090" text-anchor="start">Wait for approval</text>
+<circle cx="272" cy="692" r="14" fill="#E8EFF8" />
+<text x="272" y="697" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#0f2f57" text-anchor="middle">3</text>
+<text x="298" y="697" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#5B7090" text-anchor="start">Open your program</text>
+<text x="256" y="796" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#2f6fb5" text-anchor="start">Help · Version 0.9.0</text>
+</svg>

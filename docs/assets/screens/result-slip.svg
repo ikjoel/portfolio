@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Result slip (mockup)">
+<title>Result slip (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1440" height="900" fill="#F4F7FB"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#0f2f57"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#c9a24a" text-anchor="start">CHUVOR CBT</text>
+<rect x="400" y="100" width="640" height="740" rx="20" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<circle cx="720" cy="190" r="34" fill="#E3F4EA" />
+<text x="720" y="202" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="36" font-weight="800" fill="#1E7A4C" text-anchor="middle">✓</text>
+<text x="720" y="266" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#0f2f57" text-anchor="middle">Exam submitted</text>
+<text x="720" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#5B7090" text-anchor="middle">Chinedu Obi · 2026/0143</text>
+<rect x="456" y="326" width="528" height="150" rx="16" fill="#E8EFF8"    />
+<text x="720" y="400" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="54" font-weight="800" fill="#0f2f57" text-anchor="middle">34 / 40</text>
+<text x="720" y="432" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#0f2f57" text-anchor="middle">85%  ·  Grade A</text>
+<text x="720" y="456" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="middle">Mathematics · JSS 3 Mock</text>
+<rect x="456" y="504" width="160" height="160" rx="10" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<rect x="486" y="514" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="506" y="514" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="546" y="514" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="566" y="514" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="586" y="514" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="486" y="534" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="506" y="534" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="526" y="534" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="566" y="534" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="586" y="534" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="506" y="554" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="526" y="554" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="566" y="554" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="586" y="554" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="466" y="574" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="506" y="574" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="526" y="574" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="546" y="574" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="586" y="574" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="466" y="594" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="526" y="594" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="546" y="594" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="586" y="594" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="466" y="614" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="486" y="614" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="526" y="614" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="546" y="614" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="566" y="614" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="466" y="634" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="486" y="634" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="546" y="634" width="16" height="16" rx="2" fill="#0f2f57"    />
+<rect x="566" y="634" width="16" height="16" rx="2" fill="#0f2f57"    />
+<text x="640" y="560" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#0f2f57" text-anchor="start">Scan to check this slip</text>
+<text x="640" y="584" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="start">Valid with the school stamp.</text>
+<text x="640" y="608" font-family="Consolas,monospace" font-size="12.5" font-weight="400" fill="#5B7090" text-anchor="start">Slip no. CBT-2026-0143-M</text>
+<rect x="456" y="700" width="250" height="50" rx="10" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="581" y="730.075" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#0f2f57" text-anchor="middle">Print slip</text>
+<rect x="734" y="700" width="250" height="50" rx="10" fill="#0f2f57"    />
+<text x="859" y="730.075" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Finish</text>
+</svg>

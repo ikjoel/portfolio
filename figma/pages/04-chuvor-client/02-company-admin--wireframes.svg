@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1210" viewBox="0 0 3200 1210">
+<title>Chuvor Client · Company admin · Wireframes</title>
+<rect width="3200" height="1210" fill="#eef1f6"/>
+<text x="100" y="80" font-family="Segoe UI,Arial,sans-serif" font-size="56" font-weight="800" fill="#0f2f57">Chuvor Client · Company admin</text>
+<text x="100" y="124" font-family="Segoe UI,Arial,sans-serif" font-size="26" fill="#52627a">Wireframes · sample data only · 2 screens</text>
+<text x="100" y="192" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#10233f">Chuvor Client control panel</text>
+<svg id="chuvor-client-control-panel" x="100" y="210" width="1440" height="900" viewBox="0 0 1440 900" overflow="hidden">
+<title>Chuvor Client control panel (wireframe)</title>
+<rect width="1440" height="900" fill="#ffffff"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#e2e2e2"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CHUVOR</text>
+<text x="122" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CLIENT</text>
+<text x="250" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="400" fill="#2b2b2b" text-anchor="start" opacity="0.8">Sample Trading Ltd</text>
+<text x="560" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="800" fill="#2b2b2b" text-anchor="start">Computers</text>
+<text x="710" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Enrolment codes</text>
+<text x="860" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Settings</text>
+<text x="1010" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Subscription</text>
+<text x="1400" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#2b2b2b" text-anchor="end">Admin ▾</text>
+<rect x="32" y="96" width="1376" height="64" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="56" y="124" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#2b2b2b" text-anchor="start">Service active</text>
+<text x="190" y="124" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#2b2b2b" text-anchor="start">Paid until 30 Nov 2026 · 12 days left · Business plan · 9 of 15 computers used</text>
+<rect x="1252" y="108" width="132" height="40" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1318" y="132.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#2b2b2b" text-anchor="middle">Renew</text>
+<circle cx="1236" cy="128" r="5" fill="#c0392b"/>
+<path d="M1236 128 L1212 128" stroke="#c0392b" stroke-width="1.2"/>
+<text x="1208" y="132" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#c0392b" text-anchor="end">Subscription state is always visible, so nothing expires by surprise</text>
+<rect x="32" y="190" width="940" height="660" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="60" y="228" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#333333" text-anchor="start">Computers</text>
+<text x="60" y="250" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">Only approved computers can connect. Revoke one and it is cut off in seconds.</text>
+<text x="60" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">Name</text>
+<text x="250" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">Type</text>
+<text x="340" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">Status</text>
+<text x="470" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">Connects to</text>
+<text x="640" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">Last seen</text>
+<text x="800" y="292" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start"></text>
+<line x1="60" y1="304" x2="944" y2="304" stroke="#b5b5b5" stroke-width="1"/>
+<text x="60" y="346" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#333333" text-anchor="start">OFFICE-HQ</text>
+<text x="250" y="346" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Company</text>
+<rect x="340" y="330" width="62" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="371" y="345" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Online</text>
+<text x="470" y="346" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">—</text>
+<text x="640" y="346" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">1 min ago</text>
+<rect x="800" y="324" width="120" height="38" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="860" y="347.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">Revoke</text>
+<line x1="60" y1="380" x2="944" y2="380" stroke="#f0f0f0" stroke-width="1"/>
+<text x="60" y="416" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#333333" text-anchor="start">ADA-LAPTOP</text>
+<text x="250" y="416" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Staff</text>
+<rect x="340" y="400" width="62" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="371" y="415" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Online</text>
+<text x="470" y="416" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">OFFICE-HQ</text>
+<text x="640" y="416" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">now</text>
+<rect x="800" y="394" width="120" height="38" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="860" y="417.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">Revoke</text>
+<line x1="60" y1="450" x2="944" y2="450" stroke="#f0f0f0" stroke-width="1"/>
+<text x="60" y="486" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#333333" text-anchor="start">TUNDE-PC</text>
+<text x="250" y="486" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Staff</text>
+<rect x="340" y="470" width="68" height="22" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="374" y="485" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#8a8a8a" text-anchor="middle">Offline</text>
+<text x="470" y="486" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">OFFICE-HQ</text>
+<text x="640" y="486" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">2 h ago</text>
+<rect x="800" y="464" width="120" height="38" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="860" y="487.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">Revoke</text>
+<line x1="60" y1="520" x2="944" y2="520" stroke="#f0f0f0" stroke-width="1"/>
+<text x="60" y="556" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#333333" text-anchor="start">BRANCH-2</text>
+<text x="250" y="556" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Staff</text>
+<rect x="340" y="540" width="68" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="374" y="555" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Waiting</text>
+<text x="470" y="556" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">OFFICE-HQ</text>
+<text x="640" y="556" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">just now</text>
+<rect x="800" y="534" width="120" height="38" rx="4" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="860" y="557.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#2b2b2b" text-anchor="middle">Approve</text>
+<line x1="60" y1="590" x2="944" y2="590" stroke="#f0f0f0" stroke-width="1"/>
+<text x="60" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#333333" text-anchor="start">KEMI-LAPTOP</text>
+<text x="250" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Staff</text>
+<rect x="340" y="610" width="62" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="371" y="625" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Online</text>
+<text x="470" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">OFFICE-HQ</text>
+<text x="640" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">now</text>
+<rect x="800" y="604" width="120" height="38" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="860" y="627.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">Revoke</text>
+<line x1="60" y1="660" x2="944" y2="660" stroke="#f0f0f0" stroke-width="1"/>
+<text x="60" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#333333" text-anchor="start">STORE-PC</text>
+<text x="250" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Staff</text>
+<rect x="340" y="680" width="68" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="374" y="695" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Revoked</text>
+<text x="470" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">—</text>
+<text x="640" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">3 d ago</text>
+<rect x="800" y="674" width="120" height="38" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="860" y="697.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">Remove</text>
+<rect x="1000" y="190" width="408" height="300" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1028" y="228" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#333333" text-anchor="start">Add a computer</text>
+<text x="1028" y="252" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">Create a one-time code, then type it into</text>
+<text x="1028" y="270" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">Chuvor Client on the new computer.</text>
+<rect x="1028" y="292" width="352" height="62" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="1204" y="333" font-family="Consolas,monospace" font-size="24" font-weight="800" fill="#2b2b2b" text-anchor="middle">K7Q4-M2XD-9PTA</text>
+<rect x="1028" y="372" width="168" height="44" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1112" y="398.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#2b2b2b" text-anchor="middle">New staff code</text>
+<rect x="1212" y="372" width="168" height="44" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1296" y="398.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">New company code</text>
+<text x="1028" y="450" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">The code works once and expires in 24 hours.</text>
+<rect x="1000" y="514" width="408" height="336" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1028" y="552" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#333333" text-anchor="start">Next step</text>
+<text x="1028" y="580" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Set the program your staff open.</text>
+<text x="1028" y="612" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Program to start</text>
+<rect x="1028" y="620" width="352" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1042" y="645" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">C:\Windows\System32\notepad.exe</text>
+<text x="1028" y="678" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Test with Notepad first, then use your real program.</text>
+<rect x="1028" y="724" width="352" height="46" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1204" y="751.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#2b2b2b" text-anchor="middle">Save settings</text>
+</svg>
+<text x="1660" y="192" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#10233f">Company settings</text>
+<svg id="settings-page" x="1660" y="210" width="1440" height="900" viewBox="0 0 1440 900" overflow="hidden">
+<title>Company settings (wireframe)</title>
+<rect width="1440" height="900" fill="#ffffff"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#e2e2e2"    />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CHUVOR</text>
+<text x="122" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="start">CLIENT</text>
+<text x="250" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="400" fill="#2b2b2b" text-anchor="start" opacity="0.8">Sample Trading Ltd</text>
+<text x="560" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Computers</text>
+<text x="710" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Enrolment codes</text>
+<text x="860" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="800" fill="#2b2b2b" text-anchor="start">Settings</text>
+<text x="1010" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#2b2b2b" text-anchor="start">Subscription</text>
+<text x="32" y="126" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#333333" text-anchor="start">Settings</text>
+<text x="32" y="152" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#8a8a8a" text-anchor="start">Every setting has a short explanation underneath.</text>
+<rect x="32" y="180" width="700" height="330" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="56" y="218" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#333333" text-anchor="start">Your program</text>
+<text x="56" y="246" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Name of your program</text>
+<rect x="56" y="254" width="652" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="70" y="279" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Accounting</text>
+<text x="56" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Program to start</text>
+<rect x="56" y="348" width="652" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="70" y="373" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">C:\Program Files\Accounts\accounts.exe</text>
+<text x="56" y="406" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Copy it from the program’s shortcut &gt; Properties &gt; Target.</text>
+<rect x="56" y="442" width="200" height="46" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="156" y="469.725" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#333333" text-anchor="middle">Test with Notepad</text>
+<rect x="32" y="534" width="700" height="300" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="56" y="572" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#333333" text-anchor="start">Picture quality</text>
+<rect x="56" y="606" width="652" height="60" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"   />
+<circle cx="84" cy="636" r="9" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"/>
+<text x="108" y="633" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#333333" text-anchor="start">Speed</text>
+<text x="108" y="652" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Smoothest on a slow line</text>
+<rect x="56" y="676" width="652" height="60" rx="4" fill="#ececec" stroke="#bdbdbd" stroke-width="2"   />
+<circle cx="84" cy="706" r="9" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"/>
+<circle cx="84" cy="706" r="5" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1"/>
+<text x="108" y="703" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#333333" text-anchor="start">Balanced</text>
+<text x="108" y="722" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Good for most offices</text>
+<rect x="56" y="746" width="652" height="60" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"   />
+<circle cx="84" cy="776" r="9" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"/>
+<text x="108" y="773" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#333333" text-anchor="start">Quality</text>
+<text x="108" y="792" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Sharpest picture</text>
+<rect x="756" y="180" width="652" height="654" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="780" y="218" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#333333" text-anchor="start">Printing and sharing</text>
+<text x="780" y="272" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start">Fast receipt and document printing</text>
+<text x="780" y="294" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Prints go straight to each person’s own printer.</text>
+<rect x="1332" y="256" width="44" height="24" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1"   />
+<circle cx="1364" cy="268" r="9" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"/>
+<line x1="780" y1="326" x2="1384" y2="326" stroke="#f0f0f0" stroke-width="1"/>
+<text x="780" y="372" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start">Allow clipboard (copy and paste)</text>
+<text x="780" y="394" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Off keeps company data in the company computer.</text>
+<rect x="1332" y="356" width="44" height="24" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<circle cx="1344" cy="368" r="9" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"/>
+<line x1="780" y1="426" x2="1384" y2="426" stroke="#f0f0f0" stroke-width="1"/>
+<text x="780" y="472" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start">Allow drives and files</text>
+<text x="780" y="494" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Off stops files leaving the company computer.</text>
+<rect x="1332" y="456" width="44" height="24" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<circle cx="1344" cy="468" r="9" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"/>
+<line x1="780" y1="526" x2="1384" y2="526" stroke="#f0f0f0" stroke-width="1"/>
+<text x="780" y="572" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start">Direct connection when possible</text>
+<text x="780" y="594" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Can make the screen faster. Try it on one person first.</text>
+<rect x="1332" y="556" width="44" height="24" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<circle cx="1344" cy="568" r="9" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"/>
+<line x1="780" y1="626" x2="1384" y2="626" stroke="#f0f0f0" stroke-width="1"/>
+<rect x="780" y="700" width="604" height="54" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1082" y="732.425" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Save settings</text>
+<circle cx="1330" cy="290" r="5" fill="#c0392b"/>
+<path d="M1330 290 L950 700" stroke="#c0392b" stroke-width="1.2"/>
+<text x="946" y="704" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#c0392b" text-anchor="end">Every switch says what it does and what “off” means</text>
+</svg>
+</svg>

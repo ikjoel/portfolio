@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Record a payment (wireframe)">
+<title>Record a payment (wireframe)</title>
+<rect width="1440" height="900" fill="#ffffff"/>
+<rect x="0" y="0" width="248" height="900" rx="0" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"   />
+<rect x="28" y="24" width="34" height="34" rx="4" fill="#d6d6d6"    />
+<text x="76" y="49" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#333333" text-anchor="start">StudyPat</text>
+<rect x="30" y="97" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="111" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">Dashboard</text>
+<rect x="30" y="143" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="157" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">Start here</text>
+<rect x="30" y="189" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="203" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">Students</text>
+<rect x="30" y="235" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="249" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">Academics</text>
+<rect x="30" y="281" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="295" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">Results</text>
+<rect x="14" y="318" width="220" height="40" rx="4" fill="#f0f0f0"    />
+<rect x="30" y="327" width="18" height="18" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="341" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#2b2b2b" text-anchor="start">Finance</text>
+<rect x="30" y="373" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="387" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">E-Class</text>
+<rect x="30" y="419" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="433" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">CBT exams</text>
+<rect x="30" y="465" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="479" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">School website</text>
+<rect x="30" y="511" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="525" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">Billing</text>
+<rect x="30" y="557" width="18" height="18" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="62" y="571" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#333333" text-anchor="start">Help</text>
+<rect x="248" y="0" width="1192" height="72" rx="0" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"   />
+<text x="284" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#333333" text-anchor="start">Student fees</text>
+<rect x="1090" y="25" width="167" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="1173.5" y="40" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">2026/2027 · First Term</text>
+<circle cx="1368" cy="36" r="18" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"/>
+<text x="1368" y="41.4" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15.299999999999999" font-weight="700" fill="#333333" text-anchor="middle">MO</text>
+<text x="284" y="112" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#8a8a8a" text-anchor="start">Ada Okafor · JSS 2A · First Term</text>
+<rect x="284" y="156" width="380" height="250" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<circle cx="330" cy="214" r="30" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"/>
+<text x="330" y="223" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="25.5" font-weight="700" fill="#333333" text-anchor="middle">A</text>
+<text x="376" y="208" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#333333" text-anchor="start">Ada Okafor</text>
+<text x="376" y="230" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">SA/26/108 · JSS 2A</text>
+<text x="312" y="300" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">Balance</text>
+<text x="312" y="346" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="38" font-weight="800" fill="#2b2b2b" text-anchor="start">₦ 20,000</text>
+<rect x="312" y="368" width="81" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="352.5" y="383" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Part paid</text>
+<rect x="690" y="156" width="714" height="224" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="714" y="184" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">FEE</text>
+<text x="1114" y="184" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="end">CHARGED</text>
+<text x="1234" y="184" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="end">PAID</text>
+<text x="1274" y="184" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">STATUS</text>
+<line x1="714" y1="194" x2="1380" y2="194" stroke="#b5b5b5" stroke-width="1"/>
+<text x="714" y="233" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Tuition</text>
+<text x="1114" y="233" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 45,000</text>
+<text x="1234" y="233" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 25,000</text>
+<rect x="1274" y="213" width="48" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="1298" y="228" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Part</text>
+<line x1="714" y1="256" x2="1380" y2="256" stroke="#f0f0f0" stroke-width="1"/>
+<text x="714" y="289" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Development levy</text>
+<text x="1114" y="289" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 10,000</text>
+<text x="1234" y="289" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 10,000</text>
+<rect x="1274" y="269" width="48" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="1298" y="284" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Paid</text>
+<line x1="714" y1="312" x2="1380" y2="312" stroke="#f0f0f0" stroke-width="1"/>
+<text x="714" y="345" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Uniform</text>
+<text x="1114" y="345" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 18,000</text>
+<text x="1234" y="345" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 18,000</text>
+<rect x="1274" y="325" width="48" height="22" rx="4" fill="#ececec" stroke="#b5b5b5" stroke-width="1"   />
+<text x="1298" y="340" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2b2b2b" text-anchor="middle">Paid</text>
+<rect x="284" y="430" width="520" height="420" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="308" y="468" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#333333" text-anchor="start">Record a payment</text>
+<text x="308" y="490" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Paid = recorded. Credit is a payment with no fee.</text>
+<text x="308" y="540" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Amount (₦)</text>
+<rect x="308" y="548" width="220" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="322" y="573" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">20,000</text>
+<text x="552" y="532" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Method</text>
+<rect x="552" y="540" width="228" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="566" y="565" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">Bank transfer</text>
+<text x="758" y="565" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">▾</text>
+<text x="308" y="630" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Date</text>
+<rect x="308" y="638" width="220" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="322" y="663" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">18 Nov 2026</text>
+<text x="552" y="630" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="600" fill="#8a8a8a" text-anchor="start">Reference</text>
+<rect x="552" y="638" width="228" height="40" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="566" y="663" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">TRF-88213</text>
+<rect x="308" y="724" width="20" height="20" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="340" y="739" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start">This is credit (not for a fee)</text>
+<rect x="308" y="776" width="220" height="50" rx="4" fill="#a8a8a8" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="418" y="805.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="middle">Save payment</text>
+<rect x="544" y="776" width="200" height="50" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="644" y="805.725" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#333333" text-anchor="middle">Save and print receipt</text>
+<rect x="830" y="404" width="574" height="230" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="854" y="438" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#333333" text-anchor="start">Payments so far</text>
+<text x="854" y="502" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">DATE</text>
+<text x="1094" y="502" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="end">AMOUNT</text>
+<text x="1134" y="502" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#8a8a8a" text-anchor="start">REF</text>
+<line x1="854" y1="512" x2="1380" y2="512" stroke="#b5b5b5" stroke-width="1"/>
+<text x="854" y="549" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">02 Sep</text>
+<text x="1094" y="549" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 25,000</text>
+<text x="1134" y="549" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">POS-4421</text>
+<line x1="854" y1="570" x2="1380" y2="570" stroke="#f0f0f0" stroke-width="1"/>
+<text x="854" y="601" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">11 Oct</text>
+<text x="1094" y="601" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="end">₦ 10,000</text>
+<text x="1134" y="601" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">TRF-7710</text>
+<rect x="830" y="660" width="574" height="92" rx="4" fill="#ececec"    />
+<text x="854" y="696" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="#2b2b2b" text-anchor="start">Unpaid fees can lock a report card.</text>
+<text x="854" y="720" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#2b2b2b" text-anchor="start">You decide in settings. Scratch cards still work.</text>
+</svg>

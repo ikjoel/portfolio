@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Ohm’s law practical (desktop) (mockup)">
+<title>Ohm’s law practical (desktop) (mockup)</title><defs><filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="7" flood-color="#1b1740" flood-opacity="0.09"/></filter></defs>
+<rect width="1440" height="900" fill="#F4F7FB"/>
+<rect x="0" y="0" width="1440" height="72" rx="0" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="32" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#0f2f57" text-anchor="start">Virtual Lab</text>
+<text x="170" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="400" fill="#5B7090" text-anchor="start">Ohm’s law · SS 2 Physics</text>
+<rect x="1180" y="25" width="88" height="22" rx="11" fill="#E3EEF9"    />
+<text x="1224" y="40" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#2f6fb5" text-anchor="middle">Time 12:05</text>
+<rect x="1290" y="16" width="118" height="40" rx="10" fill="#c9a24a"    />
+<text x="1349" y="40.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#0f2f57" text-anchor="middle">Submit</text>
+<rect x="32" y="96" width="800" height="400" rx="16" fill="#0f2f57"    />
+<rect x="120" y="240" width="620" height="8" rx="4" fill="#cfe3f7"  opacity="0.6"  />
+<rect x="120" y="240" width="8" height="160" rx="4" fill="#cfe3f7"  opacity="0.6"  />
+<rect x="120" y="392" width="620" height="8" rx="4" fill="#cfe3f7"  opacity="0.6"  />
+<rect x="732" y="240" width="8" height="160" rx="4" fill="#cfe3f7"  opacity="0.6"  />
+<rect x="190" y="214" width="70" height="54" rx="8" fill="#c9a24a"    />
+<text x="225" y="246" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#0f2f57" text-anchor="middle">Cell</text>
+<rect x="420" y="220" width="120" height="40" rx="8" fill="#ffb26b"    />
+<text x="480" y="246" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="#0f2f57" text-anchor="middle">R = ? Ω</text>
+<circle cx="330" cy="396" r="34" fill="#ffffff" />
+<text x="330" y="402" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#0f2f57" text-anchor="middle">A</text>
+<circle cx="640" cy="320" r="34" fill="#ffffff" />
+<text x="640" y="326" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#0f2f57" text-anchor="middle">V</text>
+<text x="56" y="134" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start">Physics · Ohm’s law</text>
+<rect x="32" y="516" width="800" height="340" rx="16" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<text x="56" y="554" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#0f2f57" text-anchor="start">Voltage against current</text>
+<text x="56" y="576" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#5B7090" text-anchor="start">Plot as you record. The slope is the resistance.</text>
+<line x1="100" y1="600" x2="100" y2="810" stroke="#DCE4EF" stroke-width="1"/>
+<line x1="100" y1="810" x2="780" y2="810" stroke="#DCE4EF" stroke-width="1"/>
+<circle cx="230" cy="770" r="6" fill="#0f2f57" />
+<circle cx="360" cy="730" r="6" fill="#0f2f57" />
+<circle cx="490" cy="698" r="6" fill="#0f2f57" />
+<circle cx="620" cy="642" r="6" fill="#0f2f57" />
+<circle cx="750" cy="610" r="6" fill="#0f2f57" />
+<line x1="100" y1="810" x2="750" y2="590" stroke="#c9a24a" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="440" y="840" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#5B7090" text-anchor="middle">Current I (A)</text>
+<rect x="856" y="96" width="552" height="360" rx="16" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<text x="880" y="134" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#0f2f57" text-anchor="start">Controls</text>
+<text x="880" y="182" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#5B7090" text-anchor="start">Voltage</text>
+<rect x="880" y="194" width="504" height="8" rx="4" fill="#E8EFF8"    />
+<rect x="880" y="194" width="220" height="8" rx="4" fill="#0f2f57"    />
+<circle cx="1100" cy="198" r="11" fill="#c9a24a" stroke="#0f2f57" stroke-width="2"/>
+<text x="1384" y="182" font-family="Consolas,monospace" font-size="15" font-weight="800" fill="#0f2f57" text-anchor="end">3.0 V</text>
+<rect x="880" y="240" width="240" height="52" rx="10" fill="#0f2f57"    />
+<text x="1000" y="270.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Record reading</text>
+<rect x="1136" y="240" width="248" height="52" rx="10" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
+<text x="1260" y="270.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#0f2f57" text-anchor="middle">Clear last</text>
+<rect x="880" y="314" width="180" height="46" rx="10" fill="#E8EFF8"    />
+<text x="970" y="341.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#0f2f57" text-anchor="middle">💡 Hint</text>
+<text x="1080" y="342" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#5B7090" text-anchor="start">Formulas appear after a hint</text>
+<rect x="856" y="476" width="552" height="188" rx="16" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
+<text x="880" y="504" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#5B7090" text-anchor="start">V (volts)</text>
+<text x="1100" y="504" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#5B7090" text-anchor="start">I (amps)</text>
+<text x="1300" y="504" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#5B7090" text-anchor="start">V ÷ I</text>
+<line x1="880" y1="514" x2="1384" y2="514" stroke="#DCE4EF" stroke-width="1"/>
+<text x="880" y="547" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#0f2f57" text-anchor="start">1.0</text>
+<text x="1100" y="547" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="start">0.50</text>
+<text x="1300" y="547" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="start">—</text>
+<line x1="880" y1="564" x2="1384" y2="564" stroke="#E8EFF8" stroke-width="1"/>
+<text x="880" y="591" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#0f2f57" text-anchor="start">2.0</text>
+<text x="1100" y="591" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="start">1.00</text>
+<text x="1300" y="591" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="start">—</text>
+<line x1="880" y1="608" x2="1384" y2="608" stroke="#E8EFF8" stroke-width="1"/>
+<text x="880" y="635" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#0f2f57" text-anchor="start">3.0</text>
+<text x="1100" y="635" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="start">1.40</text>
+<text x="1300" y="635" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#5B7090" text-anchor="start">—</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="StudyPat landing page (wireframe)">
+<title>StudyPat landing page (wireframe)</title>
+<rect width="1440" height="900" fill="#ffffff"/>
+<rect x="0" y="0" width="1440" height="76" rx="0" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"   />
+<rect x="40" y="20" width="34" height="34" rx="4" fill="#d6d6d6"    />
+<text x="86" y="46" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#333333" text-anchor="start">StudyPat</text>
+<text x="560" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#8a8a8a" text-anchor="start">Features</text>
+<text x="660" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#8a8a8a" text-anchor="start">Demo</text>
+<text x="760" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#8a8a8a" text-anchor="start">Pricing</text>
+<text x="860" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#8a8a8a" text-anchor="start">Blog</text>
+<text x="960" y="45" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#8a8a8a" text-anchor="start">Help</text>
+<rect x="1160" y="16" width="100" height="44" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1210" y="42.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="middle">Sign in</text>
+<rect x="1276" y="16" width="130" height="44" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1341" y="42.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#2b2b2b" text-anchor="middle">Register</text>
+<text x="100" y="190" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="48" font-weight="800" fill="#333333" text-anchor="start">Run your whole school</text>
+<text x="100" y="248" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="48" font-weight="800" fill="#2b2b2b" text-anchor="start">from one place.</text>
+<text x="100" y="296" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="400" fill="#8a8a8a" text-anchor="start">Results, fees, parents, teachers, exams and your own school website.</text>
+<text x="100" y="324" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="400" fill="#8a8a8a" text-anchor="start">Works on any phone. No software to install.</text>
+<rect x="100" y="364" width="250" height="56" rx="4" fill="#a8a8a8" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="225" y="397.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#333333" text-anchor="middle">Try the demo (30 minutes, free)</text>
+<rect x="366" y="364" width="220" height="56" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="476" y="397.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#333333" text-anchor="middle">Register your school</text>
+<rect x="780" y="110" width="580" height="340" rx="4" fill="#f6f6f6" stroke="#b5b5b5" stroke-width="1.5"/>
+<line x1="780" y1="110" x2="1360" y2="450" stroke="#cfcfcf"/><line x1="1360" y1="110" x2="780" y2="450" stroke="#cfcfcf"/>
+<text x="1070" y="284" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#8a8a8a" text-anchor="middle">product screenshot</text>
+<circle cx="480" cy="392" r="5" fill="#c0392b"/>
+<path d="M480 392 L510 442" stroke="#c0392b" stroke-width="1.2"/>
+<text x="514" y="446" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="600" fill="#c0392b" text-anchor="start">Free demo lowers the risk of signing up</text>
+<rect x="100" y="500" width="300" height="150" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<rect x="122" y="524" width="40" height="40" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="122" y="600" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#333333" text-anchor="start">Results</text>
+<text x="122" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">CA, exams, report cards</text>
+<rect x="422" y="500" width="300" height="150" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<rect x="444" y="524" width="40" height="40" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="444" y="600" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#333333" text-anchor="start">Fees</text>
+<text x="444" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Invoices and receipts</text>
+<rect x="744" y="500" width="300" height="150" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<rect x="766" y="524" width="40" height="40" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="766" y="600" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#333333" text-anchor="start">Parents</text>
+<text x="766" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Results on their phone</text>
+<rect x="1066" y="500" width="300" height="150" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<rect x="1088" y="524" width="40" height="40" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="1088" y="600" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#333333" text-anchor="start">CBT exams</text>
+<text x="1088" y="626" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">Computer-based tests</text>
+<text x="100" y="700" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#333333" text-anchor="start">Choose your path</text>
+<rect x="100" y="724" width="630" height="120" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="128" y="772" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#333333" text-anchor="start">Nursery, primary and secondary schools</text>
+<rect x="128" y="790" width="220" height="38" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="238" y="813.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#2b2b2b" text-anchor="middle">Register your school  →</text>
+<rect x="760" y="724" width="630" height="120" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="788" y="772" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#333333" text-anchor="start">Universities, polytechnics and colleges</text>
+<rect x="788" y="790" width="220" height="38" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="898" y="813.55" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="600" fill="#333333" text-anchor="middle">Higher education portal  →</text>
+</svg>

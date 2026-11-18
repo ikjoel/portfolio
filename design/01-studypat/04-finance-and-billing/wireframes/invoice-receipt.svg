@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1160" viewBox="0 0 1240 1160" role="img" aria-label="Invoice / receipt (A4) (wireframe)">
+<title>Invoice / receipt (A4) (wireframe)</title>
+<rect width="1240" height="1160" fill="#ffffff"/>
+<rect x="0" y="0" width="1240" height="1160" rx="0" fill="#f0f0f0"    />
+<rect x="40" y="30" width="800" height="1100" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1"   />
+<rect x="70" y="60" width="56" height="56" rx="4" fill="#d6d6d6"    />
+<text x="140" y="92" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#333333" text-anchor="start">StudyPat</text>
+<text x="140" y="114" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">Sample Academy</text>
+<text x="810" y="90" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#2b2b2b" text-anchor="end">RECEIPT</text>
+<text x="810" y="114" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="end">No. R-2026-00418</text>
+<line x1="70" y1="150" x2="810" y2="150" stroke="#b5b5b5" stroke-width="1"/>
+<text x="70" y="190" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#8a8a8a" text-anchor="start">Received from</text>
+<text x="70" y="214" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start">Mr Okafor (parent of Ada Okafor, JSS 2A)</text>
+<text x="810" y="190" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#8a8a8a" text-anchor="end">Date</text>
+<text x="810" y="214" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="end">18 November 2026</text>
+<rect x="70" y="256" width="740" height="38" rx="4" fill="#f0f0f0" stroke="#b5b5b5" stroke-width="1"   />
+<text x="86" y="280" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="800" fill="#8a8a8a" text-anchor="start">Description</text>
+<text x="790" y="280" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="800" fill="#8a8a8a" text-anchor="end">Amount</text>
+<line x1="70" y1="342" x2="810" y2="342" stroke="#f0f0f0" stroke-width="1"/>
+<text x="86" y="324" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="400" fill="#333333" text-anchor="start">Tuition: First Term 2026/2027</text>
+<text x="790" y="324" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="400" fill="#333333" text-anchor="end">₦ 20,000</text>
+<line x1="70" y1="390" x2="810" y2="390" stroke="#f0f0f0" stroke-width="1"/>
+<text x="86" y="372" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="400" fill="#333333" text-anchor="start">Balance brought forward</text>
+<text x="790" y="372" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="400" fill="#333333" text-anchor="end">₦ 0</text>
+<text x="790" y="440" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="20" font-weight="800" fill="#2b2b2b" text-anchor="end">Paid  ₦ 20,000</text>
+<text x="790" y="466" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#8a8a8a" text-anchor="end">Balance  ₦ 0</text>
+<rect x="70" y="520" width="200" height="80" rx="4" fill="#ececec" stroke="#bdbdbd" stroke-width="2"  stroke-dasharray="6 4" />
+<text x="170" y="570" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="30" font-weight="800" fill="#2b2b2b" text-anchor="middle">PAID</text>
+<text x="70" y="680" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">Payment method: Bank transfer · Reference TRF-88213</text>
+<line x1="540" y1="1000" x2="800" y2="1000" stroke="#b5b5b5" stroke-width="1"/>
+<text x="670" y="1022" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#8a8a8a" text-anchor="middle">Bursar</text>
+<text x="70" y="1090" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#8a8a8a" text-anchor="start">Computer generated. Thank you.</text>
+<rect x="870" y="30" width="330" height="200" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="894" y="70" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="17" font-weight="800" fill="#333333" text-anchor="start">Automatic PDF</text>
+<text x="894" y="98" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">Every payment makes a receipt</text>
+<text x="894" y="118" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#8a8a8a" text-anchor="start">that can be emailed or printed.</text>
+<rect x="894" y="144" width="282" height="46" rx="4" fill="#d6d6d6" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1035" y="171.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#2b2b2b" text-anchor="middle">Download PDF</text>
+</svg>

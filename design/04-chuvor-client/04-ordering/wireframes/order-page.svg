@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Order page (new customer) (wireframe)">
+<title>Order page (new customer) (wireframe)</title>
+<rect width="1440" height="900" fill="#ffffff"/>
+<rect x="0" y="0" width="1440" height="76" rx="0" fill="#e2e2e2"    />
+<text x="40" y="48" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#2b2b2b" text-anchor="start">CHUVOR</text>
+<text x="136" y="48" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="21" font-weight="800" fill="#2b2b2b" text-anchor="start">CLIENT</text>
+<text x="720" y="160" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="36" font-weight="800" fill="#333333" text-anchor="middle">Secure access to your company computer</text>
+<text x="720" y="194" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="400" fill="#8a8a8a" text-anchor="middle">Choose a plan, pay, and start the same day.</text>
+<rect x="180" y="240" width="360" height="360" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="208" y="284" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#333333" text-anchor="start">Starter</text>
+<text x="208" y="308" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">up to 5 computers</text>
+<text x="208" y="370" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="800" fill="#2b2b2b" text-anchor="start">₦ XX,XXX</text>
+<text x="208" y="394" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">per month (sample)</text>
+<circle cx="216" cy="436" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="232" y="441" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Secure private tunnel</text>
+<circle cx="216" cy="464" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="232" y="469" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Fast receipt printing</text>
+<circle cx="216" cy="492" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="232" y="497" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Approved computers only</text>
+<rect x="208" y="540" width="304" height="46" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="360" y="567.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="middle">Choose Starter</text>
+<rect x="560" y="240" width="360" height="360" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="588" y="284" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#333333" text-anchor="start">Business</text>
+<text x="588" y="308" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">up to 15 computers</text>
+<text x="588" y="370" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="800" fill="#2b2b2b" text-anchor="start">₦ XX,XXX</text>
+<text x="588" y="394" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">per month (sample)</text>
+<circle cx="596" cy="436" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="612" y="441" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Secure private tunnel</text>
+<circle cx="596" cy="464" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="612" y="469" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Fast receipt printing</text>
+<circle cx="596" cy="492" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="612" y="497" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Approved computers only</text>
+<rect x="588" y="540" width="304" height="46" rx="4" fill="#a8a8a8" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="740" y="567.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="middle">Choose Business</text>
+<rect x="940" y="240" width="360" height="360" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="968" y="284" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#333333" text-anchor="start">Enterprise</text>
+<text x="968" y="308" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#8a8a8a" text-anchor="start">up to 50 computers</text>
+<text x="968" y="370" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="34" font-weight="800" fill="#2b2b2b" text-anchor="start">₦ XX,XXX</text>
+<text x="968" y="394" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#8a8a8a" text-anchor="start">per month (sample)</text>
+<circle cx="976" cy="436" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="992" y="441" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Secure private tunnel</text>
+<circle cx="976" cy="464" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="992" y="469" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Fast receipt printing</text>
+<circle cx="976" cy="492" r="6" fill="#bdbdbd" stroke="#b5b5b5" stroke-width="1"/>
+<text x="992" y="497" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13.5" font-weight="400" fill="#333333" text-anchor="start">Approved computers only</text>
+<rect x="968" y="540" width="304" height="46" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="1120" y="567.9" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="600" fill="#333333" text-anchor="middle">Choose Enterprise</text>
+<text x="720" y="650" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="400" fill="#8a8a8a" text-anchor="middle">Not sure? Start with a 14-day trial. Ask us on WhatsApp.</text>
+<rect x="590" y="676" width="260" height="52" rx="4" fill="#ffffff" stroke="#b5b5b5" stroke-width="1.5"   />
+<text x="720" y="707.075" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="600" fill="#333333" text-anchor="middle">Message us</text>
+<rect x="180" y="770" width="1080" height="70" rx="4" fill="#ececec"    />
+<text x="210" y="812" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14" font-weight="400" fill="#2b2b2b" text-anchor="start">After payment you get your administrator login on screen once. Save it. We also help you set up.</text>
+</svg>

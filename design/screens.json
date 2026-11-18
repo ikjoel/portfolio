@@ -1,0 +1,612 @@
+[
+  {
+    "slug": "studypat-admin-dashboard",
+    "title": "StudyPat admin dashboard",
+    "project": "studypat",
+    "category": "01-onboarding-and-dashboard",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/01-onboarding-and-dashboard/wireframes/studypat-admin-dashboard.svg",
+    "mockup": "design/01-studypat/01-onboarding-and-dashboard/mockups/studypat-admin-dashboard.svg"
+  },
+  {
+    "slug": "studypat-parent-results-mobile",
+    "title": "StudyPat parent result view (phone)",
+    "project": "studypat",
+    "category": "05-parents-and-students",
+    "width": 390,
+    "height": 844,
+    "wireframe": "design/01-studypat/05-parents-and-students/wireframes/studypat-parent-results-mobile.svg",
+    "mockup": "design/01-studypat/05-parents-and-students/mockups/studypat-parent-results-mobile.svg"
+  },
+  {
+    "slug": "cbt-candidate-exam-screen",
+    "title": "Chuvor CBT candidate exam screen",
+    "project": "chuvor-cbt",
+    "category": "01-candidate",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/01-candidate/wireframes/cbt-candidate-exam-screen.svg",
+    "mockup": "design/02-chuvor-cbt/01-candidate/mockups/cbt-candidate-exam-screen.svg"
+  },
+  {
+    "slug": "cbt-live-exam-monitor",
+    "title": "Chuvor CBT live exam monitor",
+    "project": "chuvor-cbt",
+    "category": "02-exam-centre-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/02-exam-centre-admin/wireframes/cbt-live-exam-monitor.svg",
+    "mockup": "design/02-chuvor-cbt/02-exam-centre-admin/mockups/cbt-live-exam-monitor.svg"
+  },
+  {
+    "slug": "licence-shop-pricing",
+    "title": "CBT licence shop pricing page",
+    "project": "cbt-licence-shop",
+    "category": "01-storefront",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/03-cbt-licence-shop/01-storefront/wireframes/licence-shop-pricing.svg",
+    "mockup": "design/03-cbt-licence-shop/01-storefront/mockups/licence-shop-pricing.svg"
+  },
+  {
+    "slug": "licence-shop-order-confirmation",
+    "title": "CBT licence shop order confirmation",
+    "project": "cbt-licence-shop",
+    "category": "01-storefront",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/03-cbt-licence-shop/01-storefront/wireframes/licence-shop-order-confirmation.svg",
+    "mockup": "design/03-cbt-licence-shop/01-storefront/mockups/licence-shop-order-confirmation.svg"
+  },
+  {
+    "slug": "chuvor-client-app-window",
+    "title": "Chuvor Client Windows app",
+    "project": "chuvor-client",
+    "category": "01-staff-app",
+    "width": 1000,
+    "height": 840,
+    "wireframe": "design/04-chuvor-client/01-staff-app/wireframes/chuvor-client-app-window.svg",
+    "mockup": "design/04-chuvor-client/01-staff-app/mockups/chuvor-client-app-window.svg"
+  },
+  {
+    "slug": "chuvor-client-control-panel",
+    "title": "Chuvor Client control panel",
+    "project": "chuvor-client",
+    "category": "02-company-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/04-chuvor-client/02-company-admin/wireframes/chuvor-client-control-panel.svg",
+    "mockup": "design/04-chuvor-client/02-company-admin/mockups/chuvor-client-control-panel.svg"
+  },
+  {
+    "slug": "virtual-lab-titration-desktop",
+    "title": "Virtual lab titration (desktop)",
+    "project": "virtual-lab",
+    "category": "01-student",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/05-virtual-lab/01-student/wireframes/virtual-lab-titration-desktop.svg",
+    "mockup": "design/05-virtual-lab/01-student/mockups/virtual-lab-titration-desktop.svg"
+  },
+  {
+    "slug": "virtual-lab-titration-mobile",
+    "title": "Virtual lab titration (phone)",
+    "project": "virtual-lab",
+    "category": "01-student",
+    "width": 390,
+    "height": 844,
+    "wireframe": "design/05-virtual-lab/01-student/wireframes/virtual-lab-titration-mobile.svg",
+    "mockup": "design/05-virtual-lab/01-student/mockups/virtual-lab-titration-mobile.svg"
+  },
+  {
+    "slug": "landing-page",
+    "title": "StudyPat landing page",
+    "project": "studypat",
+    "category": "01-onboarding-and-dashboard",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/01-onboarding-and-dashboard/wireframes/landing-page.svg",
+    "mockup": "design/01-studypat/01-onboarding-and-dashboard/mockups/landing-page.svg"
+  },
+  {
+    "slug": "register-school",
+    "title": "Register a school",
+    "project": "studypat",
+    "category": "01-onboarding-and-dashboard",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/01-onboarding-and-dashboard/wireframes/register-school.svg",
+    "mockup": "design/01-studypat/01-onboarding-and-dashboard/mockups/register-school.svg"
+  },
+  {
+    "slug": "sign-in",
+    "title": "Sign in",
+    "project": "studypat",
+    "category": "01-onboarding-and-dashboard",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/01-onboarding-and-dashboard/wireframes/sign-in.svg",
+    "mockup": "design/01-studypat/01-onboarding-and-dashboard/mockups/sign-in.svg"
+  },
+  {
+    "slug": "demo-sandbox",
+    "title": "Private 30-minute demo",
+    "project": "studypat",
+    "category": "01-onboarding-and-dashboard",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/01-onboarding-and-dashboard/wireframes/demo-sandbox.svg",
+    "mockup": "design/01-studypat/01-onboarding-and-dashboard/mockups/demo-sandbox.svg"
+  },
+  {
+    "slug": "students-list",
+    "title": "Students list",
+    "project": "studypat",
+    "category": "02-people-and-academics",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/02-people-and-academics/wireframes/students-list.svg",
+    "mockup": "design/01-studypat/02-people-and-academics/mockups/students-list.svg"
+  },
+  {
+    "slug": "add-student",
+    "title": "Add a student",
+    "project": "studypat",
+    "category": "02-people-and-academics",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/02-people-and-academics/wireframes/add-student.svg",
+    "mockup": "design/01-studypat/02-people-and-academics/mockups/add-student.svg"
+  },
+  {
+    "slug": "classes-and-subjects",
+    "title": "Classes and subjects",
+    "project": "studypat",
+    "category": "02-people-and-academics",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/02-people-and-academics/wireframes/classes-and-subjects.svg",
+    "mockup": "design/01-studypat/02-people-and-academics/mockups/classes-and-subjects.svg"
+  },
+  {
+    "slug": "staff-and-permissions",
+    "title": "Staff and permissions",
+    "project": "studypat",
+    "category": "02-people-and-academics",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/02-people-and-academics/wireframes/staff-and-permissions.svg",
+    "mockup": "design/01-studypat/02-people-and-academics/mockups/staff-and-permissions.svg"
+  },
+  {
+    "slug": "score-input",
+    "title": "Score input",
+    "project": "studypat",
+    "category": "03-results-and-assessment",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/03-results-and-assessment/wireframes/score-input.svg",
+    "mockup": "design/01-studypat/03-results-and-assessment/mockups/score-input.svg"
+  },
+  {
+    "slug": "score-divisions",
+    "title": "Score divisions",
+    "project": "studypat",
+    "category": "03-results-and-assessment",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/03-results-and-assessment/wireframes/score-divisions.svg",
+    "mockup": "design/01-studypat/03-results-and-assessment/mockups/score-divisions.svg"
+  },
+  {
+    "slug": "grading-scale",
+    "title": "Grading scale",
+    "project": "studypat",
+    "category": "03-results-and-assessment",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/03-results-and-assessment/wireframes/grading-scale.svg",
+    "mockup": "design/01-studypat/03-results-and-assessment/mockups/grading-scale.svg"
+  },
+  {
+    "slug": "report-card",
+    "title": "Report card (A4, printable)",
+    "project": "studypat",
+    "category": "03-results-and-assessment",
+    "width": 1280,
+    "height": 1240,
+    "wireframe": "design/01-studypat/03-results-and-assessment/wireframes/report-card.svg",
+    "mockup": "design/01-studypat/03-results-and-assessment/mockups/report-card.svg"
+  },
+  {
+    "slug": "result-checker",
+    "title": "Result checker and print all",
+    "project": "studypat",
+    "category": "03-results-and-assessment",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/03-results-and-assessment/wireframes/result-checker.svg",
+    "mockup": "design/01-studypat/03-results-and-assessment/mockups/result-checker.svg"
+  },
+  {
+    "slug": "fee-setup",
+    "title": "Fee setup",
+    "project": "studypat",
+    "category": "04-finance-and-billing",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/04-finance-and-billing/wireframes/fee-setup.svg",
+    "mockup": "design/01-studypat/04-finance-and-billing/mockups/fee-setup.svg"
+  },
+  {
+    "slug": "record-payment",
+    "title": "Record a payment",
+    "project": "studypat",
+    "category": "04-finance-and-billing",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/04-finance-and-billing/wireframes/record-payment.svg",
+    "mockup": "design/01-studypat/04-finance-and-billing/mockups/record-payment.svg"
+  },
+  {
+    "slug": "invoice-receipt",
+    "title": "Invoice / receipt (A4)",
+    "project": "studypat",
+    "category": "04-finance-and-billing",
+    "width": 1240,
+    "height": 1160,
+    "wireframe": "design/01-studypat/04-finance-and-billing/wireframes/invoice-receipt.svg",
+    "mockup": "design/01-studypat/04-finance-and-billing/mockups/invoice-receipt.svg"
+  },
+  {
+    "slug": "accounting-overview",
+    "title": "Accounting overview (directors)",
+    "project": "studypat",
+    "category": "04-finance-and-billing",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/04-finance-and-billing/wireframes/accounting-overview.svg",
+    "mockup": "design/01-studypat/04-finance-and-billing/mockups/accounting-overview.svg"
+  },
+  {
+    "slug": "subscription-billing",
+    "title": "Subscription and billing",
+    "project": "studypat",
+    "category": "04-finance-and-billing",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/04-finance-and-billing/wireframes/subscription-billing.svg",
+    "mockup": "design/01-studypat/04-finance-and-billing/mockups/subscription-billing.svg"
+  },
+  {
+    "slug": "parent-fees-mobile",
+    "title": "Parent: fees and pay (phone)",
+    "project": "studypat",
+    "category": "05-parents-and-students",
+    "width": 390,
+    "height": 844,
+    "wireframe": "design/01-studypat/05-parents-and-students/wireframes/parent-fees-mobile.svg",
+    "mockup": "design/01-studypat/05-parents-and-students/mockups/parent-fees-mobile.svg"
+  },
+  {
+    "slug": "student-dashboard",
+    "title": "Student dashboard",
+    "project": "studypat",
+    "category": "05-parents-and-students",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/05-parents-and-students/wireframes/student-dashboard.svg",
+    "mockup": "design/01-studypat/05-parents-and-students/mockups/student-dashboard.svg"
+  },
+  {
+    "slug": "e-class-hub",
+    "title": "E-Class hub",
+    "project": "studypat",
+    "category": "06-e-learning-and-exams",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/06-e-learning-and-exams/wireframes/e-class-hub.svg",
+    "mockup": "design/01-studypat/06-e-learning-and-exams/mockups/e-class-hub.svg"
+  },
+  {
+    "slug": "question-bank-editor",
+    "title": "Question bank editor (teachers)",
+    "project": "studypat",
+    "category": "06-e-learning-and-exams",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/06-e-learning-and-exams/wireframes/question-bank-editor.svg",
+    "mockup": "design/01-studypat/06-e-learning-and-exams/mockups/question-bank-editor.svg"
+  },
+  {
+    "slug": "website-builder",
+    "title": "School website builder",
+    "project": "studypat",
+    "category": "07-school-website-and-branding",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/07-school-website-and-branding/wireframes/website-builder.svg",
+    "mockup": "design/01-studypat/07-school-website-and-branding/mockups/website-builder.svg"
+  },
+  {
+    "slug": "install-app-pwa",
+    "title": "Install as an app (PWA)",
+    "project": "studypat",
+    "category": "07-school-website-and-branding",
+    "width": 390,
+    "height": 844,
+    "wireframe": "design/01-studypat/07-school-website-and-branding/wireframes/install-app-pwa.svg",
+    "mockup": "design/01-studypat/07-school-website-and-branding/mockups/install-app-pwa.svg"
+  },
+  {
+    "slug": "custom-domain-white-label",
+    "title": "Custom domain and white label",
+    "project": "studypat",
+    "category": "07-school-website-and-branding",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/07-school-website-and-branding/wireframes/custom-domain-white-label.svg",
+    "mockup": "design/01-studypat/07-school-website-and-branding/mockups/custom-domain-white-label.svg"
+  },
+  {
+    "slug": "control-centre",
+    "title": "Control centre (platform owner)",
+    "project": "studypat",
+    "category": "08-platform-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/08-platform-admin/wireframes/control-centre.svg",
+    "mockup": "design/01-studypat/08-platform-admin/mockups/control-centre.svg"
+  },
+  {
+    "slug": "schools-list",
+    "title": "Schools list",
+    "project": "studypat",
+    "category": "08-platform-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/08-platform-admin/wireframes/schools-list.svg",
+    "mockup": "design/01-studypat/08-platform-admin/mockups/schools-list.svg"
+  },
+  {
+    "slug": "school-health",
+    "title": "School health inspection",
+    "project": "studypat",
+    "category": "08-platform-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/08-platform-admin/wireframes/school-health.svg",
+    "mockup": "design/01-studypat/08-platform-admin/mockups/school-health.svg"
+  },
+  {
+    "slug": "course-registration",
+    "title": "Course registration",
+    "project": "studypat",
+    "category": "09-higher-education",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/01-studypat/09-higher-education/wireframes/course-registration.svg",
+    "mockup": "design/01-studypat/09-higher-education/mockups/course-registration.svg"
+  },
+  {
+    "slug": "transcript-gpa",
+    "title": "Transcript with GPA / CGPA",
+    "project": "studypat",
+    "category": "09-higher-education",
+    "width": 1260,
+    "height": 1160,
+    "wireframe": "design/01-studypat/09-higher-education/wireframes/transcript-gpa.svg",
+    "mockup": "design/01-studypat/09-higher-education/mockups/transcript-gpa.svg"
+  },
+  {
+    "slug": "candidate-login",
+    "title": "Candidate sign-in and photo check",
+    "project": "chuvor-cbt",
+    "category": "01-candidate",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/01-candidate/wireframes/candidate-login.svg",
+    "mockup": "design/02-chuvor-cbt/01-candidate/mockups/candidate-login.svg"
+  },
+  {
+    "slug": "exam-instructions",
+    "title": "Exam instructions",
+    "project": "chuvor-cbt",
+    "category": "01-candidate",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/01-candidate/wireframes/exam-instructions.svg",
+    "mockup": "design/02-chuvor-cbt/01-candidate/mockups/exam-instructions.svg"
+  },
+  {
+    "slug": "submit-review",
+    "title": "Review before submitting",
+    "project": "chuvor-cbt",
+    "category": "01-candidate",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/01-candidate/wireframes/submit-review.svg",
+    "mockup": "design/02-chuvor-cbt/01-candidate/mockups/submit-review.svg"
+  },
+  {
+    "slug": "result-slip",
+    "title": "Result slip",
+    "project": "chuvor-cbt",
+    "category": "01-candidate",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/01-candidate/wireframes/result-slip.svg",
+    "mockup": "design/02-chuvor-cbt/01-candidate/mockups/result-slip.svg"
+  },
+  {
+    "slug": "exam-setup",
+    "title": "Exam setup",
+    "project": "chuvor-cbt",
+    "category": "02-exam-centre-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/02-exam-centre-admin/wireframes/exam-setup.svg",
+    "mockup": "design/02-chuvor-cbt/02-exam-centre-admin/mockups/exam-setup.svg"
+  },
+  {
+    "slug": "question-import",
+    "title": "Question import and check",
+    "project": "chuvor-cbt",
+    "category": "02-exam-centre-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/02-exam-centre-admin/wireframes/question-import.svg",
+    "mockup": "design/02-chuvor-cbt/02-exam-centre-admin/mockups/question-import.svg"
+  },
+  {
+    "slug": "theory-marking",
+    "title": "Theory marking workspace",
+    "project": "chuvor-cbt",
+    "category": "03-results-and-marking",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/03-results-and-marking/wireframes/theory-marking.svg",
+    "mockup": "design/02-chuvor-cbt/03-results-and-marking/mockups/theory-marking.svg"
+  },
+  {
+    "slug": "results-analysis",
+    "title": "Results analysis",
+    "project": "chuvor-cbt",
+    "category": "03-results-and-marking",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/03-results-and-marking/wireframes/results-analysis.svg",
+    "mockup": "design/02-chuvor-cbt/03-results-and-marking/mockups/results-analysis.svg"
+  },
+  {
+    "slug": "licence-activation",
+    "title": "Licence activation",
+    "project": "chuvor-cbt",
+    "category": "04-setup",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/02-chuvor-cbt/04-setup/wireframes/licence-activation.svg",
+    "mockup": "design/02-chuvor-cbt/04-setup/mockups/licence-activation.svg"
+  },
+  {
+    "slug": "requirements-page",
+    "title": "Requirements: pick the server PC",
+    "project": "cbt-licence-shop",
+    "category": "01-storefront",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/03-cbt-licence-shop/01-storefront/wireframes/requirements-page.svg",
+    "mockup": "design/03-cbt-licence-shop/01-storefront/mockups/requirements-page.svg"
+  },
+  {
+    "slug": "checkout-form",
+    "title": "Checkout",
+    "project": "cbt-licence-shop",
+    "category": "01-storefront",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/03-cbt-licence-shop/01-storefront/wireframes/checkout-form.svg",
+    "mockup": "design/03-cbt-licence-shop/01-storefront/mockups/checkout-form.svg"
+  },
+  {
+    "slug": "orders-admin",
+    "title": "Orders (owner admin)",
+    "project": "cbt-licence-shop",
+    "category": "02-owner-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/03-cbt-licence-shop/02-owner-admin/wireframes/orders-admin.svg",
+    "mockup": "design/03-cbt-licence-shop/02-owner-admin/mockups/orders-admin.svg"
+  },
+  {
+    "slug": "enrol-computer",
+    "title": "Enrol this computer",
+    "project": "chuvor-client",
+    "category": "01-staff-app",
+    "width": 1000,
+    "height": 840,
+    "wireframe": "design/04-chuvor-client/01-staff-app/wireframes/enrol-computer.svg",
+    "mockup": "design/04-chuvor-client/01-staff-app/mockups/enrol-computer.svg"
+  },
+  {
+    "slug": "settings-page",
+    "title": "Company settings",
+    "project": "chuvor-client",
+    "category": "02-company-admin",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/04-chuvor-client/02-company-admin/wireframes/settings-page.svg",
+    "mockup": "design/04-chuvor-client/02-company-admin/mockups/settings-page.svg"
+  },
+  {
+    "slug": "platform-customers",
+    "title": "Platform: customers (owner)",
+    "project": "chuvor-client",
+    "category": "03-platform-owner",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/04-chuvor-client/03-platform-owner/wireframes/platform-customers.svg",
+    "mockup": "design/04-chuvor-client/03-platform-owner/mockups/platform-customers.svg"
+  },
+  {
+    "slug": "platform-plans",
+    "title": "Platform: plans and pricing",
+    "project": "chuvor-client",
+    "category": "03-platform-owner",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/04-chuvor-client/03-platform-owner/wireframes/platform-plans.svg",
+    "mockup": "design/04-chuvor-client/03-platform-owner/mockups/platform-plans.svg"
+  },
+  {
+    "slug": "order-page",
+    "title": "Order page (new customer)",
+    "project": "chuvor-client",
+    "category": "04-ordering",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/04-chuvor-client/04-ordering/wireframes/order-page.svg",
+    "mockup": "design/04-chuvor-client/04-ordering/mockups/order-page.svg"
+  },
+  {
+    "slug": "ohms-law-desktop",
+    "title": "Ohm’s law practical (desktop)",
+    "project": "virtual-lab",
+    "category": "01-student",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/05-virtual-lab/01-student/wireframes/ohms-law-desktop.svg",
+    "mockup": "design/05-virtual-lab/01-student/mockups/ohms-law-desktop.svg"
+  },
+  {
+    "slug": "practical-marking",
+    "title": "Practical marking breakdown",
+    "project": "virtual-lab",
+    "category": "01-student",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/05-virtual-lab/01-student/wireframes/practical-marking.svg",
+    "mockup": "design/05-virtual-lab/01-student/mockups/practical-marking.svg"
+  },
+  {
+    "slug": "assign-practical",
+    "title": "Teacher: assign a practical",
+    "project": "virtual-lab",
+    "category": "02-teacher",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/05-virtual-lab/02-teacher/wireframes/assign-practical.svg",
+    "mockup": "design/05-virtual-lab/02-teacher/mockups/assign-practical.svg"
+  },
+  {
+    "slug": "class-practical-results",
+    "title": "Teacher: class practical results",
+    "project": "virtual-lab",
+    "category": "02-teacher",
+    "width": 1440,
+    "height": 900,
+    "wireframe": "design/05-virtual-lab/02-teacher/wireframes/class-practical-results.svg",
+    "mockup": "design/05-virtual-lab/02-teacher/mockups/class-practical-results.svg"
+  }
+]
