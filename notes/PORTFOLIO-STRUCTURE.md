@@ -34,7 +34,7 @@ Quality bar for the site itself (it is also a sample of your work): semantic HTM
 7. **What I would do next:** shows judgement.
 8. **Screens index:** link to the library.
 
-Rules: say "I", name the trade-off, never claim what is not done (Chuvor Client is "pre-launch", Virtual Lab is a "prototype").
+Rules: say "I", name the trade-off, never claim what is not done (Virtual Lab is a "prototype"; screens that are proposals are marked "concept").
 
 ## 4. Write-ups to use as the story for each product
 
@@ -44,7 +44,7 @@ Rules: say "I", name the trade-off, never claim what is not done (Chuvor Client 
 
 **CBT Licence Shop.** "A buyer paying from a phone needs to know three things the moment they pay: did it work, where is my licence, what do I do next. The confirmation page answers all three, and a nightly job guarantees no paid order is lost."
 
-**Chuvor Client.** "Non-technical staff open one program with one button; the administrator approves a computer in one click. State (active, ending soon, grace) is computed from dates so it is always right. It is pre-launch and I say so."
+**Chuvor Client.** "Non-technical staff open one program with one button; the administrator approves a computer in one click. State (active, ending soon, grace) is computed from dates so it is always right. It is launched and in use."
 
 **Virtual Lab.** "Performance is the design constraint: render on demand, a Low graphics switch, and controls in a thumb-reach bottom sheet."
 

@@ -16,7 +16,7 @@
   <div class="wrap bar">
     <a class="brand" href="#top" aria-label="Home"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a>
     <nav aria-label="Main">
-      <a href="#work">Work</a><a href="design-library.html">Design library</a><a href="#process">Process</a><a href="#skills">Skills</a><a href="#about">About</a><a class="btn small" href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a href="#process">Process</a><a href="#skills">Skills</a><a href="#about">About</a><a class="btn small" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -28,7 +28,7 @@
     <p class="lede">I design the screens, write the HTML, CSS and JavaScript, connect them to the back end and keep them running. Everything below is built for schools, exam centres and small businesses in Nigeria. Each project says whether it is live, released, pre-launch or a prototype.</p>
     <div class="cta">
       <a class="btn" href="#work">See the work</a>
-      <a class="btn ghost" href="design-library.html">Design library</a> <a class="btn ghost" href="https://github.com/ikjoel">GitHub</a>
+      <a class="btn ghost" href="design-library.html">Design library</a> <a class="btn ghost" href="code.html">Code</a> <a class="btn ghost" href="https://github.com/ikjoel">GitHub</a>
     </div>
     <ul class="proof" aria-label="At a glance">
       <li><strong>370+</strong><span>server-rendered pages built and maintained</span></li>
@@ -40,7 +40,7 @@
 
   <section id="work" class="wrap section">
     <h2>Selected work</h2>
-    <p class="sub">Five products. Each card shows the finished design and a switch to the wireframe. <a href="design-library.html">Browse all 61 screens in the design library.</a> Use the switch on every card to compare them. Screens use <strong>sample data only</strong>; no real school, student or customer is shown.</p>
+    <p class="sub">Five products. Each card shows the finished design and a switch to the wireframe. <a href="design-library.html">Browse all 61 screens in the design library.</a> Use the switch on every card to compare them. Screens use <strong>sample data only</strong>; no real school, student or customer is shown. They are redrawn from the real products; a few are my proposed improvements and are marked <strong>concept</strong> in the design library.</p>
 
     <article class="project" id="studypat" data-project>
       <div class="shots">
@@ -67,6 +67,7 @@
           <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
           <a href="https://studypat.com">Visit the live site ↗</a>
           <a href="https://github.com/ikjoel/portfolio/tree/main/projects/01-studypat">Case study</a>
+          <a href="code.html#c0">Code</a>
         </div>
       </div>
     </article>
@@ -83,19 +84,21 @@
         </div>
       </div>
       <div class="text">
-        <p class="tags">ASP.NET Core · Razor Pages · SignalR · SQL Server</p>
+        <p class="tags">ASP.NET Core · Razor Pages · SQL Server · JavaScript</p>
         <h3>Chuvor CBT <span class="live">released</span></h3>
         <p>Offline computer-based exams for schools and exam centres: a calm candidate screen and a live monitor for the invigilator, designed for hundreds of candidates at once.</p>
         <ul class="points">
           <li><b>One question per screen</b>, large type, a question palette with answered, flagged and current states that never rely on colour alone.</li>
-          <li><b>Live monitor.</b> Real-time status through SignalR: who is writing, who left the exam tab, who is offline, with one-click actions for the hall.</li>
-          <li><b>Maths that reads properly</b> using KaTeX for display and MathLive for entry in the question editor.</li>
+          <li><b>A save queue that never loses an answer.</b> Every answer is versioned and re-sent until the server confirms; the screen always says “All answers saved”, “Saving” or “2 not saved, retrying”.</li>
+          <li><b>Live monitor.</b> Refreshes every 3 seconds, one request at a time, slows down and shows a banner when the connection is bad; who is writing, who left the exam tab, who is offline.</li>
+          <li><b>Maths that reads properly</b> with MathJax in the exam screen.</li>
           <li><b>Proven under load</b> with a scripted load test before it reached an exam hall.</li>
         </ul>
         <div class="actions">
           <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
           <a href="https://chuvorint.com">Chuvor International ↗</a>
           <a href="https://github.com/ikjoel/portfolio/tree/main/projects/02-chuvor-cbt">Case study</a>
+          <a href="code.html#c5">Code</a>
         </div>
       </div>
     </article>
@@ -141,7 +144,7 @@
       </div>
       <div class="text">
         <p class="tags">.NET · Windows Forms · Node.js · WireGuard</p>
-        <h3>Chuvor Client <span class="soon">pre-launch</span></h3>
+        <h3>Chuvor Client <span class="live">launched</span></h3>
         <p>A secure remote-access product: staff open one company program from approved computers only, and receipts and documents print fast on their own printer.</p>
         <ul class="points">
           <li><b>Plain language everywhere.</b> Help text under every control and a live “Connection quality: Excellent” line, because the users are not technical.</li>
@@ -151,6 +154,7 @@
         <div class="actions">
           <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
           <a href="https://github.com/ikjoel/portfolio/tree/main/projects/04-chuvor-client">Case study</a>
+          <a href="code.html#c7">Code</a>
         </div>
       </div>
     </article>
@@ -178,6 +182,7 @@
         <div class="actions">
           <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
           <a href="https://github.com/ikjoel/portfolio/tree/main/projects/05-virtual-lab">Case study</a>
+          <a href="code.html#c8">Code</a>
         </div>
       </div>
     </article>

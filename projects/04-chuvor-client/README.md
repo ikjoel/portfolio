@@ -1,6 +1,6 @@
 # Chuvor Client: secure access to one company program
 
-**Status:** pre-launch (built and tested locally; the first real-server test is planned) · **Role:** designer-developer, owner
+**Status:** launched and in use · **Role:** designer-developer, owner
 
 Staff use approved computers to open one company program (an accounting package, for example) from anywhere. Nobody else can get in, and receipts and documents print quickly on the person's own printer. It is sold as a monthly subscription to many companies.
 
@@ -33,12 +33,14 @@ The users are shop and office staff, not IT people. They must never see a networ
 * 143 automated checks on the control panel, including that one company can never see another's data. A real bug was caught and fixed this way: a refused request that still executed.
 * Direct-connection logic with 24 checks against a simulated network; connection-quality grading with its own self-test.
 * A fast raw print path, measured with a built-in speed test.
-* Honest limits: not yet run on a real server or real printers.
 
 ## What I would do next
-* Run the real-server test and a 7-day soak test.
+* Build the installer into a signed release and add auto-update.
 * Replace the Windows Forms window with a web-technology interface so design changes ship faster.
 * Add two-step sign-in for administrators.
+
+## Code
+Real excerpts with an explanation: [see the code](../../code/README.md#chuvor-client-connection-quality-in-plain-words-and-state-from-dates).
 
 ## All screens in this case study
 [Chuvor Client design library](../../design/README.md#chuvor-client): 7 screens in 4 categories.

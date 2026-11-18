@@ -1,6 +1,6 @@
 # Design library
 
-61 screens across 5 products, each drawn as a **wireframe** and as a finished **mockup**. All data is sample data.
+61 screens across 5 products, each drawn as a **wireframe** and as a finished **mockup**. All data is sample data. The screens are redrawn from the real products; those marked *(concept)* are proposed improvements that are not built.
 
 Open any SVG in a browser, or drag it into Figma (see [../figma/FIGMA-GUIDE.md](../figma/FIGMA-GUIDE.md)). Ready-made Figma pages, one per category, are in [../figma/pages](../figma/pages).
 
@@ -95,17 +95,17 @@ School management platform (Laravel, Blade, Bootstrap, PWA). Live: https://study
 
 ## Chuvor CBT
 
-Offline computer-based exams (ASP.NET Core, SignalR). Live: https://chuvorint.com
+Offline computer-based exams (ASP.NET Core). Live: https://chuvorint.com
 
 ### Candidate
 
 | Screen | Wireframe | Mockup | Figma page |
 |---|---|---|---|
 | Chuvor CBT candidate exam screen | [svg](02-chuvor-cbt/01-candidate/wireframes/cbt-candidate-exam-screen.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/cbt-candidate-exam-screen.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
-| Candidate sign-in and photo check | [svg](02-chuvor-cbt/01-candidate/wireframes/candidate-login.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/candidate-login.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
+| Candidate sign-in and photo check *(concept)* | [svg](02-chuvor-cbt/01-candidate/wireframes/candidate-login.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/candidate-login.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
 | Exam instructions | [svg](02-chuvor-cbt/01-candidate/wireframes/exam-instructions.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/exam-instructions.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
-| Review before submitting | [svg](02-chuvor-cbt/01-candidate/wireframes/submit-review.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/submit-review.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
-| Result slip | [svg](02-chuvor-cbt/01-candidate/wireframes/result-slip.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/result-slip.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
+| Review before submitting *(concept)* | [svg](02-chuvor-cbt/01-candidate/wireframes/submit-review.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/submit-review.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
+| Result slip *(concept)* | [svg](02-chuvor-cbt/01-candidate/wireframes/result-slip.svg) | [svg](02-chuvor-cbt/01-candidate/mockups/result-slip.svg) | [wire](../figma/pages/02-chuvor-cbt/01-candidate--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/01-candidate--mockups.svg) |
 
 ### Exam centre admin
 
@@ -120,7 +120,7 @@ Offline computer-based exams (ASP.NET Core, SignalR). Live: https://chuvorint.co
 | Screen | Wireframe | Mockup | Figma page |
 |---|---|---|---|
 | Theory marking workspace | [svg](02-chuvor-cbt/03-results-and-marking/wireframes/theory-marking.svg) | [svg](02-chuvor-cbt/03-results-and-marking/mockups/theory-marking.svg) | [wire](../figma/pages/02-chuvor-cbt/03-results-and-marking--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/03-results-and-marking--mockups.svg) |
-| Results analysis | [svg](02-chuvor-cbt/03-results-and-marking/wireframes/results-analysis.svg) | [svg](02-chuvor-cbt/03-results-and-marking/mockups/results-analysis.svg) | [wire](../figma/pages/02-chuvor-cbt/03-results-and-marking--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/03-results-and-marking--mockups.svg) |
+| Results analysis *(concept)* | [svg](02-chuvor-cbt/03-results-and-marking/wireframes/results-analysis.svg) | [svg](02-chuvor-cbt/03-results-and-marking/mockups/results-analysis.svg) | [wire](../figma/pages/02-chuvor-cbt/03-results-and-marking--wireframes.svg) · [mock](../figma/pages/02-chuvor-cbt/03-results-and-marking--mockups.svg) |
 
 ### Setup
 
@@ -195,5 +195,5 @@ Secure remote access for company programs (.NET, Node, WireGuard).
 
 | Screen | Wireframe | Mockup | Figma page |
 |---|---|---|---|
-| Teacher: assign a practical | [svg](05-virtual-lab/02-teacher/wireframes/assign-practical.svg) | [svg](05-virtual-lab/02-teacher/mockups/assign-practical.svg) | [wire](../figma/pages/05-virtual-lab/02-teacher--wireframes.svg) · [mock](../figma/pages/05-virtual-lab/02-teacher--mockups.svg) |
-| Teacher: class practical results | [svg](05-virtual-lab/02-teacher/wireframes/class-practical-results.svg) | [svg](05-virtual-lab/02-teacher/mockups/class-practical-results.svg) | [wire](../figma/pages/05-virtual-lab/02-teacher--wireframes.svg) · [mock](../figma/pages/05-virtual-lab/02-teacher--mockups.svg) |
+| Teacher: assign a practical *(concept)* | [svg](05-virtual-lab/02-teacher/wireframes/assign-practical.svg) | [svg](05-virtual-lab/02-teacher/mockups/assign-practical.svg) | [wire](../figma/pages/05-virtual-lab/02-teacher--wireframes.svg) · [mock](../figma/pages/05-virtual-lab/02-teacher--mockups.svg) |
+| Teacher: class practical results *(concept)* | [svg](05-virtual-lab/02-teacher/wireframes/class-practical-results.svg) | [svg](05-virtual-lab/02-teacher/mockups/class-practical-results.svg) | [wire](../figma/pages/05-virtual-lab/02-teacher--wireframes.svg) · [mock](../figma/pages/05-virtual-lab/02-teacher--mockups.svg) |

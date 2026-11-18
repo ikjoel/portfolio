@@ -16,3 +16,5 @@
 .g.tall a{display:grid;place-items:center;padding:12px}
 .g.tall img{max-height:380px;width:auto;max-width:100%}
 .g figcaption{padding:12px 16px;font-weight:600;font-size:.92rem}
+
+.chip{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;background:var(--warn-soft);color:var(--warn);padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}

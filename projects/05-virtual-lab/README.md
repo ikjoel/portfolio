@@ -28,5 +28,8 @@ Many schools have no lab equipment, but the exam still asks about practicals. Th
 * A second language layer for instructions.
 * Offline caching, once the experiments are stable.
 
+## Code
+Real excerpts with an explanation: [see the code](../../code/README.md#virtual-lab-per-student-values-marking-and-render-on-demand).
+
 ## All screens in this case study
 [Virtual Lab design library](../../design/README.md#virtual-lab): 6 screens in 2 categories.

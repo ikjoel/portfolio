@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code · Egbujor Ikechukwu Joel</title>
+<meta name="description" content="Real front-end code from five products: reusable components, an autosave queue for exams, a service worker policy, and more. Each sample explains the problem it solves.">
+<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="code.css"></head>
+<body><a class="skip" href="#code">Skip to the code</a>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="index.html#contact">Contact</a></nav></div></header>
+<main id="code" class="wrap section">
+  <h1>The code behind the screens</h1>
+  <p class="lede">Real code from the products, copied exactly as it runs. Each sample says what problem it solves and what to notice. No keys, passwords or customer data. The full products are private.</p>
+  <p class="note">StudyPat is server-rendered (Blade, vanilla JavaScript, CSS). These samples show how I build components and behaviour in that stack; React and TypeScript are what I am adding now.</p>
+  <nav class="toc" aria-label="Samples"><a href="#c0">StudyPat: Reusable help components</a><a href="#c1">StudyPat: Get Started card and the setup checklist</a><a href="#c2">StudyPat: Install-as-an-app prompt</a><a href="#c3">StudyPat: Service worker: pages are never cached</a><a href="#c4">StudyPat: Demo countdown bar</a><a href="#c5">Chuvor CBT: The exam screen: save queue, timer, safety</a><a href="#c6">Chuvor CBT: Live monitor refresh</a><a href="#c7">Chuvor Client: Connection quality in plain words, and state from dates</a><a href="#c8">Virtual Lab: Per-student values, marking and render on demand</a></nav>
+  
+  <article class="block" id="c0">
+    <p class="tags">StudyPat · Blade · JavaScript · CSS</p>
+    <h2>Reusable help components</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>New users did not know what to do and could not find help. Help text was being rewritten on every page.</p>
+        <h3>What the code does</h3><p>Five Blade components (help, steps, tip, next-step, empty-state) plus a small script and stylesheet. A page writes one line, for example &lt;x-ux.help tone="tip"&gt;, and gets a consistent callout. A callout can be closed and stays closed (remembered in the browser). Pages that save as you type get one shared "Saving... / All changes saved / 2 not saved" indicator with a retry button, and the browser warns before leaving with unsaved work.</p>
+        <h3>Good parts to notice</h3><ul><li>Props with defaults, so the common case is one line.</li><li>role="note", aria-label, aria-current and role="status" so assistive technology can follow them.</li><li>localStorage wrapped in try/catch so private browsing never breaks a page.</li><li>One save-state object (uxSave) instead of every page inventing its own.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/studypat-admin-dashboard.svg"><img src="assets/screens/studypat-admin-dashboard.svg" alt="Dashboard with the Get Started card" loading="lazy"></a><figcaption>Dashboard with the Get Started card</figcaption></figure><figure><a href="assets/screens/score-divisions.svg"><img src="assets/screens/score-divisions.svg" alt="Score divisions with the live check" loading="lazy"></a><figcaption>Score divisions with the live check</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>01-studypat/blade-ux-components/help.blade.php</code> <span>19 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- A friendly callout. &lt;x-ux.help tone="tip|info|warn|ok|bad" title="..." dismiss="unique-id"&gt;text&lt;/x-ux.help&gt;
+     "dismiss" adds a close button that remembers (in the browser) that this person has read it. --}}
+@props(['tone' =&gt; 'tip', 'title' =&gt; null, 'icon' =&gt; null, 'dismiss' =&gt; null])
+@php
+    $defaultIcons = ['tip' =&gt; 'fa-lightbulb', 'info' =&gt; 'fa-circle-info', 'warn' =&gt; 'fa-triangle-exclamation', 'ok' =&gt; 'fa-circle-check', 'bad' =&gt; 'fa-circle-exclamation'];
+@endphp
+&lt;div class="ux-help ux-{{ $tone }}" role="note" @if($dismiss) data-ux-key="{{ $dismiss }}" @endif&gt;
+    &lt;div class="ux-ic"&gt;&lt;i class="fas {{ $icon ?? ($defaultIcons[$tone] ?? 'fa-lightbulb') }}"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;div class="ux-body"&gt;
+        @if($title)
+            &lt;div class="ux-title"&gt;{{ $title }}&lt;/div&gt;
+        @endif
+        {{ $slot }}
+    &lt;/div&gt;
+    @if($dismiss)
+        &lt;button type="button" class="ux-x" aria-label="Hide this tip"&gt;&amp;times;&lt;/button&gt;
+    @endif
+&lt;/div&gt;
+</code></pre></details><details class="file"><summary><code>01-studypat/blade-ux-components/steps.blade.php</code> <span>24 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- Progress through a task. &lt;x-ux.steps :steps="[['Create', 'done'], ['Add questions', 'current'], ['Submit', 'todo']]" /&gt;
+     States: done, current, todo, stop (something needs attention). --}}
+@props(['steps'])
+&lt;ol class="ux-steps" aria-label="Progress"&gt;
+    @foreach($steps as $i =&gt; $step)
+        @php
+            $label = $step[0];
+            $state = $step[1] ?? 'todo';
+        @endphp
+        &lt;li class="ux-{{ $state }}" @if($state === 'current') aria-current="step" @endif&gt;
+            &lt;div class="ux-dot"&gt;
+                @if($state === 'done')
+                    &lt;i class="fas fa-check"&gt;&lt;/i&gt;
+                @elseif($state === 'stop')
+                    &lt;i class="fas fa-exclamation"&gt;&lt;/i&gt;
+                @else
+                    {{ $i + 1 }}
+                @endif
+            &lt;/div&gt;
+            {{ $label }}
+        &lt;/li&gt;
+    @endforeach
+&lt;/ol&gt;
+</code></pre></details><details class="file"><summary><code>01-studypat/blade-ux-components/next.blade.php</code> <span>17 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- The one thing to do now. &lt;x-ux.next title="Add your first question" text="..." icon="fa-pen"&gt;buttons&lt;/x-ux.next&gt;
+     done="true" turns it green ("all set"). --}}
+@props(['title', 'text' =&gt; null, 'icon' =&gt; 'fa-arrow-right', 'label' =&gt; 'Do this next', 'done' =&gt; false])
+&lt;div class="ux-next {{ $done ? 'ux-done' : '' }}"&gt;
+    &lt;div class="ux-next-ic"&gt;&lt;i class="fas {{ $done ? 'fa-check' : $icon }}"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;div class="ux-next-body"&gt;
+        &lt;div class="ux-next-label"&gt;{{ $done ? 'All set' : $label }}&lt;/div&gt;
+        &lt;div class="ux-next-title"&gt;{{ $title }}&lt;/div&gt;
+        @if($text)
+            &lt;div class="ux-next-text"&gt;{{ $text }}&lt;/div&gt;
+        @endif
+    &lt;/div&gt;
+    @if(trim((string) $slot) !== '')
+        &lt;div class="d-flex flex-wrap gap-2"&gt;{{ $slot }}&lt;/div&gt;
+    @endif
+&lt;/div&gt;
+</code></pre></details><details class="file"><summary><code>01-studypat/blade-ux-components/tip.blade.php</code> <span>4 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- A small "?" next to a label. Hover (laptop) or tap (phone) to read the explanation. &lt;x-ux.tip text="..." /&gt; --}}
+@props(['text'])
+&lt;button type="button" class="ux-q" data-ux-tip="{{ $text }}" aria-label="What is this? {{ $text }}"&gt;?&lt;/button&gt;
+</code></pre></details><details class="file"><summary><code>01-studypat/blade-ux-components/empty.blade.php</code> <span>11 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- A page with nothing on it yet. &lt;x-ux.empty icon="fa-file" title="No question sets yet"&gt;What to do about it.&lt;x-slot:action&gt;button&lt;/x-slot:action&gt;&lt;/x-ux.empty&gt; --}}
+@props(['title', 'icon' =&gt; 'fa-inbox'])
+&lt;div class="card"&gt;&lt;div class="card-body ux-empty"&gt;
+    &lt;div class="ux-empty-ic"&gt;&lt;i class="fas {{ $icon }}"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;h5&gt;{{ $title }}&lt;/h5&gt;
+    &lt;p&gt;{{ $slot }}&lt;/p&gt;
+    @isset($action)
+        &lt;div&gt;{{ $action }}&lt;/div&gt;
+    @endisset
+&lt;/div&gt;&lt;/div&gt;
+</code></pre></details><details class="file"><summary><code>01-studypat/blade-ux-components/ux-behaviour.blade.php</code> <span>73 lines</span></summary><pre tabindex="0"><code class="lang-php">&lt;script&gt;
+(function () {
+    // "?" tooltips: hover on a laptop, tap on a phone
+    function initTips(root) {
+        if (!window.bootstrap) { return; }
+        (root || document).querySelectorAll('[data-ux-tip]:not([data-ux-ready])').forEach(function (el) {
+            el.setAttribute('data-ux-ready', '1');
+            new bootstrap.Popover(el, { trigger: 'hover focus click', placement: 'top', html: false, content: el.getAttribute('data-ux-tip'), container: 'body' });
+        });
+    }
+    document.addEventListener('DOMContentLoaded', function () { initTips(); });
+
+    // Callouts that can be closed and stay closed
+    function seen(key) { try { return localStorage.getItem('ux-hide-' + key) === '1'; } catch (e) { return false; } }
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.ux-help[data-ux-key]').forEach(function (box) {
+            if (seen(box.getAttribute('data-ux-key'))) { box.remove(); }
+        });
+    });
+    document.addEventListener('click', function (e) {
+        var x = e.target.closest('.ux-x');
+        if (!x) { return; }
+        var box = x.closest('.ux-help');
+        try { localStorage.setItem('ux-hide-' + box.getAttribute('data-ux-key'), '1'); } catch (err) {}
+        box.remove();
+    });
+
+    // "Saving... / All changes saved / 2 not saved" for pages that save as you type.
+    // uxSave.begin() when a save starts; uxSave.ok(key) when it worked; uxSave.fail(key, message, retryFunction) when it did not.
+    var saveEl = null, saveFade = null, savePending = 0, saveFailed = new Map();
+    function renderSave() {
+        if (!saveEl) { saveEl = document.createElement('div'); saveEl.id = 'uxSaveState'; saveEl.setAttribute('role', 'status'); document.body.appendChild(saveEl); }
+        clearTimeout(saveFade);
+        if (savePending &gt; 0) {
+            saveEl.className = 'ux-savestate ux-busy'; saveEl.innerHTML = '&lt;i class="fas fa-circle-notch fa-spin"&gt;&lt;/i&gt; Saving...';
+        } else if (saveFailed.size &gt; 0) {
+            saveEl.className = 'ux-savestate ux-bad';
+            saveEl.innerHTML = '&lt;i class="fas fa-triangle-exclamation"&gt;&lt;/i&gt; ' + saveFailed.size + ' not saved &lt;button type="button" data-ux-retry&gt;Try again&lt;/button&gt;';
+        } else {
+            saveEl.className = 'ux-savestate ux-ok'; saveEl.innerHTML = '&lt;i class="fas fa-check"&gt;&lt;/i&gt; All changes saved';
+            saveFade = setTimeout(function () { saveEl.classList.add('ux-fade'); }, 2500);
+        }
+    }
+    window.uxSave = {
+        begin: function () { savePending++; renderSave(); },
+        ok: function (key) { savePending = Math.max(0, savePending - 1); if (key !== undefined) { saveFailed.delete(key); } renderSave(); },
+        fail: function (key, message, retry) {
+            savePending = Math.max(0, savePending - 1);
+            saveFailed.set(key, retry || null);
+            if (message) { uxToast(message, 'bad'); }
+            renderSave();
+        },
+        retryAll: function () { var fns = Array.from(saveFailed.values()); saveFailed.clear(); renderSave(); fns.forEach(function (f) { if (f) { f(); } }); }
+    };
+    document.addEventListener('click', function (e) { if (e.target.closest('[data-ux-retry]')) { window.uxSave.retryAll(); } });
+    window.addEventListener('beforeunload', function (e) {
+        if (savePending &gt; 0 || saveFailed.size &gt; 0) { e.preventDefault(); e.returnValue = ''; }
+    });
+
+    // Friendly messages instead of browser pop-ups: uxToast('Saved', 'ok') or uxToast('Could not save', 'bad')
+    window.uxToast = function (message, tone) {
+        var wrap = document.getElementById('uxToasts');
+        if (!wrap) { wrap = document.createElement('div'); wrap.id = 'uxToasts'; document.body.appendChild(wrap); }
+        var t = document.createElement('div');
+        t.className = 'ux-toast' + (tone ? ' ux-' + tone : '');
+        t.setAttribute('role', 'status');
+        t.textContent = message;
+        wrap.appendChild(t);
+        setTimeout(function () { t.remove(); }, tone === 'bad' ? 7000 : 3500);
+    };
+})();
+&lt;/script&gt;
+</code></pre></details><details class="file"><summary><code>01-studypat/blade-ux-components/ux-styles.blade.php</code> <span>78 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- Shared "easy to use" building blocks: callouts, step trackers, empty states, tooltips, toasts.
+     Used through the &lt;x-ux.*&gt; components in resources/views/components/ux. --}}
+&lt;style&gt;
+    /* ---------- Callout (tip / info / warning / success) ---------- */
+    .ux-help { display: flex; gap: 12px; align-items: flex-start; border-radius: 12px; padding: 12px 14px; margin-bottom: 14px; font-size: 14px; line-height: 1.5; border: 1px solid transparent; }
+    .ux-help .ux-ic { flex: 0 0 32px; height: 32px; width: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; background: #fff; }
+    .ux-help .ux-body { flex: 1; min-width: 0; }
+    .ux-help .ux-title { font-weight: 700; margin-bottom: 2px; }
+    .ux-help .ux-body p:last-child, .ux-help .ux-body ul:last-child { margin-bottom: 0; }
+    .ux-help .ux-x { margin-left: auto; background: none; border: 0; opacity: .55; font-size: 18px; line-height: 1; padding: 0 4px; cursor: pointer; }
+    .ux-help .ux-x:hover { opacity: 1; }
+    .ux-help.ux-tip  { background: var(--sp-purple-soft); border-color: var(--sp-lilac); }  .ux-tip .ux-ic  { color: var(--sp-purple); }
+    .ux-help.ux-info { background: var(--sp-blue-soft); border-color: #B5D4F4; }            .ux-info .ux-ic { color: var(--sp-blue); }
+    .ux-help.ux-warn { background: var(--sp-amber-soft); border-color: #FAC775; }           .ux-warn .ux-ic { color: var(--sp-amber); }
+    .ux-help.ux-ok   { background: var(--sp-green-soft); border-color: #C0DD97; }           .ux-ok .ux-ic   { color: var(--sp-green); }
+    .ux-help.ux-bad  { background: var(--sp-coral-soft); border-color: #F5C4B3; }           .ux-bad .ux-ic  { color: var(--sp-coral); }
+
+    /* ---------- Step tracker ---------- */
+    .ux-steps { display: flex; list-style: none; padding: 0; margin: 0 0 18px; counter-reset: uxstep; }
+    .ux-steps li { flex: 1 1 0; position: relative; text-align: center; font-size: 12px; color: var(--sp-muted); padding: 0 4px; min-width: 0; }
+    .ux-steps li::before { content: ''; position: absolute; top: 14px; left: -50%; width: 100%; height: 2px; background: var(--sp-border); z-index: 0; }
+    .ux-steps li:first-child::before { display: none; }
+    .ux-steps .ux-dot { position: relative; z-index: 1; width: 30px; height: 30px; border-radius: 50%; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; background: #fff; border: 2px solid var(--sp-border); color: var(--sp-muted); }
+    .ux-steps li.ux-done { color: var(--sp-green); }
+    .ux-steps li.ux-done::before, .ux-steps li.ux-current::before { background: var(--sp-green); }
+    .ux-steps li.ux-done .ux-dot { background: var(--sp-green); border-color: var(--sp-green); color: #fff; }
+    .ux-steps li.ux-current { color: var(--sp-purple); font-weight: 700; }
+    .ux-steps li.ux-current .ux-dot { background: var(--sp-purple); border-color: var(--sp-purple); color: #fff; box-shadow: 0 0 0 4px var(--sp-purple-soft); }
+    .ux-steps li.ux-stop .ux-dot { background: var(--sp-coral); border-color: var(--sp-coral); color: #fff; }
+    .ux-steps li.ux-stop { color: var(--sp-coral); font-weight: 700; }
+    @media (max-width: 576px) { .ux-steps li { font-size: 11px; } .ux-steps .ux-dot { width: 26px; height: 26px; font-size: 12px; } .ux-steps li::before { top: 12px; } }
+
+    /* ---------- "Do this next" banner ---------- */
+    .ux-next { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; background: var(--sp-ink); color: #fff; border-radius: 14px; padding: 14px 18px; margin-bottom: 16px; }
+    .ux-next .ux-next-ic { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.14); display: flex; align-items: center; justify-content: center; flex: 0 0 38px; }
+    .ux-next .ux-next-body { flex: 1; min-width: 200px; }
+    .ux-next .ux-next-label { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; opacity: .7; }
+    .ux-next .ux-next-title { font-weight: 700; font-size: 16px; }
+    .ux-next .ux-next-text { font-size: 13px; opacity: .85; }
+    .ux-next.ux-done { background: var(--sp-green); }
+
+    /* ---------- Empty state ---------- */
+    .ux-empty { text-align: center; padding: 36px 18px; }
+    .ux-empty .ux-empty-ic { width: 64px; height: 64px; border-radius: 50%; background: var(--sp-purple-soft); color: var(--sp-purple-mid); font-size: 26px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+    .ux-empty h5 { margin-bottom: 6px; }
+    .ux-empty p { color: var(--sp-muted); max-width: 460px; margin: 0 auto 14px; }
+
+    /* ---------- "?" tooltip ---------- */
+    .ux-q { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--sp-purple-soft); color: var(--sp-purple); font-size: 11px; font-weight: 700; cursor: help; margin-left: 6px; vertical-align: middle; border: 0; padding: 0; }
+    .ux-q:hover, .ux-q:focus { background: var(--sp-purple); color: #fff; outline: none; }
+
+    /* ---------- Small helper line under a field ---------- */
+    .ux-hint { font-size: 12.5px; color: var(--sp-muted); margin-top: 4px; }
+
+    /* ---------- Brief highlight when a link jumps you to a card ---------- */
+    .ux-flash { animation: uxFlash 1.8s ease-out; }
+    @keyframes uxFlash { 0% { box-shadow: 0 0 0 4px var(--sp-lilac); } 100% { box-shadow: 0 0 0 0 transparent; } }
+    .nav-tabs .nav-link { white-space: nowrap; }
+    #cbtTabs .nav-link { padding: .5rem .6rem; font-size: 14px; }
+    #cbtTabs { scrollbar-width: thin; }
+
+    /* ---------- Save indicator for pages that save as you type ---------- */
+    .ux-savestate { position: fixed; left: 16px; bottom: 16px; z-index: 1900; background: #fff; border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 600; box-shadow: 0 6px 24px rgba(38,33,92,.18); border: 1px solid var(--sp-border); transition: opacity .4s; }
+    @media (min-width: 769px) { .ux-savestate { left: 280px; } }
+    .ux-savestate.ux-busy { color: var(--sp-purple); } .ux-savestate.ux-ok { color: var(--sp-green); } .ux-savestate.ux-bad { color: var(--sp-coral); border-color: #F5C4B3; }
+    .ux-savestate.ux-fade { opacity: 0; pointer-events: none; }
+    .ux-savestate button { margin-left: 8px; border: 0; background: var(--sp-coral); color: #fff; border-radius: 999px; padding: 2px 10px; font-size: 12px; }
+    input.ux-invalid { border-color: #dc3545 !important; background: #fff5f5; }
+    .ux-sticky-cols tbody td:nth-child(2) { position: sticky; left: 0; background: #fff; z-index: 2; box-shadow: 1px 0 0 var(--sp-border); }
+    .ux-sticky-cols thead tr:first-child th:nth-child(2) { position: sticky; left: 0; background: #212529; z-index: 3; }
+
+    /* ---------- Toast messages (replace browser pop-ups) ---------- */
+    #uxToasts { position: fixed; right: 16px; bottom: 16px; z-index: 2000; display: flex; flex-direction: column; gap: 8px; max-width: calc(100vw - 32px); }
+    .ux-toast { background: #fff; border-left: 4px solid var(--sp-purple); border-radius: 10px; box-shadow: 0 6px 24px rgba(38,33,92,.18); padding: 10px 14px; font-size: 14px; min-width: 240px; max-width: 380px; animation: uxIn .2s ease-out; }
+    .ux-toast.ux-ok { border-color: var(--sp-green); } .ux-toast.ux-bad { border-color: var(--sp-coral); }
+    @keyframes uxIn { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+&lt;/style&gt;
+</code></pre></details>
+  </article>
+  <article class="block" id="c1">
+    <p class="tags">StudyPat · Laravel service · Blade</p>
+    <h2>Get Started card and the setup checklist</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>Schools said "after registering I don't know what to do next". A seven-step wizard put Students last.</p>
+        <h3>What the code does</h3><p>One class, SetupProgress, is the single source of truth for the checklist, the next step, the percentage and the minutes left. The Get Started card, the wizard banner, the sidebar and the "where next" links all read it, so they can never disagree.</p>
+        <h3>Good parts to notice</h3><ul><li>Order chosen for the user: classes, then students (what they came to do), then rules.</li><li>Each step carries its own plain-language explanation and time estimate.</li><li>The card hides itself when setup is finished or the admin chooses "I will set up later".</li><li>White-labelled schools get no StudyPat support link.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/studypat-admin-dashboard.svg"><img src="assets/screens/studypat-admin-dashboard.svg" alt="Dashboard with the Get Started card" loading="lazy"></a><figcaption>Dashboard with the Get Started card</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>01-studypat/get-started/SetupProgress.php</code> <span>99 lines</span></summary><pre tabindex="0"><code class="lang-php">&lt;?php
+
+namespace App\Services;
+
+use App\Models\AcademicSession;
+use App\Models\GradingSystem;
+use App\Models\School;
+use App\Models\SchoolClass;
+use App\Models\ScoreDivision;
+use App\Models\Staff;
+use App\Models\Student;
+use App\Models\Subject;
+
+/**
+ * The first-time setup of a school, in the order that is easiest for a new admin: classes first, then the students
+ * (what they came to do), then subjects and teachers, then the two "rules" (how grades are given and how a subject's
+ * marks are split). One list used by the dashboard's Get Started card, the setup wizard banner, the wizard's own
+ * "where to next" and the sidebar, so they can never disagree about what is done and what comes next.
+ */
+class SetupProgress
+{
+    /** @return array{steps: array&lt;string, array&gt;, done: int, total: int, percent: int, next: ?array, incomplete: bool, minutesLeft: int} */
+    public function forSchool(School $school): array
+    {
+        $id = $school-&gt;id;
+        $url = fn (string $route) =&gt; route($route, ['subdomain' =&gt; $school-&gt;subdomain, 'wizard' =&gt; 1]);
+
+        $steps = [
+            'classes' =&gt; [
+                'label' =&gt; 'Classes &amp; Arms', 'title' =&gt; 'Add your classes', 'route' =&gt; 'tenant.academics.classes', 'minutes' =&gt; 2,
+                'explain' =&gt; 'Add the classes your school has, such as Primary 1 or JSS 2. If a class has sections (A, B, C), add them as arms.',
+                'done' =&gt; SchoolClass::where('school_id', $id)-&gt;exists(),
+            ],
+            'students' =&gt; [
+                'label' =&gt; 'Students', 'title' =&gt; 'Add your students', 'route' =&gt; 'tenant.people.students', 'minutes' =&gt; 5,
+                'explain' =&gt; 'Add your students one by one, or upload a whole class from a spreadsheet. Each parent gets a login automatically.',
+                'done' =&gt; Student::where('school_id', $id)-&gt;exists(),
+            ],
+            'subjects' =&gt; [
+                'label' =&gt; 'Subjects', 'title' =&gt; 'Add your subjects', 'route' =&gt; 'tenant.academics.subjects.create', 'minutes' =&gt; 3,
+                'explain' =&gt; 'Add the subjects each class studies. You can add many at once, and assign them to teachers later.',
+                'done' =&gt; Subject::where('school_id', $id)-&gt;exists(),
+            ],
+            'staff' =&gt; [
+                'label' =&gt; 'Teachers', 'title' =&gt; 'Add your teachers', 'route' =&gt; 'tenant.people.staff.create', 'minutes' =&gt; 3,
+                'explain' =&gt; 'Add your teachers and give each a login. Tick the subjects they teach so they see them when they sign in.',
+                'done' =&gt; Staff::where('school_id', $id)-&gt;exists(),
+            ],
+            'grading' =&gt; [
+                'label' =&gt; 'Grading', 'title' =&gt; 'Choose how grades are given', 'route' =&gt; 'tenant.academics.grading', 'minutes' =&gt; 1,
+                'explain' =&gt; 'Pick a ready-made scale (such as A1 to F9) with one click, or set your own. Report cards use it to show a grade.',
+                'done' =&gt; GradingSystem::where('school_id', $id)-&gt;exists(),
+            ],
+            'divisions' =&gt; [
+                'label' =&gt; 'Score split', 'title' =&gt; 'Choose how scores are split', 'route' =&gt; 'tenant.results.score-divisions', 'minutes' =&gt; 1,
+                'explain' =&gt; 'Pick how each subject is scored, for example CA 30 and Exam 70 (together they make 100), or set your own.',
+                'done' =&gt; ScoreDivision::where('school_id', $id)-&gt;exists(),
+            ],
+            'sessions' =&gt; [
+                'label' =&gt; 'Session &amp; Terms', 'title' =&gt; 'Set your session and terms', 'route' =&gt; 'tenant.academics.sessions_terms', 'minutes' =&gt; 1,
+                'explain' =&gt; 'Create the school year (for example 2026/2027) with its terms, and mark the current one. Scores and fees are recorded against it.',
+                'done' =&gt; AcademicSession::where('school_id', $id)-&gt;exists(),
+            ],
+        ];
+
+        $next = null;
+        $done = 0;
+        $minutesLeft = 0;
+        foreach ($steps as $key =&gt; &amp;$step) {
+            $step['key'] = $key;
+            $step['url'] = $url($step['route']);
+            if ($step['done']) {
+                $done++;
+            } else {
+                $minutesLeft += $step['minutes'];
+                $next = $next ?? $step;
+            }
+        }
+        unset($step);
+
+        $total = count($steps);
+
+        return [
+            'steps' =&gt; $steps,
+            'done' =&gt; $done,
+            'total' =&gt; $total,
+            'percent' =&gt; (int) round($done / $total * 100),
+            'next' =&gt; $next,
+            'incomplete' =&gt; $next !== null,
+            'minutesLeft' =&gt; $minutesLeft,
+        ];
+    }
+
+    public function incomplete(School $school): bool
+    {
+        return $this-&gt;forSchool($school)['incomplete'];
+    }
+}
+</code></pre></details><details class="file"><summary><code>01-studypat/get-started/get-started-card.blade.php</code> <span>52 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- The dashboard's first-time setup card: one clear next step, a progress bar and the whole checklist. Hidden once setup is
+     finished or the admin chose "Skip setup". Needs $school; $setup (from SetupProgress) is optional. --}}
+@php
+    $setup = $setup ?? app(\App\Services\SetupProgress::class)-&gt;forSchool($school);
+    $helpUrl = $school-&gt;isWhiteLabel() ? null : $school-&gt;supportWhatsAppUrl(\Illuminate\Support\Facades\Auth::user(), 'setting up my school');
+    $nextStep = $setup['next'];
+@endphp
+@if($setup['incomplete'] &amp;&amp; !$school-&gt;onboarding_dismissed_at &amp;&amp; $nextStep)
+    &lt;div class="card border-0 shadow-sm mb-3" style="border-radius:16px;overflow:hidden" id="getStartedCard"&gt;
+        &lt;div class="p-3 p-md-4" style="background:linear-gradient(135deg,#534AB7,#7F77DD);color:#fff"&gt;
+            &lt;div class="d-flex justify-content-between flex-wrap gap-3 align-items-start"&gt;
+                &lt;div style="min-width:0;flex:1 1 320px"&gt;
+                    &lt;div class="small text-uppercase fw-semibold" style="letter-spacing:.08em;opacity:.85"&gt;Let's get your school ready&lt;/div&gt;
+                    &lt;h4 class="mb-1 fw-bold" style="color:#fff"&gt;{{ $nextStep['title'] }}&lt;/h4&gt;
+                    &lt;div style="opacity:.95;max-width:560px"&gt;{{ $nextStep['explain'] }}&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="text-end" style="flex:none"&gt;
+                    &lt;div class="fw-bold" style="font-size:28px;line-height:1"&gt;{{ $setup['done'] }} / {{ $setup['total'] }}&lt;/div&gt;
+                    &lt;div class="small" style="opacity:.85"&gt;steps done&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="my-3" style="height:8px;background:rgba(255,255,255,.28);border-radius:4px"&gt;&lt;div style="height:100%;width:{{ max(4, $setup['percent']) }}%;background:#FAC775;border-radius:4px"&gt;&lt;/div&gt;&lt;/div&gt;
+            &lt;div class="d-flex flex-wrap gap-2 align-items-center"&gt;
+                &lt;a href="{{ $nextStep['url'] }}" class="btn btn-light fw-bold px-4 py-2"&gt;Start: {{ $nextStep['title'] }} &lt;i class="fas fa-arrow-right ms-1"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;span class="small" style="opacity:.92"&gt;This step takes about {{ $nextStep['minutes'] }} {{ $nextStep['minutes'] === 1 ? 'minute' : 'minutes' }}. About {{ $setup['minutesLeft'] }} minutes to finish the whole setup.&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="card-body"&gt;
+            &lt;div class="row g-2"&gt;
+                @foreach($setup['steps'] as $step)
+                    &lt;div class="col-md-6"&gt;
+                        &lt;a href="{{ $step['url'] }}" class="d-flex align-items-center gap-2 text-decoration-none p-2 rounded-3" style="color:inherit;{{ !$step['done'] &amp;&amp; $step['key'] === $nextStep['key'] ? 'background:#F1EFFF;font-weight:600' : '' }}"&gt;
+                            &lt;i class="fas {{ $step['done'] ? 'fa-circle-check' : 'fa-circle' }}" style="color:{{ $step['done'] ? '#2E9E6B' : '#C9C5E6' }};font-size:18px"&gt;&lt;/i&gt;
+                            &lt;span style="{{ $step['done'] ? 'text-decoration:line-through;opacity:.6' : '' }}"&gt;{{ $step['title'] }}&lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                @endforeach
+            &lt;/div&gt;
+            &lt;div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3 pt-3 border-top"&gt;
+                @if($helpUrl)
+                    &lt;a href="{{ $helpUrl }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-success"&gt;&lt;i class="fab fa-whatsapp me-1"&gt;&lt;/i&gt; Stuck? Chat with us on WhatsApp&lt;/a&gt;
+                @else
+                    &lt;span&gt;&lt;/span&gt;
+                @endif
+                &lt;form action="{{ route('tenant.onboarding.dismiss', ['subdomain' =&gt; $school-&gt;subdomain]) }}" method="POST" class="d-inline"&gt;@csrf
+                    &lt;button type="submit" class="btn btn-link btn-sm text-muted text-decoration-none"&gt;I will set up later&lt;/button&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+@endif
+</code></pre></details>
+  </article>
+  <article class="block" id="c2">
+    <p class="tags">StudyPat · Vanilla JavaScript · PWA</p>
+    <h2>Install-as-an-app prompt</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>Parents on phones should be able to open the school like an app. Android and iPhone install differently.</p>
+        <h3>What the code does</h3><p>One partial that adds the manifest, theme colour and icons for the current school, registers the service worker, shows an Install card on Android (beforeinstallprompt), shows the two taps on iPhone Safari, remembers a dismissal for 14 days, hides itself once installed, and offers the help guide once when the installed app is first opened.</p>
+        <h3>Good parts to notice</h3><ul><li>Branded per school: name, colour and icon come from one helper.</li><li>iOS detection that excludes Chrome, Firefox, Edge and Opera on iOS (which cannot add to home screen).</li><li>All storage access in try/catch.</li><li>A data-install-app hook so any menu link can offer the same thing.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/install-app-pwa.svg"><img src="assets/screens/install-app-pwa.svg" alt="Install card on a phone" loading="lazy"></a><figcaption>Install card on a phone</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>01-studypat/pwa/install-prompt-and-welcome.blade.php</code> <span>116 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- Makes every page installable as an app: manifest, colours, home-screen icon, service worker and the "Install app" prompt.
+     Include once inside &lt;head&gt;. Works on a school's own address and on StudyPat's main site. --}}
+@php
+    // Only a school's own address is branded as that school (master-admin pages that happen to hold a $school stay StudyPat)
+    $pwaSub = request()-&gt;route('subdomain');
+    $pwaSchool = null;
+    if ($pwaSub) {
+        $pwaSchool = (isset($school) &amp;&amp; $school instanceof \App\Models\School &amp;&amp; $school-&gt;subdomain === $pwaSub)
+            ? $school
+            : \App\Models\School::where('subdomain', $pwaSub)-&gt;first();
+    }
+    $pwaB = \App\Support\PwaBranding::for($pwaSchool);
+    // Where the first-run "welcome" card sends a signed-in person using the installed app
+    $pwaHelpUrl = ($pwaSchool &amp;&amp; auth()-&gt;check()) ? route('tenant.help', ['subdomain' =&gt; $pwaSchool-&gt;subdomain, 'welcome' =&gt; 1]) : null;
+@endphp
+&lt;link rel="manifest" href="/manifest.webmanifest"&gt;
+&lt;style&gt;@media (display-mode: standalone) { [data-install-app] { display: none !important; } }&lt;/style&gt;
+&lt;meta name="theme-color" content="{{ $pwaB['theme'] }}"&gt;
+&lt;meta name="mobile-web-app-capable" content="yes"&gt;
+&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+&lt;meta name="apple-mobile-web-app-title" content="{{ $pwaB['short'] }}"&gt;
+&lt;meta name="apple-mobile-web-app-status-bar-style" content="default"&gt;
+&lt;link rel="apple-touch-icon" href="/pwa/icon-180.png"&gt;
+&lt;script&gt;
+(function () {
+    var APP = @json($pwaB['name']), BRAND = @json($pwaB['theme']);
+    var standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+
+    if ('serviceWorker' in navigator &amp;&amp; location.protocol === 'https:') {
+        window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(function () {}); });
+    }
+    if (standalone) {
+        // The first time the installed app is opened by a signed-in person, offer the help guide once
+        var HELP = @json($pwaHelpUrl), SEEN = 'sp-app-welcomed';
+        var seen = false;
+        try { seen = !!localStorage.getItem(SEEN); } catch (e) {}
+        if (HELP &amp;&amp; !seen &amp;&amp; location.pathname.indexOf('/help-guide') !== 0) {
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    var w = document.createElement('div');
+                    w.setAttribute('role', 'dialog');
+                    w.style.cssText = 'position:fixed;left:12px;right:12px;bottom:84px;max-width:440px;margin:0 auto;z-index:2147483000;background:#fff;color:#1D1D1F;border-radius:18px;box-shadow:0 14px 44px rgba(0,0,0,.28);padding:16px;font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;border-top:4px solid ' + BRAND;
+                    w.innerHTML = '&lt;strong style="display:block;font-size:15px;margin-bottom:4px"&gt;Welcome to the ' + APP.replace(/&lt;/g, '&amp;lt;') + ' app&lt;/strong&gt;&lt;span style="color:#5F6368"&gt;New here? The help guide shows what to do first, step by step.&lt;/span&gt;' +
+                        '&lt;div style="display:flex;gap:8px;margin-top:12px"&gt;&lt;a data-go href="' + HELP + '" style="flex:1;text-align:center;text-decoration:none;border-radius:11px;padding:11px;font-weight:700;color:#fff;background:' + BRAND + '"&gt;Open the help guide&lt;/a&gt;' +
+                        '&lt;button type="button" data-x style="border:1px solid #D6D6DA;background:#fff;border-radius:11px;padding:11px 14px;font-weight:600;color:#5F6368;cursor:pointer"&gt;Not now&lt;/button&gt;&lt;/div&gt;';
+                    document.body.appendChild(w);
+                    function done() { try { localStorage.setItem(SEEN, '1'); } catch (e) {} }
+                    w.querySelector('[data-x]').addEventListener('click', function () { done(); w.remove(); });
+                    w.querySelector('[data-go]').addEventListener('click', done);
+                }, 1500);
+            });
+        }
+        return;
+    }
+
+    var KEY = 'sp-install-dismissed';
+    function dismissedRecently() {
+        try { var t = parseInt(localStorage.getItem(KEY) || '0', 10); return t &amp;&amp; (Date.now() - t) &lt; 14 * 86400000; } catch (e) { return false; }
+    }
+    function remember() { try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {} }
+
+    var deferred = null, card = null;
+    var isIos = /iphone|ipad|ipod/i.test(navigator.userAgent) &amp;&amp; !window.MSStream;
+    var isSafari = /safari/i.test(navigator.userAgent) &amp;&amp; !/crios|fxios|edgios|opios/i.test(navigator.userAgent);
+
+    function build(html) {
+        if (card || dismissedRecently()) { return; }
+        card = document.createElement('div');
+        card.setAttribute('role', 'dialog');
+        card.style.cssText = 'position:fixed;left:12px;right:12px;bottom:84px;max-width:440px;margin:0 auto;z-index:2147483000;background:#fff;color:#1D1D1F;border-radius:18px;box-shadow:0 14px 44px rgba(0,0,0,.28);padding:16px;font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;border-top:4px solid ' + BRAND;
+        card.innerHTML = html;
+        document.body.appendChild(card);
+        card.querySelector('[data-x]').addEventListener('click', function () { remember(); card.remove(); card = null; });
+        var go = card.querySelector('[data-go]');
+        if (go) { go.addEventListener('click', install); }
+    }
+    function install() {
+        if (!deferred) { return; }
+        deferred.prompt();
+        deferred.userChoice.then(function () { deferred = null; if (card) { card.remove(); card = null; } });
+    }
+    var head = '&lt;div style="display:flex;gap:12px;align-items:center"&gt;&lt;img src="/pwa/icon-192.png" alt="" width="46" height="46" style="border-radius:11px;flex:none"&gt;&lt;div style="flex:1;min-width:0"&gt;&lt;strong style="display:block;font-size:15px"&gt;Install the ' + APP.replace(/&lt;/g, '&amp;lt;') + ' app&lt;/strong&gt;';
+    var close = '&lt;button type="button" data-x aria-label="Close" style="border:0;background:none;font-size:22px;line-height:1;color:#8A8D93;padding:4px;cursor:pointer"&gt;&amp;times;&lt;/button&gt;&lt;/div&gt;';
+    var installBody = head + '&lt;span style="color:#5F6368"&gt;Open it from your home screen like any app - faster and full screen.&lt;/span&gt;&lt;/div&gt;' + close +
+        '&lt;button type="button" data-go style="margin-top:12px;width:100%;border:0;border-radius:11px;padding:12px;font-size:15px;font-weight:700;color:#fff;background:' + BRAND + ';cursor:pointer"&gt;Install app&lt;/button&gt;';
+
+    window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        deferred = e;
+        if (document.readyState === 'complete') { build(installBody); }
+        else { window.addEventListener('load', function () { build(installBody); }); }
+    });
+    window.addEventListener('appinstalled', function () { if (card) { card.remove(); card = null; } remember(); });
+
+    // iPhone / iPad have no install button: show the two taps instead (only in Safari, where "Add to Home Screen" exists)
+    if (isIos &amp;&amp; isSafari) {
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                build(head + '&lt;span style="color:#5F6368"&gt;Tap &lt;strong&gt;Share&lt;/strong&gt; at the bottom of Safari, then &lt;strong&gt;Add to Home Screen&lt;/strong&gt;.&lt;/span&gt;&lt;/div&gt;' + close);
+            }, 2500);
+        });
+    }
+
+    // a small hook so a menu link can offer the same thing: &lt;a href="#" data-install-app&gt;Install app&lt;/a&gt;
+    document.addEventListener('click', function (e) {
+        var t = e.target.closest &amp;&amp; e.target.closest('[data-install-app]');
+        if (!t) { return; }
+        e.preventDefault();
+        if (deferred) { install(); return; }
+        try { localStorage.removeItem(KEY); } catch (err) {}
+        if (card) { card.remove(); card = null; }
+        build(head + '&lt;span style="color:#5F6368"&gt;' + (isIos ? 'Tap &lt;strong&gt;Share&lt;/strong&gt;, then &lt;strong&gt;Add to Home Screen&lt;/strong&gt;.' : 'Open your browser menu and choose &lt;strong&gt;Install app&lt;/strong&gt; or &lt;strong&gt;Add to Home screen&lt;/strong&gt;.') + '&lt;/span&gt;&lt;/div&gt;' + close);
+    });
+})();
+&lt;/script&gt;
+</code></pre></details>
+  </article>
+  <article class="block" id="c3">
+    <p class="tags">StudyPat · JavaScript · Service Worker</p>
+    <h2>Service worker: pages are never cached</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>An installable app tempts you to cache everything. But pages hold personal data and form tokens, and stale pages mean wrong data and failed forms.</p>
+        <h3>What the code does</h3><p>A deliberately small service worker. Page navigations always go to the network and fall back to an offline page. Only the offline page, shared libraries and fonts, and static images are kept on the phone: cache-first for shared libraries, stale-while-revalidate for images.</p>
+        <h3>Good parts to notice</h3><ul><li>Versioned cache names, and old caches deleted on activate.</li><li>Only GET requests; range requests skipped.</li><li>skipWaiting and clients.claim so an update takes effect without a double reload.</li><li>The rule is written in the file header so the next developer does not add page caching by accident.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/install-app-pwa.svg"><img src="assets/screens/install-app-pwa.svg" alt="Install card on a phone" loading="lazy"></a><figcaption>Install card on a phone</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>01-studypat/pwa/service-worker.js</code> <span>64 lines</span></summary><pre tabindex="0"><code class="lang-js">// StudyPat installable app - service worker
+// Pages always come from the network (they are personal and carry security tokens); only the "you are offline" page
+// and static files (fonts, icons, logos, libraries) are kept on the phone, so the app opens fast and fails politely.
+const VERSION = '__VERSION__';
+const SHELL = 'sp-shell-' + VERSION;
+const STATIC = 'sp-static-' + VERSION;
+const OFFLINE_URL = '/offline';
+const CDN_HOSTS = ['cdn.jsdelivr.net', 'cdnjs.cloudflare.com', 'fonts.googleapis.com', 'fonts.gstatic.com', 'code.jquery.com'];
+
+self.addEventListener('install', (event) =&gt; {
+  event.waitUntil(
+    caches.open(SHELL)
+      .then((cache) =&gt; cache.add(new Request(OFFLINE_URL, { cache: 'reload' })))
+      .then(() =&gt; self.skipWaiting())
+  );
+});
+
+self.addEventListener('activate', (event) =&gt; {
+  event.waitUntil(
+    caches.keys()
+      .then((keys) =&gt; Promise.all(keys.filter((k) =&gt; k !== SHELL &amp;&amp; k !== STATIC).map((k) =&gt; caches.delete(k))))
+      .then(() =&gt; self.clients.claim())
+  );
+});
+
+async function cacheFirst(request) {
+  const cache = await caches.open(STATIC);
+  const hit = await cache.match(request);
+  if (hit) return hit;
+  const response = await fetch(request);
+  if (response &amp;&amp; (response.ok || response.type === 'opaque')) cache.put(request, response.clone());
+  return response;
+}
+
+async function staleWhileRevalidate(request) {
+  const cache = await caches.open(STATIC);
+  const hit = await cache.match(request);
+  const refresh = fetch(request).then((response) =&gt; {
+    if (response &amp;&amp; response.ok) cache.put(request, response.clone());
+    return response;
+  }).catch(() =&gt; hit);
+  return hit || refresh;
+}
+
+self.addEventListener('fetch', (event) =&gt; {
+  const request = event.request;
+  if (request.method !== 'GET' || request.headers.has('range')) return;
+  const url = new URL(request.url);
+
+  if (request.mode === 'navigate') {
+    event.respondWith(fetch(request).catch(() =&gt; caches.match(OFFLINE_URL)));
+    return;
+  }
+  if (CDN_HOSTS.includes(url.hostname)) {
+    event.respondWith(cacheFirst(request).catch(() =&gt; fetch(request)));
+    return;
+  }
+  if (url.origin === self.location.origin &amp;&amp;
+      (url.pathname.startsWith('/storage/') || url.pathname.startsWith('/pwa/') ||
+       /\.(png|jpe?g|svg|webp|ico|woff2?)$/i.test(url.pathname))) {
+    event.respondWith(staleWhileRevalidate(request));
+  }
+});
+</code></pre></details>
+  </article>
+  <article class="block" id="c4">
+    <p class="tags">StudyPat · Blade · vanilla JavaScript</p>
+    <h2>Demo countdown bar</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>Visitors should try the product without registering, but the demo must clearly end and never confuse a visitor about where they are.</p>
+        <h3>What the code does</h3><p>A fixed bar on every page of a private demo: a DEMO badge, a clock that turns red in the last five minutes, a "View as" role switcher, a register link, and an End demo button with a confirmation.</p>
+        <h3>Good parts to notice</h3><ul><li>Time left comes from the server, so reloading cannot reset it.</li><li>Role switch submits on change, with a real &lt;label&gt;.</li><li>Redirects to a friendly "demo ended" page at zero.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/demo-sandbox.svg"><img src="assets/screens/demo-sandbox.svg" alt="Demo bar on the dashboard" loading="lazy"></a><figcaption>Demo bar on the dashboard</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>01-studypat/demo/demo-countdown-bar.blade.php</code> <span>35 lines</span></summary><pre tabindex="0"><code class="lang-php">{{-- The countdown pill shown on every page of a demo sandbox: time left, switch role, register, leave. --}}
+@if(!empty($demoSandbox))
+&lt;div id="demoBar" style="position:fixed;left:50%;transform:translateX(-50%);bottom:14px;z-index:3000;max-width:calc(100vw - 20px);background:#1B1740;color:#fff;border-radius:18px;padding:10px 14px;box-shadow:0 14px 40px rgba(20,15,50,.45);border:1.5px solid rgba(239,159,39,.6);font:600 13.5px/1.35 'Plus Jakarta Sans',system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:center"&gt;
+    &lt;span style="background:#EF9F27;color:#2B1700;border-radius:999px;padding:3px 10px;font-weight:800;letter-spacing:.04em"&gt;DEMO&lt;/span&gt;
+    &lt;span&gt;&lt;span id="demoClock" style="font-variant-numeric:tabular-nums;font-weight:800;font-size:15px"&gt;--:--&lt;/span&gt; left&lt;/span&gt;
+    &lt;form method="POST" action="{{ route('tenant.demo.switch', ['subdomain' =&gt; $demoSandbox['subdomain']]) }}" style="margin:0;display:flex;gap:6px;align-items:center"&gt;
+        @csrf
+        &lt;label for="demoRole" style="margin:0;color:#CFCBFA"&gt;View as&lt;/label&gt;
+        &lt;select id="demoRole" name="role" onchange="this.form.submit()" style="border-radius:10px;border:0;padding:4px 8px;font-weight:700;color:#1B1740"&gt;
+            @foreach(['admin' =&gt; 'School admin', 'teacher' =&gt; 'Teacher', 'parent' =&gt; 'Parent', 'student' =&gt; 'Student'] as $key =&gt; $label)
+                &lt;option value="{{ $key }}" @selected(strtolower((string) (auth()-&gt;user()-&gt;role ?? '')) === $key)&gt;{{ $label }}&lt;/option&gt;
+            @endforeach
+        &lt;/select&gt;
+    &lt;/form&gt;
+    &lt;a href="{{ $demoSandbox['mainUrl'] }}/register" style="color:#FAC775;text-decoration:underline;font-weight:800" target="_top"&gt;Register your school free&lt;/a&gt;
+    &lt;form method="POST" action="{{ route('tenant.demo.end', ['subdomain' =&gt; $demoSandbox['subdomain']]) }}" style="margin:0" onsubmit="return confirm('End this demo? Everything you added will be deleted.')"&gt;
+        @csrf
+        &lt;button type="submit" style="background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff;border-radius:10px;padding:3px 10px;font-weight:700"&gt;End demo&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+    var left = {{ (int) $demoSandbox['seconds'] }}, el = document.getElementById('demoClock'), main = @json($demoSandbox['mainUrl']);
+    function tick() {
+        if (left &lt;= 0) { location.href = main + '/demo?ended=1'; return; }
+        var m = Math.floor(left / 60), s = left % 60;
+        el.textContent = (m &lt; 10 ? '0' : '') + m + ':' + (s &lt; 10 ? '0' : '') + s;
+        if (left &lt;= 300) { el.style.color = '#FF9A8A'; }
+        left--; setTimeout(tick, 1000);
+    }
+    tick();
+})();
+&lt;/script&gt;
+@endif
+</code></pre></details>
+  </article>
+  <article class="block" id="c5">
+    <p class="tags">Chuvor CBT · Vanilla JavaScript · fetch</p>
+    <h2>The exam screen: save queue, timer, safety</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>In an exam hall the network is poor and a lost answer is serious. The candidate must always know whether their work is saved.</p>
+        <h3>What the code does</h3><p>Every answer goes into a queue and is re-sent until the server says "saved". Each answer carries a version, so a newer edit made while an older one is in flight is never lost. Failures retry with exponential back-off (2 s, 4 s … up to 15 s). A status line shows "All answers saved", "Saving…" or "2 not saved, retrying". The timer counts to a deadline and is re-synchronised with the server clock every 20 seconds. A phone is kept awake, and leaving the tab is reported to the invigilator.</p>
+        <h3>Good parts to notice</h3><ul><li>One shape for every question, whatever the server's letter case.</li><li>Anything that is not JSON (a login page, an error page) counts as a failed save, so the answer is kept and retried.</li><li>Answers the server will never accept are dropped instead of retried forever.</li><li>A lost violation report can never break the exam.</li><li>The Screen Wake Lock API with a safe fallback.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/cbt-candidate-exam-screen.svg"><img src="assets/screens/cbt-candidate-exam-screen.svg" alt="The candidate exam screen" loading="lazy"></a><figcaption>The candidate exam screen</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>02-chuvor-cbt/exam-client.js</code> <span>233 lines</span></summary><pre tabindex="0"><code class="lang-js">// Chuvor CBT: the candidate's exam page script (verbatim excerpt of Pages/StudentExam.cshtml).
+// Values injected by the server (Razor) and used below:  rawQuestions, rawAnswers, examId, attemptId, serverRemaining
+// Shown here: one shape for every question, the save queue, the timer, keep-alive ping, violation reporting, keep-screen-on.
+
+            const $ = id =&gt; document.getElementById(id);
+            const esc = s =&gt; String(s == null ? '' : s).replace(/[&amp;&lt;&gt;"']/g, c =&gt; ({ '&amp;': '&amp;amp;', '&lt;': '&amp;lt;', '&gt;': '&amp;gt;', '"': '&amp;quot;', "'": '&amp;#39;' }[c]));
+            const pick = (o, a, b) =&gt; (o[a] !== undefined ? o[a] : o[b]);
+
+            // One clean shape for every question, whatever the letter case of the server data
+            const questions = rawQuestions.map(q =&gt; ({
+                id: pick(q, 'Id', 'id'),
+                text: pick(q, 'QuestionText', 'questionText') || '',
+                image: pick(q, 'ImagePath', 'imagePath') || null,
+                type: String(pick(q, 'QuestionType', 'questionType') || 'Objective'),
+                options: {
+                    A: pick(q, 'OptionA', 'optionA'),
+                    B: pick(q, 'OptionB', 'optionB'),
+                    C: pick(q, 'OptionC', 'optionC'),
+                    D: pick(q, 'OptionD', 'optionD')
+                },
+                // The student's own arrangement of the options. A, B, C, D on screen are positions; the answer that is
+                // saved and marked is always the option's original letter.
+                order: String(pick(q, 'OptionOrder', 'optionOrder') || 'ABCD').split(''),
+                groupId: pick(q, 'GroupId', 'groupId') || null,
+                isReference: !!pick(q, 'IsReference', 'isReference')
+            }));
+
+            // answers[questionId] = { selectedOption, answerText }  (the one place answers live)
+            const answers = {};
+            rawAnswers.forEach(a =&gt; {
+                answers[pick(a, 'QuestionId', 'questionId')] = {
+                    selectedOption: pick(a, 'SelectedOption', 'selectedOption') || null,
+                    answerText: pick(a, 'AnswerText', 'answerText') || null
+                };
+            });
+
+            const hasContent = a =&gt; !!a &amp;&amp; (!!(a.selectedOption &amp;&amp; String(a.selectedOption).trim()) || !!(a.answerText &amp;&amp; String(a.answerText).trim()));
+            const totalQuestions = questions.filter(q =&gt; !q.isReference).length;
+
+            let currentIndex = 0;
+            let finished = false;   // true once we are leaving this page (submit, time up, or attempt already finished)
+
+            // ---------------------------------------------------------------
+            // Banner + "saved / not saved" indicator
+            // ---------------------------------------------------------------
+            function showBanner(msg) {
+                const b = $('netBanner');
+                if (!msg) { b.style.display = 'none'; return; }
+                b.textContent = msg;
+                b.style.display = 'block';
+            }
+
+            function updateSaveStatus() {
+                const el = $('saveStatus');
+                if (el) {
+                    if (dirty.size === 0) {
+                        el.className = 'save-status ok';
+                        el.innerHTML = '&lt;i class="bi bi-cloud-check"&gt;&lt;/i&gt; All answers saved';
+                    } else if (failCount &gt; 0) {
+                        el.className = 'save-status bad';
+                        el.innerHTML = '&lt;i class="bi bi-cloud-slash"&gt;&lt;/i&gt; ' + dirty.size + ' not saved - retrying';
+                    } else {
+                        el.className = 'save-status busy';
+                        el.innerHTML = '&lt;i class="bi bi-cloud-arrow-up"&gt;&lt;/i&gt; Saving...';
+                    }
+                }
+                renderNavGrid(currentIndex);
+            }
+
+            function leave(url) {
+                finished = true;
+                window.location.href = url || '/StudentDashboard';
+            }
+
+            // Reads a JSON answer from the server. Anything else (login page, licence page, error page)
+            // counts as a failure, so the answer is kept and sent again.
+            async function readJson(resp) {
+                const type = resp.headers.get('content-type') || '';
+                if (resp.redirected &amp;&amp; /login/i.test(resp.url)) {
+                    showBanner('Your login has ended. Tell your teacher. Do NOT close this page - your answers are still here.');
+                    throw new Error('login expired');
+                }
+                if (!resp.ok || type.indexOf('json') &lt; 0) throw new Error('HTTP ' + resp.status);
+                return resp.json();
+            }
+
+            const token = () =&gt; document.querySelector('#antiforgeryForm input[name="__RequestVerificationToken"]').value;
+
+            // ---------------------------------------------------------------
+            // Saving answers: every change goes into a queue and is sent until the server says "saved".
+            // ---------------------------------------------------------------
+            const dirty = new Map();   // questionId -&gt; version of the answer that still has to be saved
+            let version = 0;
+            let sending = false;
+            let failCount = 0;
+            let retryTimer = null;
+            let flushTimer = null;
+
+            function setAnswer(qid, selectedOption, answerText, delayMs) {
+                answers[qid] = { selectedOption: selectedOption, answerText: answerText };
+                dirty.set(qid, ++version);
+                updateSaveStatus();
+                clearTimeout(flushTimer);
+                if (delayMs &gt; 0) flushTimer = setTimeout(flush, delayMs); else flush();
+            }
+
+            async function sendAnswer(qid, a) {
+                const resp = await fetch('/StudentExam?handler=SaveAnswer&amp;examId=' + examId, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'RequestVerificationToken': token() },
+                    body: JSON.stringify({
+                        questionId: parseInt(qid, 10),
+                        selectedOption: a.selectedOption,
+                        answerText: a.answerText,
+                        examId: parseInt(examId, 10)
+                    })
+                });
+                const data = await readJson(resp);
+
+                if (data.success) return 'ok';
+                if (data.code === 'FINISHED') { leave(data.redirect); return 'finished'; }
+                // The server will never accept this one: do not retry it forever
+                if (data.code === 'BAD_QUESTION' || data.code === 'BAD_OPTION') { console.warn('Answer rejected:', data.code); return 'ok'; }
+                throw new Error(data.code || 'save failed');
+            }
+
+            async function flush() {
+                if (sending || finished) return;
+                sending = true;
+                try {
+                    while (dirty.size &gt; 0 &amp;&amp; !finished) {
+                        const first = dirty.entries().next().value;
+                        const qid = first[0];
+                        const ver = first[1];
+                        const a = answers[qid] || { selectedOption: null, answerText: null };
+
+                        const result = await sendAnswer(qid, a);
+                        if (result === 'finished') return;
+
+                        // If the student changed this answer again while it was being sent, the newer version stays queued.
+                        if (dirty.get(qid) === ver) dirty.delete(qid);
+
+                        failCount = 0;
+                        showBanner(null);
+                        updateSaveStatus();
+                    }
+                } catch (err) {
+                    failCount++;
+                    showBanner('Connection problem: your latest answers are NOT saved yet. Keep this page open - it keeps trying.');
+                    clearTimeout(retryTimer);
+                    retryTimer = setTimeout(flush, Math.min(15000, 2000 * Math.pow(2, failCount - 1)));
+                } finally {
+                    sending = false;
+                    updateSaveStatus();
+                }
+
+                // Something was typed while we were busy
+                if (dirty.size &gt; 0 &amp;&amp; failCount === 0 &amp;&amp; !finished) flush();
+            }
+
+            // ---------------------------------------------------------------
+            // Timer: counts down to a deadline, and is re-synchronised with the server clock every 20 seconds
+            // ---------------------------------------------------------------
+            let deadline = performance.now() + Math.max(1, serverRemaining) * 1000;
+
+            const secondsLeft = () =&gt; Math.max(0, Math.ceil((deadline - performance.now()) / 1000));
+
+            function updateTimerDisplay() {
+                const left = secondsLeft();
+                const display = $('timerDisplay');
+                if (display) {
+                    display.textContent = String(Math.floor(left / 60)).padStart(2, '0') + ':' + String(left % 60).padStart(2, '0');
+                    display.classList.toggle('warning', left &lt; 300);
+                }
+            }
+
+            function startTimer() {
+                updateTimerDisplay();
+                setInterval(() =&gt; {
+                    updateTimerDisplay();
+                    if (secondsLeft() &lt;= 0) submitExam(true);
+                }, 500);
+            }
+
+            async function ping() {
+                if (finished) return;
+                try {
+                    const resp = await fetch('/StudentExam?handler=Ping&amp;examId=' + examId, {
+                        method: 'POST',
+                        headers: { 'RequestVerificationToken': token() }
+                    });
+                    const data = await readJson(resp);
+                    if (data.success) deadline = performance.now() + data.remainingSeconds * 1000;
+                    else if (data.code === 'FINISHED') leave(data.redirect);
+                } catch (err) { /* the next ping tries again */ }
+            }
+            setInterval(ping, 20000);
+
+// ---- reporting that the candidate left the exam page, and keeping a phone awake ----
+            function logViolation(type, details) {
+                if (!attemptId || finished) return;
+                fetch('/StudentExam?handler=LogViolation&amp;examId=' + examId, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'RequestVerificationToken': token() },
+                    body: JSON.stringify({ violationType: type, details: details, examId: parseInt(examId, 10) })
+                })
+                    .then(readJson)
+                    .then(data =&gt; {
+                        if (data.autoSubmitted) {
+                            finished = true;
+                            alert('Too many violations. Your exam was submitted automatically.');
+                            window.location.href = data.redirect || ('/StudentExamResults?attemptId=' + attemptId);
+                        } else if (data.code === 'FINISHED') {
+                            leave(data.redirect);
+                        }
+                    })
+                    .catch(() =&gt; { /* a lost violation report must never break the exam */ });
+            }
+
+            document.addEventListener('visibilitychange', () =&gt; { if (document.hidden) logViolation('TabSwitch', 'Student switched tab'); });
+
+            // Keep a phone's screen awake during the exam. A screen that locks by itself would count as leaving the exam.
+
+            async function keepScreenOn() {
+                try {
+                    if (finished || !('wakeLock' in navigator) || document.hidden) return;
+                    wakeLock = await navigator.wakeLock.request('screen');
+                    wakeLock.addEventListener('release', () =&gt; { wakeLock = null; });
+                } catch (e) { /* not supported or refused: the exam works the same, the screen may just dim */ }
+            }
+            keepScreenOn();
+            document.addEventListener('visibilitychange', () =&gt; { if (!document.hidden &amp;&amp; !wakeLock) keepScreenOn(); });
+</code></pre></details>
+  </article>
+  <article class="block" id="c6">
+    <p class="tags">Chuvor CBT · Vanilla JavaScript · fetch</p>
+    <h2>Live monitor refresh</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>The person in the hall needs an up-to-date picture of every candidate, even when the network is weak.</p>
+        <h3>What the code does</h3><p>One request at a time, never overlapping. It refreshes every 3 seconds, slows to 8 seconds after repeated failures, and shows a clear banner when what is on screen may be out of date. Filtering and paging are done on the server so a big hall stays fast. Actions (add time, end an attempt) report plainly what happened or that nothing may have changed.</p>
+        <h3>Good parts to notice</h3><ul><li>A busy flag stops requests piling up on a slow line.</li><li>Honest error messages that say what to do next.</li><li>cache: "no-store" so a proxy never serves an old picture.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/cbt-live-exam-monitor.svg"><img src="assets/screens/cbt-live-exam-monitor.svg" alt="The live monitor" loading="lazy"></a><figcaption>The live monitor</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>02-chuvor-cbt/live-monitor-polling.js</code> <span>62 lines</span></summary><pre tabindex="0"><code class="lang-js">// Chuvor CBT: the invigilator's live monitor (verbatim excerpt of Pages/LiveMonitor.cshtml).
+// One request at a time; refreshes every 3 s and slows to 8 s when the connection is bad, with a visible banner.
+    // ---------- polling (one request at a time; slows down when the connection is bad) ----------
+    async function poll() {
+        if (state.busy) return;
+        state.busy = true;
+        try {
+            const params = new URLSearchParams({
+                handler: 'PollData',
+                examId: cfg.examId,
+                classFilter: cfg.classFilter || '',
+                statusFilter: cfg.statusFilter || '',
+                searchTerm: cfg.searchTerm || '',
+                currentPage: state.page
+            });
+            const resp = await fetch(cfg.basePath + '?' + params.toString(), { cache: 'no-store' });
+            if (!resp.ok) throw new Error('HTTP ' + resp.status);
+            const data = await resp.json();
+            if (!data.found) throw new Error('Exam not found');
+            render(data);
+            state.fails = 0;
+            $('connectionBanner').classList.add('d-none');
+        } catch (err) {
+            state.fails++;
+            const b = $('connectionBanner');
+            b.classList.remove('d-none');
+            b.textContent = 'Connection lost or session expired - what you see may be out of date. Retrying (' + state.fails + ')... If this keeps happening, reload the page and log in again.';
+        } finally {
+            state.busy = false;
+            clearTimeout(state.timer);
+            state.timer = setTimeout(poll, state.fails &gt; 3 ? 8000 : 3000);
+        }
+    }
+
+    // ---------- actions ----------
+    async function post(handler, fields) {
+        const token = document.querySelector('#monitorAntiforgeryForm input[name="__RequestVerificationToken"]').value;
+        const body = new URLSearchParams();
+        Object.keys(fields).forEach(k =&gt; {
+            const v = fields[k];
+            (Array.isArray(v) ? v : [v]).forEach(x =&gt; body.append(k, x));
+        });
+        const resp = await fetch(cfg.basePath + '?handler=' + handler, {
+            method: 'POST',
+            headers: { 'RequestVerificationToken': token, 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: body.toString()
+        });
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        return resp.json();
+    }
+
+    async function run(handler, fields) {
+        try {
+            const data = await post(handler, fields);
+            alert(data.message || (data.success ? 'Done.' : 'That did not work.'));
+        } catch (err) {
+            alert('Could not reach the server, so nothing may have changed. Check the list and try again.');
+        }
+        poll();
+    }
+
+</code></pre></details>
+  </article>
+  <article class="block" id="c7">
+    <p class="tags">Chuvor Client · C# · JavaScript</p>
+    <h2>Connection quality in plain words, and state from dates</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>Non-technical staff say "it is slow" or "it hangs". Support needs to know in one glance whether the connection is the cause. The owner needs expiry that cannot go wrong.</p>
+        <h3>What the code does</h3><p>ConnectionQuality turns the last eight delay measurements into a grade (Excellent, Good, Fair, Poor) and a sentence that tells the user what to try. serviceState computes a customer's state (ok, expiring, grace, expired, suspended, pending) from dates every time, so it is never stored and never stale.</p>
+        <h3>Good parts to notice</h3><ul><li>A self-test found a one-lost-message case wrongly marked "Poor"; the rule was fixed so one hiccup is at most "Fair".</li><li>Jitter is counted, because delay that jumps around feels bad even when the average is fine.</li><li>The same state function feeds the app, the admin panel and the access check.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/chuvor-client-app-window.svg"><img src="assets/screens/chuvor-client-app-window.svg" alt="The staff app" loading="lazy"></a><figcaption>The staff app</figcaption></figure><figure><a href="assets/screens/chuvor-client-control-panel.svg"><img src="assets/screens/chuvor-client-control-panel.svg" alt="The control panel" loading="lazy"></a><figcaption>The control panel</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>04-chuvor-client/ConnectionQuality.cs</code> <span>41 lines</span></summary><pre tabindex="0"><code class="lang-cs">namespace Chuvor.Client;
+
+/// &lt;summary&gt;
+/// Turns the last few delay measurements to the company computer into a plain-words grade, so a user (and support) can tell at a glance
+/// whether "slow" or "hanging" comes from the connection and not from the program. A null sample means the answer never came back.
+/// What delay feels like: up to 50 ms is hard to tell from sitting at the computer, up to 100 ms is comfortable, up to 200 ms is usable
+/// but the typing and clicking lag is noticeable, above that it feels slow. Lost answers (packet loss) cause the freezes.
+/// &lt;/summary&gt;
+public static class ConnectionQuality
+{
+    public static string Grade(IReadOnlyList&lt;int?&gt; samples, out int avgMs, out int lossPercent)
+    {
+        avgMs = 0; lossPercent = 0;
+        if (samples.Count == 0) return "unknown";
+        var ok = samples.Where(x =&gt; x.HasValue).Select(x =&gt; x!.Value).ToList();
+        lossPercent = (samples.Count - ok.Count) * 100 / samples.Count;
+        if (ok.Count == 0) return "silent";
+        avgMs = (int)Math.Round(ok.Average());
+        var jitter = ok.Max() - ok.Min();
+        var g = avgMs &lt;= 50 ? 0 : avgMs &lt;= 100 ? 1 : avgMs &lt;= 200 ? 2 : 3;     // 0 excellent .. 3 poor
+        if (jitter &gt; 150) g = Math.Max(g, 2);                                    // delay that jumps around feels bad even when the average is fine
+        // only 8 measurements are kept, so one lost message is already 12%: a single hiccup is "Fair" at worst; "Poor" needs several lost
+        if (lossPercent &gt; 25) g = 3; else if (lossPercent &gt; 0) g = Math.Max(g, 2);
+        return new[] { "Excellent", "Good", "Fair", "Poor" }[g];
+    }
+
+    public static string Describe(IReadOnlyList&lt;int?&gt; samples)
+    {
+        var grade = Grade(samples, out var avg, out var loss);
+        switch (grade)
+        {
+            case "unknown": return "";
+            case "silent": return "Connection quality: cannot measure (the company computer does not answer a test message).";
+        }
+        var text = $"Connection quality: {grade}, {avg} ms delay" + (loss &gt; 0 ? $", {loss}% of test messages lost" : "") + ".";
+        if (grade == "Fair") text += " It may feel a little slow. A cable instead of Wi-Fi, or moving closer to the router, usually helps.";
+        if (grade == "Poor") text += " It will feel slow or freeze. Try a cable instead of Wi-Fi; if it stays poor tell your administrator.";
+        return text;
+    }
+}
+</code></pre></details><details class="file"><summary><code>04-chuvor-client/service-state.mjs</code> <span>11 lines</span></summary><pre tabindex="0"><code class="lang-mjs">// Chuvor Client control panel: a subscription's state is computed from dates, never stored (excerpt of server/lib/core.mjs)
+export function serviceState(t, at = now()) {
+  if (t.status === 'suspended') return { live: false, state: 'suspended', message: 'This account is suspended.' };
+  if (t.status === 'pending') return { live: false, state: 'pending', message: 'This account is waiting for its first payment.' };
+  const graceEnd = t.paid_until + t.grace_days * DAY;
+  if (at &gt; graceEnd) return { live: false, state: 'expired', message: 'The subscription has ended. Renew it to restore access.', daysLeft: 0 };
+  if (at &gt; t.paid_until) return { live: true, state: 'grace', daysLeft: Math.max(1, Math.ceil((graceEnd - at) / DAY)), message: 'The subscription has ended. Access stops soon unless it is renewed.' };
+  const daysLeft = Math.max(0, Math.ceil((t.paid_until - at) / DAY));
+  return { live: true, state: daysLeft &lt;= 7 ? 'expiring' : 'ok', daysLeft, message: daysLeft &lt;= 7 ? `The subscription ends in ${daysLeft} day${daysLeft === 1 ? '' : 's'}.` : '' };
+}
+</code></pre></details>
+  </article>
+  <article class="block" id="c8">
+    <p class="tags">Virtual Lab · JavaScript · Three.js</p>
+    <h2>Per-student values, marking and render on demand</h2>
+    <div class="two">
+      <div>
+        <h3>The problem</h3><p>Practicals must be marked fairly without copying, and a 3D scene must run on a cheap phone.</p>
+        <h3>What the code does</h3><p>A seeded random generator gives each student their own hidden values, so a friend's answer is wrong for you. Marking uses accuracy bands and returns a line for every mark with a note saying what to improve. The render loop redraws the 3D scene only when something changed (a "dirty" flag), and a Low graphics switch reduces work further.</p>
+        <h3>Good parts to notice</h3><ul><li>Pure functions for the logic, so it is testable in Node (21 checks).</li><li>Every mark line carries its own explanation.</li><li>Render on demand keeps phones cool and fast.</li></ul>
+      </div>
+      <div class="shots"><figure><a href="assets/screens/virtual-lab-titration-desktop.svg"><img src="assets/screens/virtual-lab-titration-desktop.svg" alt="Lab on desktop" loading="lazy"></a><figcaption>Lab on desktop</figcaption></figure><figure><a href="assets/screens/virtual-lab-titration-mobile.svg"><img src="assets/screens/virtual-lab-titration-mobile.svg" alt="Lab on a phone" loading="lazy"></a><figcaption>Lab on a phone</figcaption></figure></div>
+    </div>
+    <details class="file" open><summary><code>05-virtual-lab/marking-and-render-loop.js</code> <span>76 lines</span></summary><pre tabindex="0"><code class="lang-js">// Virtual Lab: seeded per-student values, marking logic and the render-on-demand loop (verbatim excerpts of lab-prototype/virtual-lab.html)
+
+/* ---------- logic: every student gets different hidden values (seeded), and every mark line explains itself ---------- */
+function rng(seed){var a=seed&gt;&gt;&gt;0;return function(){a=(a+0x6D2B79F5)&gt;&gt;&gt;0;var t=a;t=Math.imul(t^(t&gt;&gt;&gt;15),t|1);t^=t+Math.imul(t^(t&gt;&gt;&gt;7),t|61);return((t^(t&gt;&gt;&gt;14))&gt;&gt;&gt;0)/4294967296;};}
+function r2(x,d){var f=Math.pow(10,d);return Math.round(x*f)/f;}
+var OHM={Vs:6,r:0.5,Ra:0.1,RhMax:20};
+function newOhm(seed){var r=rng(seed);return{seed:seed,R:r2(4+r()*11,1)};}
+function ohmRead(s,slider){
+  var I=OHM.Vs/(s.R+(slider/100)*OHM.RhMax+OHM.r+OHM.Ra), V=I*s.R, j=rng(s.seed*131+slider);
+  return{V:r2(V*(1+(j()-0.5)*0.01),2),I:r2(I*(1+(j()-0.5)*0.01),3)};
+}
+function fitLine(pts){
+  var n=pts.length,sx=0,sy=0,sxx=0,sxy=0,syy=0,i;
+  for(i=0;i&lt;n;i++){sx+=pts[i].x;sy+=pts[i].y;sxx+=pts[i].x*pts[i].x;sxy+=pts[i].x*pts[i].y;syy+=pts[i].y*pts[i].y;}
+  var d=n*sxx-sx*sx; if(!n||Math.abs(d)&lt;1e-12) return null;
+  var m=(n*sxy-sx*sy)/d, c=(sy-m*sx)/n, rr=(n*sxy-sx*sy)/Math.sqrt(d*(n*syy-sy*sy)||1);
+  return{m:m,c:c,r2:rr*rr};
+}
+function bandMarks(err,bands){for(var i=0;i&lt;bands.length;i++){if(err&lt;=bands[i][0])return bands[i][1];}return 0;}
+function markOhm(s,rows,ans){
+  var out=[],pts=rows.map(function(r){return{x:r.I,y:r.V};}),fit=fitLine(pts),Is=rows.map(function(r){return r.I;});
+  var spread=Is.length?Math.max.apply(null,Is)/Math.max(Math.min.apply(null,Is),1e-9):0;
+  var rd=(rows.length&gt;=5?3:rows.length&gt;=3?1:0)+(spread&gt;=1.5?2:0)+(fit&amp;&amp;fit.r2&gt;0.99?1:0);
+  out.push({label:'Readings',got:rd,max:6,note:rows.length&lt;5?'Take at least 5 readings.':spread&lt;1.5?'Spread your readings more: use very different rheostat settings.':'Good range of readings.'});
+  var g=Number(ans.grad),ge=isFinite(g)&amp;&amp;ans.grad!==''?Math.abs(g-s.R)/s.R:Infinity;
+  out.push({label:'Gradient of the graph',got:bandMarks(ge,[[0.05,6],[0.10,3]]),max:6,note:ge===Infinity?'No gradient entered.':ge&lt;=0.05?'Gradient is within 5%.':ge&lt;=0.10?'Close: within 10%.':'Gradient is off by more than 10%. Use two points far apart on the line.'});
+  var R=Number(ans.res),re=isFinite(R)&amp;&amp;ans.res!==''?Math.abs(R-s.R)/s.R:Infinity;
+  out.push({label:'Resistance of X',got:bandMarks(re,[[0.05,5],[0.10,3],[0.20,1]]),max:5,note:re===Infinity?'No value entered.':re&lt;=0.05?'Within 5% of the true value.':'Not within 5% of the true value.'});
+  out.push({label:'Conclusion',got:ans.concl==='prop'?3:0,max:3,note:ans.concl==='prop'?'Correct.':'V is directly proportional to I at constant temperature.'});
+  return out;
+}
+var TIT={cB:0.1,Vp:25};
+function newTit(seed){var r=rng(seed),cA=r2(0.08+r()*0.04,3);return{seed:seed,cA:cA,Ve:r2(TIT.Vp*cA/TIT.cB,3),r:r};}
+function startReading(s){return r2(Math.floor(s.r()*13)*0.05,2);}
+function buretteReading(start,added){return r2(Math.round((start+added)*20)/20,2);}
+function isPink(s,added){return added-s.Ve&gt;0.02;}
+function markTit(s,runs,ans){
+  var out=[],acc=runs.slice(1).map(function(r){return r.titre;}),best=Infinity,i,j;
+  for(i=0;i&lt;acc.length;i++)for(j=i+1;j&lt;acc.length;j++)best=Math.min(best,Math.abs(acc[i]-acc[j]));
+  var nrun=runs.length;
+  out.push({label:'Titrations recorded',got:nrun&gt;=4?4:nrun&gt;=3?3:nrun&gt;=2?1:0,max:4,note:nrun&lt;3?'Record a rough and at least two accurate titrations.':nrun&lt;4?'Three is acceptable. A fourth titration earns full marks.':'Enough titrations.'});
+  out.push({label:'Concordant titres',got:best&lt;=0.10001?5:best&lt;=0.20001?2:0,max:5,note:best===Infinity?'You need two accurate titres to compare.':best&lt;=0.10001?'Two accurate titres agree within 0.10 cm³.':'Accurate titres should agree within 0.10 cm³. Add drop by drop near the end.'});
+  var m=Number(ans.mean),me=isFinite(m)&amp;&amp;ans.mean!==''?Math.abs(m-s.Ve):Infinity;
+  out.push({label:'Mean titre',got:bandMarks(me,[[0.10001,5],[0.20001,3],[0.40001,1]]),max:5,note:me===Infinity?'No mean titre entered.':me&lt;=0.10001?'Accurate.':'Your mean titre is not close enough. Check your end point.'});
+  var c=Number(ans.conc),ce=isFinite(c)&amp;&amp;ans.conc!==''?Math.abs(c-s.cA)/s.cA:Infinity;
+  out.push({label:'Concentration of HCl',got:bandMarks(ce,[[0.02,4],[0.05,2]]),max:4,note:ce===Infinity?'No value entered.':ce&lt;=0.02?'Within 2%.':'Use cA = (cB × titre) ÷ 25.0 for a 1:1 reaction.'});
+  var prep=runs.filter(function(r){return r.prepared;}).length;
+  out.push({label:'Procedure',got:nrun&amp;&amp;prep===nrun?2:prep?1:0,max:2,note:nrun&amp;&amp;prep===nrun?'Pipette and indicator used every time.':'Pipette the acid and add indicator before every titration.'});
+  return out;
+}
+
+/* ---------- main loop: draws only when something changed ---------- */
+var last=performance.now();
+function frame(now){
+  requestAnimationFrame(frame);
+  var dt=Math.min((now-last)/1000,0.1);last=now;
+  var testing=speedUntil&gt;0;
+  if(camTween){camTween.t=Math.min(1,camTween.t+dt/0.5);var q=camTween.t,k=q&lt;0.5?2*q*q:1-Math.pow(-2*q+2,2)/2,f=camTween.from,to=camTween.to;cam.target.set(f.tx+(to.tx-f.tx)*k,f.ty+(to.ty-f.ty)*k,f.tz+(to.tz-f.tz)*k);cam.r=f.r+(to.r-f.r)*k;cam.theta=f.theta+(to.theta-f.theta)*k;cam.phi=f.phi+(to.phi-f.phi)*k;placeCamera();if(q&gt;=1)camTween=null;}
+  if(exp==='ohm'){
+    if(oSwitch){var I=ohmRead(ohm,ohmSlider()).I;ohmParts.phase+=dt*I*0.05;
+      var n=$('low').checked?8:ohmParts.dots.length;
+      ohmParts.dots.forEach(function(d,i){d.visible=i&lt;n;if(i&lt;n)d.position.copy(pointOnLoop(ohmParts.phase+i/n));});dirty=true;}
+    else ohmParts.dots.forEach(function(d){d.visible=false;});
+  }else{
+    if(tState.hold&gt;0&amp;&amp;!tRun().final&amp;&amp;tState.start+tState.added&lt;50){
+      var amt=tState.hold*dt;dispense(amt);tp.stream.visible=tState.hold&gt;1;
+      if(tState.hold&lt;=1&amp;&amp;now-tState.lastDrop&gt;200){tState.lastDrop=now;spawnDrop();}
+    }
+    tp.drops.forEach(function(d){if(d.on){d.y-=dt*7;d.m.position.set(0,d.y,0);if(d.y&lt;1.0){d.on=false;d.m.visible=false;}dirty=true;}});
+    if(tState.flash&gt;0){tState.flash=Math.max(0,tState.flash-dt/(tState.swirl&gt;0?0.3:2.5));tUpdateView();}
+    if(tState.swirl&gt;0){tState.swirl-=dt;tUpdateView();if(tState.swirl&lt;=0)tp.flask.rotation.z=0;}
+  }
+  if(testing){cam.theta+=dt*0.8;placeCamera();speedFrames++;if(now&gt;speedUntil){speedUntil=0;finishSpeed();}}
+  if(dirty&amp;&amp;glOK){dirty=false;renderer.render(scene,camera);}
+}
+</code></pre></details>
+  </article>
+</main>
+<footer class="wrap foot"><p>Source: github.com/ikjoel/portfolio/tree/main/code</p></footer>
+</body></html>

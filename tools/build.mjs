@@ -17,7 +17,7 @@ import { C } from './screens-chuvor.mjs';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PROJECTS = {
   'studypat': { dir: '01-studypat', name: 'StudyPat', blurb: 'School management platform (Laravel, Blade, Bootstrap, PWA)', url: 'https://studypat.com' },
-  'chuvor-cbt': { dir: '02-chuvor-cbt', name: 'Chuvor CBT', blurb: 'Offline computer-based exams (ASP.NET Core, SignalR)', url: 'https://chuvorint.com' },
+  'chuvor-cbt': { dir: '02-chuvor-cbt', name: 'Chuvor CBT', blurb: 'Offline computer-based exams (ASP.NET Core)', url: 'https://chuvorint.com' },
   'cbt-licence-shop': { dir: '03-cbt-licence-shop', name: 'CBT Licence Shop', blurb: 'Online shop that sells and delivers exam-software licences (Laravel)', url: 'https://cbtlicense.chuvorint.com' },
   'chuvor-client': { dir: '04-chuvor-client', name: 'Chuvor Client', blurb: 'Secure remote access for company programs (.NET, Node, WireGuard)', url: '' },
   'virtual-lab': { dir: '05-virtual-lab', name: 'Virtual Lab', blurb: '3D science practicals in the browser (Three.js)', url: '' },
@@ -34,6 +34,8 @@ const ALL = [...BASE.map((s) => ({ ...s, cat: OLD[s.slug] })), ...A, ...B, ...C]
 const seen = new Set();
 for (const s of ALL) { if (!s.cat) throw new Error('no category: ' + s.slug); if (seen.has(s.slug)) throw new Error('duplicate slug: ' + s.slug); seen.add(s.slug); if (!PROJECTS[s.project]) throw new Error('unknown project ' + s.project); }
 
+// screens that show my proposed improvements, not features that are built (checked against the source on 2026-11-18)
+const CONCEPT = new Set(['candidate-login', 'submit-review', 'result-slip', 'results-analysis', 'assign-practical', 'class-practical-results']);
 const nice = (cat) => { const t = cat.replace(/^\d+-/, '').replace(/-/g, ' '); return t[0].toUpperCase() + t.slice(1); };
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -90,16 +92,16 @@ out('figma/tokens/studypat.tokens.json', tokenFile('studypat', PALETTES.studypat
 out('figma/tokens/chuvor.tokens.json', tokenFile('chuvor', PALETTES.chuvor, { font: 'Segoe UI' }));
 
 // 4. index (markdown + json)
-const manifest = built.map((r) => ({ slug: r.slug, title: r.title, project: r.project, category: r.cat, width: r.W, height: r.H, wireframe: `design/${PROJECTS[r.project].dir}/${r.cat}/wireframes/${r.slug}.svg`, mockup: `design/${PROJECTS[r.project].dir}/${r.cat}/mockups/${r.slug}.svg` }));
+const manifest = built.map((r) => ({ slug: r.slug, title: r.title, concept: CONCEPT.has(r.slug), project: r.project, category: r.cat, width: r.W, height: r.H, wireframe: `design/${PROJECTS[r.project].dir}/${r.cat}/wireframes/${r.slug}.svg`, mockup: `design/${PROJECTS[r.project].dir}/${r.cat}/mockups/${r.slug}.svg` }));
 out('design/screens.json', JSON.stringify(manifest, null, 2) + '\n');
-let md = `# Design library\n\n${built.length} screens across ${Object.keys(PROJECTS).length} products, each drawn as a **wireframe** and as a finished **mockup**. All data is sample data.\n\nOpen any SVG in a browser, or drag it into Figma (see [../figma/FIGMA-GUIDE.md](../figma/FIGMA-GUIDE.md)). Ready-made Figma pages, one per category, are in [../figma/pages](../figma/pages).\n\n`;
+let md = `# Design library\n\n${built.length} screens across ${Object.keys(PROJECTS).length} products, each drawn as a **wireframe** and as a finished **mockup**. All data is sample data. The screens are redrawn from the real products; those marked *(concept)* are proposed improvements that are not built.\n\nOpen any SVG in a browser, or drag it into Figma (see [../figma/FIGMA-GUIDE.md](../figma/FIGMA-GUIDE.md)). Ready-made Figma pages, one per category, are in [../figma/pages](../figma/pages).\n\n`;
 md += `| Product | Categories | Screens |\n|---|---|---|\n`;
 for (const [id, p] of Object.entries(PROJECTS)) { const rs = built.filter((r) => r.project === id); md += `| [${p.name}](#${p.name.toLowerCase().replace(/ /g, '-')}) | ${new Set(rs.map((r) => r.cat)).size} | ${rs.length} |\n`; }
 for (const [id, p] of Object.entries(PROJECTS)) {
   md += `\n## ${p.name}\n\n${p.blurb}.${p.url ? ` Live: ${p.url}` : ''}\n`;
   for (const cat of [...new Set(built.filter((r) => r.project === id).map((r) => r.cat))].sort()) {
     md += `\n### ${nice(cat)}\n\n| Screen | Wireframe | Mockup | Figma page |\n|---|---|---|---|\n`;
-    for (const r of built.filter((r) => r.project === id && r.cat === cat)) md += `| ${r.title} | [svg](${p.dir}/${cat}/wireframes/${r.slug}.svg) | [svg](${p.dir}/${cat}/mockups/${r.slug}.svg) | [wire](../figma/pages/${p.dir}/${cat}--wireframes.svg) · [mock](../figma/pages/${p.dir}/${cat}--mockups.svg) |\n`;
+    for (const r of built.filter((r) => r.project === id && r.cat === cat)) md += `| ${r.title}${CONCEPT.has(r.slug) ? ' *(concept)*' : ''} | [svg](${p.dir}/${cat}/wireframes/${r.slug}.svg) | [svg](${p.dir}/${cat}/mockups/${r.slug}.svg) | [wire](../figma/pages/${p.dir}/${cat}--wireframes.svg) · [mock](../figma/pages/${p.dir}/${cat}--mockups.svg) |\n`;
   }
 }
 out('design/README.md', md);
@@ -111,7 +113,7 @@ const cards = (id) => [...new Set(built.filter((r) => r.project === id).map((r) 
         <div class="gallery">${built.filter((r) => r.project === id && r.cat === cat).map((r) => `
           <figure class="g ${r.W < 600 ? 'tall' : ''}">
             <a href="assets/screens/${r.slug}.svg" target="_blank" rel="noopener"><img class="s-mock" src="assets/screens/${r.slug}.svg" width="${r.W}" height="${r.H}" alt="${esc(r.title)} mockup" loading="lazy"><img class="s-wire" src="assets/screens/wire-${r.slug}.svg" width="${r.W}" height="${r.H}" alt="${esc(r.title)} wireframe" loading="lazy" hidden></a>
-            <figcaption>${esc(r.title)}</figcaption>
+            <figcaption>${esc(r.title)}${CONCEPT.has(r.slug) ? ' <span class="chip">Concept</span>' : ''}</figcaption>
           </figure>`).join('')}
         </div>
       </section>`).join('');
@@ -121,10 +123,10 @@ const html = `<!doctype html>
 <meta name="description" content="${built.length} screens across five products, each as a wireframe and a finished mockup, grouped by function.">
 <meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="library.css"></head>
 <body><a class="skip" href="#lib">Skip to the library</a>
-<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="design-library.html">Design library</a><a class="btn small" href="index.html#contact">Contact</a></nav></div></header>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="index.html#contact">Contact</a></nav></div></header>
 <main id="lib" class="wrap section">
   <h1>Design library</h1>
-  <p class="lede">${built.length} screens from five products, grouped by function. Each one is drawn twice: a grey wireframe for layout and flow, then the finished mockup. Everything uses <strong>sample data</strong>.</p>
+  <p class="lede">${built.length} screens from five products, grouped by function. Each one is drawn twice: a grey wireframe for layout and flow, then the finished mockup. Everything uses <strong>sample data</strong>. Screens marked <span class="chip">Concept</span> are my proposed improvements, not built features.</p>
   <div class="toolbar" role="group" aria-label="Library controls">
     <div class="filters" role="group" aria-label="Product">
       <button type="button" class="f" data-p="all" aria-pressed="true">All products</button>${Object.entries(PROJECTS).map(([id, p]) => `<button type="button" class="f" data-p="${id}" aria-pressed="false">${p.name} <span>${built.filter((r) => r.project === id).length}</span></button>`).join('')}

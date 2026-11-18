@@ -49,5 +49,8 @@ Score entry has one box per named part, each showing its maximum; score division
 * Add automated accessibility checks (axe) to the test run.
 * Real offline support for reading results, behind a careful cache policy.
 
+## Code
+Real excerpts with an explanation: [see the code](../../code/README.md#studypat-reusable-help-components).
+
 ## All screens in this case study
 See the [StudyPat design library](../../design/README.md#studypat): 32 screens in 9 categories.

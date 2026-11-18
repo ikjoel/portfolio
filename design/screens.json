@@ -2,6 +2,7 @@
   {
     "slug": "studypat-admin-dashboard",
     "title": "StudyPat admin dashboard",
+    "concept": false,
     "project": "studypat",
     "category": "01-onboarding-and-dashboard",
     "width": 1440,
@@ -12,6 +13,7 @@
   {
     "slug": "studypat-parent-results-mobile",
     "title": "StudyPat parent result view (phone)",
+    "concept": false,
     "project": "studypat",
     "category": "05-parents-and-students",
     "width": 390,
@@ -22,6 +24,7 @@
   {
     "slug": "cbt-candidate-exam-screen",
     "title": "Chuvor CBT candidate exam screen",
+    "concept": false,
     "project": "chuvor-cbt",
     "category": "01-candidate",
     "width": 1440,
@@ -32,6 +35,7 @@
   {
     "slug": "cbt-live-exam-monitor",
     "title": "Chuvor CBT live exam monitor",
+    "concept": false,
     "project": "chuvor-cbt",
     "category": "02-exam-centre-admin",
     "width": 1440,
@@ -42,6 +46,7 @@
   {
     "slug": "licence-shop-pricing",
     "title": "CBT licence shop pricing page",
+    "concept": false,
     "project": "cbt-licence-shop",
     "category": "01-storefront",
     "width": 1440,
@@ -52,6 +57,7 @@
   {
     "slug": "licence-shop-order-confirmation",
     "title": "CBT licence shop order confirmation",
+    "concept": false,
     "project": "cbt-licence-shop",
     "category": "01-storefront",
     "width": 1440,
@@ -62,6 +68,7 @@
   {
     "slug": "chuvor-client-app-window",
     "title": "Chuvor Client Windows app",
+    "concept": false,
     "project": "chuvor-client",
     "category": "01-staff-app",
     "width": 1000,
@@ -72,6 +79,7 @@
   {
     "slug": "chuvor-client-control-panel",
     "title": "Chuvor Client control panel",
+    "concept": false,
     "project": "chuvor-client",
     "category": "02-company-admin",
     "width": 1440,
@@ -82,6 +90,7 @@
   {
     "slug": "virtual-lab-titration-desktop",
     "title": "Virtual lab titration (desktop)",
+    "concept": false,
     "project": "virtual-lab",
     "category": "01-student",
     "width": 1440,
@@ -92,6 +101,7 @@
   {
     "slug": "virtual-lab-titration-mobile",
     "title": "Virtual lab titration (phone)",
+    "concept": false,
     "project": "virtual-lab",
     "category": "01-student",
     "width": 390,
@@ -102,6 +112,7 @@
   {
     "slug": "landing-page",
     "title": "StudyPat landing page",
+    "concept": false,
     "project": "studypat",
     "category": "01-onboarding-and-dashboard",
     "width": 1440,
@@ -112,6 +123,7 @@
   {
     "slug": "register-school",
     "title": "Register a school",
+    "concept": false,
     "project": "studypat",
     "category": "01-onboarding-and-dashboard",
     "width": 1440,
@@ -122,6 +134,7 @@
   {
     "slug": "sign-in",
     "title": "Sign in",
+    "concept": false,
     "project": "studypat",
     "category": "01-onboarding-and-dashboard",
     "width": 1440,
@@ -132,6 +145,7 @@
   {
     "slug": "demo-sandbox",
     "title": "Private 30-minute demo",
+    "concept": false,
     "project": "studypat",
     "category": "01-onboarding-and-dashboard",
     "width": 1440,
@@ -142,6 +156,7 @@
   {
     "slug": "students-list",
     "title": "Students list",
+    "concept": false,
     "project": "studypat",
     "category": "02-people-and-academics",
     "width": 1440,
@@ -152,6 +167,7 @@
   {
     "slug": "add-student",
     "title": "Add a student",
+    "concept": false,
     "project": "studypat",
     "category": "02-people-and-academics",
     "width": 1440,
@@ -162,6 +178,7 @@
   {
     "slug": "classes-and-subjects",
     "title": "Classes and subjects",
+    "concept": false,
     "project": "studypat",
     "category": "02-people-and-academics",
     "width": 1440,
@@ -172,6 +189,7 @@
   {
     "slug": "staff-and-permissions",
     "title": "Staff and permissions",
+    "concept": false,
     "project": "studypat",
     "category": "02-people-and-academics",
     "width": 1440,
@@ -182,6 +200,7 @@
   {
     "slug": "score-input",
     "title": "Score input",
+    "concept": false,
     "project": "studypat",
     "category": "03-results-and-assessment",
     "width": 1440,
@@ -192,6 +211,7 @@
   {
     "slug": "score-divisions",
     "title": "Score divisions",
+    "concept": false,
     "project": "studypat",
     "category": "03-results-and-assessment",
     "width": 1440,
@@ -202,6 +222,7 @@
   {
     "slug": "grading-scale",
     "title": "Grading scale",
+    "concept": false,
     "project": "studypat",
     "category": "03-results-and-assessment",
     "width": 1440,
@@ -212,6 +233,7 @@
   {
     "slug": "report-card",
     "title": "Report card (A4, printable)",
+    "concept": false,
     "project": "studypat",
     "category": "03-results-and-assessment",
     "width": 1280,
@@ -222,6 +244,7 @@
   {
     "slug": "result-checker",
     "title": "Result checker and print all",
+    "concept": false,
     "project": "studypat",
     "category": "03-results-and-assessment",
     "width": 1440,
@@ -232,6 +255,7 @@
   {
     "slug": "fee-setup",
     "title": "Fee setup",
+    "concept": false,
     "project": "studypat",
     "category": "04-finance-and-billing",
     "width": 1440,
@@ -242,6 +266,7 @@
   {
     "slug": "record-payment",
     "title": "Record a payment",
+    "concept": false,
     "project": "studypat",
     "category": "04-finance-and-billing",
     "width": 1440,
@@ -252,6 +277,7 @@
   {
     "slug": "invoice-receipt",
     "title": "Invoice / receipt (A4)",
+    "concept": false,
     "project": "studypat",
     "category": "04-finance-and-billing",
     "width": 1240,
@@ -262,6 +288,7 @@
   {
     "slug": "accounting-overview",
     "title": "Accounting overview (directors)",
+    "concept": false,
     "project": "studypat",
     "category": "04-finance-and-billing",
     "width": 1440,
@@ -272,6 +299,7 @@
   {
     "slug": "subscription-billing",
     "title": "Subscription and billing",
+    "concept": false,
     "project": "studypat",
     "category": "04-finance-and-billing",
     "width": 1440,
@@ -282,6 +310,7 @@
   {
     "slug": "parent-fees-mobile",
     "title": "Parent: fees and pay (phone)",
+    "concept": false,
     "project": "studypat",
     "category": "05-parents-and-students",
     "width": 390,
@@ -292,6 +321,7 @@
   {
     "slug": "student-dashboard",
     "title": "Student dashboard",
+    "concept": false,
     "project": "studypat",
     "category": "05-parents-and-students",
     "width": 1440,
@@ -302,6 +332,7 @@
   {
     "slug": "e-class-hub",
     "title": "E-Class hub",
+    "concept": false,
     "project": "studypat",
     "category": "06-e-learning-and-exams",
     "width": 1440,
@@ -312,6 +343,7 @@
   {
     "slug": "question-bank-editor",
     "title": "Question bank editor (teachers)",
+    "concept": false,
     "project": "studypat",
     "category": "06-e-learning-and-exams",
     "width": 1440,
@@ -322,6 +354,7 @@
   {
     "slug": "website-builder",
     "title": "School website builder",
+    "concept": false,
     "project": "studypat",
     "category": "07-school-website-and-branding",
     "width": 1440,
@@ -332,6 +365,7 @@
   {
     "slug": "install-app-pwa",
     "title": "Install as an app (PWA)",
+    "concept": false,
     "project": "studypat",
     "category": "07-school-website-and-branding",
     "width": 390,
@@ -342,6 +376,7 @@
   {
     "slug": "custom-domain-white-label",
     "title": "Custom domain and white label",
+    "concept": false,
     "project": "studypat",
     "category": "07-school-website-and-branding",
     "width": 1440,
@@ -352,6 +387,7 @@
   {
     "slug": "control-centre",
     "title": "Control centre (platform owner)",
+    "concept": false,
     "project": "studypat",
     "category": "08-platform-admin",
     "width": 1440,
@@ -362,6 +398,7 @@
   {
     "slug": "schools-list",
     "title": "Schools list",
+    "concept": false,
     "project": "studypat",
     "category": "08-platform-admin",
     "width": 1440,
@@ -372,6 +409,7 @@
   {
     "slug": "school-health",
     "title": "School health inspection",
+    "concept": false,
     "project": "studypat",
     "category": "08-platform-admin",
     "width": 1440,
@@ -382,6 +420,7 @@
   {
     "slug": "course-registration",
     "title": "Course registration",
+    "concept": false,
     "project": "studypat",
     "category": "09-higher-education",
     "width": 1440,
@@ -392,6 +431,7 @@
   {
     "slug": "transcript-gpa",
     "title": "Transcript with GPA / CGPA",
+    "concept": false,
     "project": "studypat",
     "category": "09-higher-education",
     "width": 1260,
@@ -402,6 +442,7 @@
   {
     "slug": "candidate-login",
     "title": "Candidate sign-in and photo check",
+    "concept": true,
     "project": "chuvor-cbt",
     "category": "01-candidate",
     "width": 1440,
@@ -412,6 +453,7 @@
   {
     "slug": "exam-instructions",
     "title": "Exam instructions",
+    "concept": false,
     "project": "chuvor-cbt",
     "category": "01-candidate",
     "width": 1440,
@@ -422,6 +464,7 @@
   {
     "slug": "submit-review",
     "title": "Review before submitting",
+    "concept": true,
     "project": "chuvor-cbt",
     "category": "01-candidate",
     "width": 1440,
@@ -432,6 +475,7 @@
   {
     "slug": "result-slip",
     "title": "Result slip",
+    "concept": true,
     "project": "chuvor-cbt",
     "category": "01-candidate",
     "width": 1440,
@@ -442,6 +486,7 @@
   {
     "slug": "exam-setup",
     "title": "Exam setup",
+    "concept": false,
     "project": "chuvor-cbt",
     "category": "02-exam-centre-admin",
     "width": 1440,
@@ -452,6 +497,7 @@
   {
     "slug": "question-import",
     "title": "Question import and check",
+    "concept": false,
     "project": "chuvor-cbt",
     "category": "02-exam-centre-admin",
     "width": 1440,
@@ -462,6 +508,7 @@
   {
     "slug": "theory-marking",
     "title": "Theory marking workspace",
+    "concept": false,
     "project": "chuvor-cbt",
     "category": "03-results-and-marking",
     "width": 1440,
@@ -472,6 +519,7 @@
   {
     "slug": "results-analysis",
     "title": "Results analysis",
+    "concept": true,
     "project": "chuvor-cbt",
     "category": "03-results-and-marking",
     "width": 1440,
@@ -482,6 +530,7 @@
   {
     "slug": "licence-activation",
     "title": "Licence activation",
+    "concept": false,
     "project": "chuvor-cbt",
     "category": "04-setup",
     "width": 1440,
@@ -492,6 +541,7 @@
   {
     "slug": "requirements-page",
     "title": "Requirements: pick the server PC",
+    "concept": false,
     "project": "cbt-licence-shop",
     "category": "01-storefront",
     "width": 1440,
@@ -502,6 +552,7 @@
   {
     "slug": "checkout-form",
     "title": "Checkout",
+    "concept": false,
     "project": "cbt-licence-shop",
     "category": "01-storefront",
     "width": 1440,
@@ -512,6 +563,7 @@
   {
     "slug": "orders-admin",
     "title": "Orders (owner admin)",
+    "concept": false,
     "project": "cbt-licence-shop",
     "category": "02-owner-admin",
     "width": 1440,
@@ -522,6 +574,7 @@
   {
     "slug": "enrol-computer",
     "title": "Enrol this computer",
+    "concept": false,
     "project": "chuvor-client",
     "category": "01-staff-app",
     "width": 1000,
@@ -532,6 +585,7 @@
   {
     "slug": "settings-page",
     "title": "Company settings",
+    "concept": false,
     "project": "chuvor-client",
     "category": "02-company-admin",
     "width": 1440,
@@ -542,6 +596,7 @@
   {
     "slug": "platform-customers",
     "title": "Platform: customers (owner)",
+    "concept": false,
     "project": "chuvor-client",
     "category": "03-platform-owner",
     "width": 1440,
@@ -552,6 +607,7 @@
   {
     "slug": "platform-plans",
     "title": "Platform: plans and pricing",
+    "concept": false,
     "project": "chuvor-client",
     "category": "03-platform-owner",
     "width": 1440,
@@ -562,6 +618,7 @@
   {
     "slug": "order-page",
     "title": "Order page (new customer)",
+    "concept": false,
     "project": "chuvor-client",
     "category": "04-ordering",
     "width": 1440,
@@ -572,6 +629,7 @@
   {
     "slug": "ohms-law-desktop",
     "title": "Ohm’s law practical (desktop)",
+    "concept": false,
     "project": "virtual-lab",
     "category": "01-student",
     "width": 1440,
@@ -582,6 +640,7 @@
   {
     "slug": "practical-marking",
     "title": "Practical marking breakdown",
+    "concept": false,
     "project": "virtual-lab",
     "category": "01-student",
     "width": 1440,
@@ -592,6 +651,7 @@
   {
     "slug": "assign-practical",
     "title": "Teacher: assign a practical",
+    "concept": true,
     "project": "virtual-lab",
     "category": "02-teacher",
     "width": 1440,
@@ -602,6 +662,7 @@
   {
     "slug": "class-practical-results",
     "title": "Teacher: class practical results",
+    "concept": true,
     "project": "virtual-lab",
     "category": "02-teacher",
     "width": 1440,

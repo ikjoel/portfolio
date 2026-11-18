@@ -50,8 +50,8 @@
 <text x="708" y="160" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="500" fill="#6B6890" text-anchor="start">Attendance</text>
 <line x1="284" y1="172" x2="1284" y2="172" stroke="#E8E6F2" stroke-width="1"/>
 <rect x="284" y="206" width="360" height="230" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
-<defs><linearGradient id="ggpolj" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
-<rect x="300" y="222" width="328" height="100" rx="10" fill="url(#ggpolj)" opacity="0.8"/>
+<defs><linearGradient id="grcie8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
+<rect x="300" y="222" width="328" height="100" rx="10" fill="url(#grcie8)" opacity="0.8"/>
 <text x="464" y="276" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">lesson cover</text>
 <text x="304" y="352" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">Fractions and decimals</text>
 <text x="304" y="374" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">Mathematics · JSS 2A</text>
@@ -59,8 +59,8 @@
 <text x="344.5" y="405" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#3B6D11" text-anchor="middle">Published</text>
 <text x="624" y="408" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#185FA5" text-anchor="end">Edit ›</text>
 <rect x="664" y="206" width="360" height="230" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
-<defs><linearGradient id="gyxrzb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
-<rect x="680" y="222" width="328" height="100" rx="10" fill="url(#gyxrzb)" opacity="0.8"/>
+<defs><linearGradient id="g24kwr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
+<rect x="680" y="222" width="328" height="100" rx="10" fill="url(#g24kwr)" opacity="0.8"/>
 <text x="844" y="276" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">lesson cover</text>
 <text x="684" y="352" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">The water cycle</text>
 <text x="684" y="374" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">Basic Science · JSS 2A</text>
@@ -68,8 +68,8 @@
 <text x="724.5" y="405" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#3B6D11" text-anchor="middle">Published</text>
 <text x="1004" y="408" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#185FA5" text-anchor="end">Edit ›</text>
 <rect x="1044" y="206" width="360" height="230" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
-<defs><linearGradient id="g5vx4i" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
-<rect x="1060" y="222" width="328" height="100" rx="10" fill="url(#g5vx4i)" opacity="0.8"/>
+<defs><linearGradient id="gup1dh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
+<rect x="1060" y="222" width="328" height="100" rx="10" fill="url(#gup1dh)" opacity="0.8"/>
 <text x="1224" y="276" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">lesson cover</text>
 <text x="1064" y="352" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">Essay writing</text>
 <text x="1064" y="374" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">English · JSS 2A</text>
@@ -77,8 +77,8 @@
 <text x="1091.5" y="405" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#633806" text-anchor="middle">Draft</text>
 <text x="1384" y="408" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#185FA5" text-anchor="end">Edit ›</text>
 <rect x="284" y="456" width="360" height="230" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
-<defs><linearGradient id="gq3lmx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
-<rect x="300" y="472" width="328" height="100" rx="10" fill="url(#gq3lmx)" opacity="0.8"/>
+<defs><linearGradient id="g0w9i4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
+<rect x="300" y="472" width="328" height="100" rx="10" fill="url(#g0w9i4)" opacity="0.8"/>
 <text x="464" y="526" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">lesson cover</text>
 <text x="304" y="602" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">Photosynthesis</text>
 <text x="304" y="624" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">Biology · SS 1A</text>
@@ -86,8 +86,8 @@
 <text x="344.5" y="655" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#3B6D11" text-anchor="middle">Published</text>
 <text x="624" y="658" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#185FA5" text-anchor="end">Edit ›</text>
 <rect x="664" y="456" width="360" height="230" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
-<defs><linearGradient id="gwpesc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
-<rect x="680" y="472" width="328" height="100" rx="10" fill="url(#gwpesc)" opacity="0.8"/>
+<defs><linearGradient id="gmfv7j" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
+<rect x="680" y="472" width="328" height="100" rx="10" fill="url(#gmfv7j)" opacity="0.8"/>
 <text x="844" y="526" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">lesson cover</text>
 <text x="684" y="602" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">Intro to spreadsheets</text>
 <text x="684" y="624" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">Computer · JSS 3A</text>
@@ -95,8 +95,8 @@
 <text x="711.5" y="655" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="11.5" font-weight="600" fill="#633806" text-anchor="middle">Draft</text>
 <text x="1004" y="658" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#185FA5" text-anchor="end">Edit ›</text>
 <rect x="1044" y="456" width="360" height="230" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
-<defs><linearGradient id="g8zkpv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
-<rect x="1060" y="472" width="328" height="100" rx="10" fill="url(#g8zkpv)" opacity="0.8"/>
+<defs><linearGradient id="g8rg2t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
+<rect x="1060" y="472" width="328" height="100" rx="10" fill="url(#g8rg2t)" opacity="0.8"/>
 <text x="1224" y="526" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">lesson cover</text>
 <text x="1064" y="602" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#1B1740" text-anchor="start">Map reading</text>
 <text x="1064" y="624" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12.5" font-weight="400" fill="#6B6890" text-anchor="start">Social Studies · JSS 2A</text>
