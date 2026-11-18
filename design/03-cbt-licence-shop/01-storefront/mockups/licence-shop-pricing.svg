@@ -19,8 +19,8 @@
 <text x="215" y="399.6" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">See prices</text>
 <rect x="326" y="366" width="210" height="56" rx="10" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   />
 <text x="431" y="399.6" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="600" fill="#0f2f57" text-anchor="middle">How it works</text>
-<defs><linearGradient id="gdy8r0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f2f57"/><stop offset="1" stop-color="#2f6fb5"/></linearGradient></defs>
-<rect x="820" y="112" width="520" height="340" rx="12" fill="url(#gdy8r0)" opacity="0.92"/>
+<defs><linearGradient id="gqu2un" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f2f57"/><stop offset="1" stop-color="#2f6fb5"/></linearGradient></defs>
+<rect x="820" y="112" width="520" height="340" rx="12" fill="url(#gqu2un)" opacity="0.92"/>
 <text x="1080" y="286" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">exam hall photo</text>
 <rect x="150" y="500" width="360" height="350" rx="18" fill="#FFFFFF" stroke="#DCE4EF" stroke-width="1"   filter="url(#sh)"/>
 <text x="178" y="548" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="22" font-weight="800" fill="#0f2f57" text-anchor="start">Starter</text>

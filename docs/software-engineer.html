@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software Engineer · Egbujor Ikechukwu Joel</title>
+<meta name="description" content="From signed, computer-tied licences to a state machine for peer-to-peer connections and an adaptive rate limiter, I build systems with clear rules and tests that pin them down.">
+<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="roles.css"></head>
+<body><a class="skip" href="#work">Skip to my work</a>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="#work">Work</a><a href="#skills">Skills</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="#contact">Contact</a></nav></div></header>
+<nav class="roles" aria-label="Portfolio views"><span>View this portfolio as:</span><a href="index.html">Front-end</a><a href="full-stack.html">Full-stack</a><a href="software-engineer.html" aria-current="page">Software engineer</a><a href="it-systems.html">IT and systems</a></nav>
+<main>
+  <section class="hero wrap">
+    <p class="eyebrow">Software Engineer</p>
+    <h1>I design software that stays correct under load, on bad networks and when people make mistakes.</h1>
+    <p class="lede">From signed, computer-tied licences to a state machine for peer-to-peer connections and an adaptive rate limiter, I build systems with clear rules and tests that pin them down.</p>
+    <div class="cta"><a class="btn" href="#work">See the work</a> <a class="btn ghost" href="code.html">Read the code</a> <a class="btn ghost" href="https://github.com/ikjoel">GitHub</a></div>
+    <ul class="proof strong" aria-label="What I bring"><li><strong>Rules first, then code</strong><span>Subscription state computed from dates, a ledger that must always add up, a connection that may only switch paths when it is safe: each is written as a rule and tested.</span></li><li><strong>Security as engineering</strong><span>Signed licence files with tamper and clock checks, per-account and per-IP sign-in limits, signed URLs, tenant isolation tests, an adaptive rate limiter with a behaviour score.</span></li><li><strong>Measured performance</strong><span>Scripted load tests for hundreds of exam candidates, measured CPU and memory per page, render-on-demand 3D, and print-first pages that cost 40 times less than server PDFs.</span></li><li><strong>Tested</strong><span>143 checks on one platform, 24 on a connection state machine, 21 on marking logic, 30 on a shop, and 40+ test files on the school platform.</span></li></ul>
+  </section>
+
+  <section class="wrap section sum"><h2>About this role</h2><p>Software engineer who designs and builds complete systems: a multi-tenant school platform, an offline exam system, a licensing system with signed licence files, and a secure remote-access platform with its own control plane. I work from clear rules (what must always be true), write tests that pin those rules down, and measure performance instead of guessing.</p><p>I am comfortable across PHP and Laravel, C# and ASP.NET Core, Node.js and JavaScript, with SQL databases, and I move between desktop, web and server code. I have found and fixed real security flaws in my own systems, written the load tests, and kept the documentation that lets someone else take over.</p><p>I am adding React and TypeScript, and deeper algorithms and system-design practice, to work well inside a larger engineering team.</p></section>
+
+  <section id="work" class="wrap section">
+    <h2>Selected work</h2>
+    <p class="sub">The same five products appear in every view of this portfolio; this page shows the parts that matter for this role.</p>
+    
+    <article class="rproj">
+      <p class="tags">C# (.NET, Windows Forms) · Node.js · SQLite · WireGuard · Inno Setup</p>
+      <h3>Chuvor Client <span class="kind">· Secure remote-access platform</span></h3>
+      <p class="when">2026</p>
+      <ul class="points"><li>Designed a multi-company private network: each company gets its own address block, user computers can reach only their company’s computer, and the hub’s firewall rules are generated per person from the control panel.</li><li>Wrote the control plane: customers, plans, limits, enrolment codes, computer approval, and subscription state computed from dates so it is never stored or stale; sign-in with hashed passwords, lockout, CSRF tokens and owner versus customer roles.</li><li>Built a state machine that can move two computers onto a direct connection and back, with make-before-break switching, a 15-second silence fallback and back-off; 24 checks run it against a simulated network.</li><li>Wrote a fast raw print bridge that accepts only the company computer’s address and streams to the Windows spooler, with a built-in speed test.</li><li>143 automated checks, including cross-company isolation; one caught a real bug (a refused request still executed), which I fixed.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/04-chuvor-client">Case study</a><a href="code.html#c7">Code</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">ASP.NET Core 8 · SQL Server · C# · JavaScript</p>
+      <h3>Chuvor CBT and licensing <span class="kind">· Offline exams and computer-tied licences</span></h3>
+      <p class="when">2026 · <a href="https://chuvorint.com">chuvorint.com ↗</a></p>
+      <ul class="points"><li>Designed a licensing system: computer-tied licence files signed with RSA, tamper and clock-rollback checks, and an offline activation flow.</li><li>Built a REST API with API-key authentication so the exam software can pull rosters and questions and send results back.</li><li>Built an exam client with a versioned save queue and exponential back-off so no answer is lost on a poor network, and verified capacity with a scripted load test for hundreds of candidates.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/02-chuvor-cbt">Case study</a><a href="code.html#c5">Code</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">Laravel 13 · PHP 8 · MySQL · JavaScript</p>
+      <h3>StudyPat <span class="kind">· Multi-tenant school platform</span></h3>
+      <p class="when">2025 to present · <a href="https://studypat.com">studypat.com ↗</a></p>
+      <ul class="points"><li>Built an adaptive request guard: a cost-weighted budget per IP and per account, a behaviour score that decays over five minutes, a ban ladder (15 minutes to 24 hours), shared-school-network handling, shadow mode before enforcement, and a rule that it fails open.</li><li>Modelled fees, results and billing with rules that tests pin down (fee carry-forward, paid equals recorded, term activation), plus nightly audits and repair commands with undo.</li><li>Measured instead of guessing: a report-card PDF cost about 1.2 s of CPU and 46 MB, the HTML page about 0.03 s and 14 MB, so parents print from their own browser.</li><li>Found and fixed a password-reset vulnerability and an open photo endpoint; wrote a written security audit of my own system.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/01-studypat">Case study</a><a href="code.html#c1">Code</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">JavaScript · Three.js · Node checks</p>
+      <h3>Virtual Lab <span class="kind">· 3D practicals with fair marking</span></h3>
+      <p class="when">2026</p>
+      <ul class="points"><li>Pure, seeded functions give each student different hidden values; marking returns a line per mark with an explanation; 21 checks cover the logic.</li><li>Render-on-demand loop keeps the scene at 60 frames per second on an old laptop GPU.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/05-virtual-lab">Case study</a><a href="code.html#c8">Code</a></p>
+    </article>
+  </section>
+
+  <section class="band"><div class="wrap section">
+    <h2>Engineering practice</h2><p class="sub">How I keep software correct as it grows.</p>
+    <ul class="practice"><li>Write down what must always be true, then test exactly that.</li><li>Compute state from facts (dates, ledgers) instead of storing it.</li><li>Prefer small, pure functions for logic, so it can be tested without a browser or a server.</li><li>Measure before and after every performance claim.</li><li>Fail safe: a guard fails open, a repair has an undo, a licence check refuses clearly.</li><li>Keep a written decision for every trap I find, so no one falls in twice.</li></ul>
+  </div></section>
+
+  <section id="skills" class="wrap section">
+    <h2>Skills</h2>
+    <div class="grid3"><div><h3>Languages</h3><p>C# · PHP 8 · JavaScript (ES6+) · SQL · Python (test and load tools) · PowerShell and Bash</p></div><div><h3>Frameworks</h3><p>ASP.NET Core 8 · Laravel 13 · Node.js · Windows Forms · Three.js</p></div><div><h3>Design and architecture</h3><p>Multi-tenant design · state machines · ledgers and reconciliation · licensing and signatures · API design · separation of control plane and data plane</p></div><div><h3>Testing and quality</h3><p>PHPUnit · scripted end-to-end checks · load-test harnesses · self-tests for logic · test-by-side-effect for security rules</p></div><div><h3>Security</h3><p>RSA-signed licences · password hashing (scrypt, bcrypt) · CSRF · lockouts and rate limits · signed URLs · tenant isolation · WireGuard networks</p></div><div><h3>Data</h3><p>MySQL · SQL Server · SQLite · migrations · backups and restore tests</p></div><div><h3>Tools</h3><p>Git · GitHub · Linux · Inno Setup · browser developer tools · Figma</p></div><div><h3>Currently adding</h3><p>React, TypeScript, and structured algorithm and system-design practice</p></div></div>
+  </section>
+
+  <section class="band"><div class="wrap section about">
+    <div><h2>Education and training</h2>
+      <ul class="edu"><li><b>BSc Mathematics and Computer Science</b>, National Open University of Nigeria, 2021</li><li><b>Data Analysis</b>, ALX</li><li><b>Prompt Engineering</b>, ALX</li><li><b>Back-End Developer certificate</b>, ILID Institute</li></ul></div>
+    <ul class="facts"><li><b>Based in</b> Lagos, Nigeria</li><li><b>Open to</b> software engineer roles, remote or on-site</li><li><b>Also see</b> <a href="index.html">the front-end view</a></li></ul>
+  </div></section>
+
+  <section id="contact" class="wrap section contact"><h2>Let’s talk</h2><p class="sub">I reply within a day.</p><p><a class="btn" href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a> <a class="btn ghost" href="https://github.com/ikjoel">github.com/ikjoel</a></p></section>
+</main>
+<footer class="wrap foot"><p>© <span id="y">2026</span> Egbujor Ikechukwu Joel. Screens use sample data. Server details are described at a high level on purpose.</p></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>

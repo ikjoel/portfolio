@@ -177,8 +177,8 @@
 <text x="225" y="397.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#1B1740" text-anchor="middle">Try the demo (30 minutes, free)</text>
 <rect x="366" y="364" width="220" height="56" rx="10" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   />
 <text x="476" y="397.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#1B1740" text-anchor="middle">Register your school</text>
-<defs><linearGradient id="gpmkii" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
-<rect x="780" y="110" width="580" height="340" rx="12" fill="url(#gpmkii)" opacity="0.92"/>
+<defs><linearGradient id="gbx4qe" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#185FA5"/></linearGradient></defs>
+<rect x="780" y="110" width="580" height="340" rx="12" fill="url(#gbx4qe)" opacity="0.92"/>
 <text x="1070" y="284" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">product screenshot</text>
 <rect x="100" y="500" width="300" height="150" rx="16" fill="#FFFFFF" stroke="#E8E6F2" stroke-width="1"   filter="url(#sh)"/>
 <rect x="122" y="524" width="40" height="40" rx="12" fill="#EEEDFB"    />

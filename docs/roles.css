@@ -1,0 +1,16 @@
+/* Role pages and the role switcher. Builds on style.css. */
+.roles{background:var(--surface);border-bottom:1px solid var(--line);display:flex;gap:6px 8px;flex-wrap:wrap;align-items:center;justify-content:center;padding:8px 16px;font-size:.88rem}
+.roles span{color:var(--muted);margin-right:6px}
+.roles a{text-decoration:none;font-weight:700;color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:5px 12px;border-radius:99px}
+.roles a[aria-current="page"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.proof.strong{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.proof.strong li strong{font-size:1.05rem;color:var(--ink);margin-bottom:6px}
+.proof.strong li span{display:block;line-height:1.5}
+.sum p{max-width:78ch;font-size:1.05rem}
+.rproj{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(18px,3vw,30px);margin-top:22px;box-shadow:var(--shadow)}
+.rproj h3{margin-bottom:2px}.rproj .kind{font-weight:500;color:var(--muted);font-size:1rem}
+.rproj .when{color:var(--muted);font-size:.92rem}
+.actions a{margin-right:18px;font-weight:700}
+.practice{columns:2 320px;column-gap:var(--gap);padding-left:1.1em}
+.practice li{margin-bottom:.6em;break-inside:avoid}
+.edu{padding-left:1.1em}.edu li{margin-bottom:.4em}

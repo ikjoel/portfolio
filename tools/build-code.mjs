@@ -1,6 +1,7 @@
 // node tools/build-code.mjs  -> writes docs/code.html and code/README.md from the real code files in code/
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { SWITCHER } from './switcher.mjs';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -111,9 +112,10 @@ const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Code · Egbujor Ikechukwu Joel</title>
 <meta name="description" content="Real front-end code from five products: reusable components, an autosave queue for exams, a service worker policy, and more. Each sample explains the problem it solves.">
-<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="code.css"></head>
+<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="roles.css"><link rel="stylesheet" href="code.css"></head>
 <body><a class="skip" href="#code">Skip to the code</a>
 <header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="index.html#contact">Contact</a></nav></div></header>
+${SWITCHER('')}
 <main id="code" class="wrap section">
   <h1>The code behind the screens</h1>
   <p class="lede">Real code from the products, copied exactly as it runs. Each sample says what problem it solves and what to notice. No keys, passwords or customer data. The full products are private.</p>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Full-Stack Engineer · Egbujor Ikechukwu Joel</title>
+<meta name="description" content="I design the data, write the back end and the interface, connect payments, email and messaging, deploy to Linux and look after it. Three products went from idea to real users this way.">
+<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="roles.css"></head>
+<body><a class="skip" href="#work">Skip to my work</a>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="#work">Work</a><a href="#skills">Skills</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="#contact">Contact</a></nav></div></header>
+<nav class="roles" aria-label="Portfolio views"><span>View this portfolio as:</span><a href="index.html">Front-end</a><a href="full-stack.html" aria-current="page">Full-stack</a><a href="software-engineer.html">Software engineer</a><a href="it-systems.html">IT and systems</a></nav>
+<main>
+  <section class="hero wrap">
+    <p class="eyebrow">Full-Stack Engineer</p>
+    <h1>I take a feature from the database to the screen, then deploy it and keep it running.</h1>
+    <p class="lede">I design the data, write the back end and the interface, connect payments, email and messaging, deploy to Linux and look after it. Three products went from idea to real users this way.</p>
+    <div class="cta"><a class="btn" href="#work">See the work</a> <a class="btn ghost" href="code.html">Read the code</a> <a class="btn ghost" href="https://github.com/ikjoel">GitHub</a></div>
+    <ul class="proof strong" aria-label="What I bring"><li><strong>Data you can trust</strong><span>Fee ledgers with carry-forward, billing by term or session, nightly audits that check every school’s books balance, and repair commands with undo.</span></li><li><strong>Payments that never get lost</strong><span>Flutterwave checkout, server-side verification, idempotent activation, webhooks, and a scheduled job that recovers a payment if a webhook fails.</span></li><li><strong>Multi-tenant by design</strong><span>Every school has its own address or domain, with automatic DNS checks and certificates, role-based access, and isolation covered by tests.</span></li><li><strong>Shipped and operated</strong><span>Deployment on Linux, backups, cron jobs, email and WhatsApp integrations, activity logs and a support desk that watches production.</span></li></ul>
+  </section>
+
+  <section class="wrap section sum"><h2>About this role</h2><p>Full-stack engineer who owns a feature end to end: the data model, the server code, the API, the interface, the payment or email integration, the deployment and the support that follows. I have taken three products from idea to real users on my own, including a multi-school platform with 20+ registered schools, an offline exam system and an online shop that sells and delivers software licences.</p><p>I care about the parts that decide whether software can be trusted: money that always adds up, a payment that is never lost, one customer never seeing another’s data, and pages that work on an inexpensive phone. I write automated tests for the risky parts, and I write down how things work so the next developer can change them.</p><p>My strongest stack is Laravel and PHP with MySQL, plus ASP.NET Core and Node.js; on the front end, semantic HTML, CSS and JavaScript with reusable components. I am adding React and TypeScript.</p></section>
+
+  <section id="work" class="wrap section">
+    <h2>Selected work</h2>
+    <p class="sub">The same five products appear in every view of this portfolio; this page shows the parts that matter for this role.</p>
+    
+    <article class="rproj">
+      <p class="tags">Laravel 13 · PHP 8 · MySQL · Blade · JavaScript · Flutterwave · Mailgun · Twilio WhatsApp</p>
+      <h3>StudyPat <span class="kind">· Multi-tenant school management platform</span></h3>
+      <p class="when">2025 to present · <a href="https://studypat.com">studypat.com ↗</a></p>
+      <ul class="points"><li>Designed the data model for results, continuous assessment, fees, billing, parents and staff for many schools in one database, with every school-facing route protected by a tenant check and covered by tests.</li><li>Modelled money carefully: fee ledgers with term-to-term carry-forward, a “paid equals recorded” rule, billing by term or by whole session (5% off), partner commissions, and nightly audits that confirm every school’s books balance.</li><li>Integrated Flutterwave end to end: hosted checkout, server-side verification, webhook handling and a scheduled reconciliation job so a payment is never lost; plus Mailgun email, Twilio WhatsApp, Google sign-in and PDF invoices and report cards.</li><li>Built custom-domain onboarding: a school points its domain, a scheduled job checks DNS, obtains a certificate and switches the domain on, with white-label branding behind a per-school switch.</li><li>Automated support: onboarding emails, a setup checker that finds common mistakes and repairs the safe ones with undo, bulk upload tools with validation, and a support desk with three severity tiers and written playbooks.</li><li>Built AI-assisted comment suggestions for report cards (teacher accepts, edits or removes) with usage limits that scale by plan.</li><li>Found and fixed a password-reset vulnerability and an open photo endpoint (signed URLs); added role-based permissions, security headers and an activity log.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/01-studypat">Case study</a><a href="code.html#c0">Code</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">Laravel · Blade · Flutterwave · Mailgun · scheduled jobs</p>
+      <h3>CBT licence shop <span class="kind">· E-commerce for software licences</span></h3>
+      <p class="when">2026 · <a href="https://cbtlicense.chuvorint.com">cbtlicense.chuvorint.com ↗</a></p>
+      <ul class="points"><li>Built the storefront, checkout, owner admin, agent portal for resellers and an installer download page.</li><li>Verified every payment on the server and re-checked nightly, so a lost webhook never loses an order; delivered the signed licence by email and download automatically.</li><li>Covered the shop with 30 automated tests.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/03-cbt-licence-shop">Case study</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">ASP.NET Core 8 · Razor Pages · SQL Server · JavaScript</p>
+      <h3>Chuvor CBT <span class="kind">· Offline computer-based exams</span></h3>
+      <p class="when">2026 · <a href="https://chuvorint.com">chuvorint.com ↗</a></p>
+      <ul class="points"><li>Built the exam screen with a save queue: every answer is versioned and re-sent with back-off until the server confirms, so no answer is lost on a poor network.</li><li>Built the live monitor, question import, theory marking, reports, a REST API with API-key authentication so the exam software can pull rosters and questions and send results back, and signed computer-tied licences.</li><li>Designed for hundreds of candidates and checked with a scripted load test.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/02-chuvor-cbt">Case study</a><a href="code.html#c5">Code</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">Node.js (no dependencies) · SQLite · .NET · WireGuard</p>
+      <h3>Chuvor Client <span class="kind">· Multi-company secure remote access</span></h3>
+      <p class="when">2026</p>
+      <ul class="points"><li>Built the multi-company control panel and API: customers, plans, computer limits, expiry and grace days computed from dates, enrolment codes, approve and revoke, and Paystack payments with signature checks.</li><li>Covered by 143 automated checks, including that one company can never see another’s data; one test exposed a real bug (a refused request still ran) which I fixed.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/04-chuvor-client">Case study</a><a href="code.html#c7">Code</a></p>
+    </article>
+  </section>
+
+  <section class="band"><div class="wrap section">
+    <h2>How I deliver</h2><p class="sub">A full-stack feature is only done when it is safe, observable and understood.</p>
+    <ul class="practice"><li>Model the data first, including the money and the edge cases.</li><li>Write a test for the risky part before trusting it.</li><li>Verify every payment on the server, and re-check it on a schedule.</li><li>Make a refused action refuse, and test the side effects, not only the message.</li><li>Log what matters so support can see a problem before the customer reports it.</li><li>Document the rule behind every non-obvious decision.</li></ul>
+  </div></section>
+
+  <section id="skills" class="wrap section">
+    <h2>Skills</h2>
+    <div class="grid3"><div><h3>Back end</h3><p>PHP 8 and Laravel 13 · ASP.NET Core 8 (Razor Pages, Entity Framework) · Node.js · REST APIs and API-key authentication · queues, scheduled jobs and webhooks · PDF generation</p></div><div><h3>Data</h3><p>MySQL, SQL Server, SQLite · data modelling and migrations · ledgers and reconciliation · reporting · nightly audits and repair commands</p></div><div><h3>Front end</h3><p>Semantic HTML5 · CSS3 (Flexbox, Grid, variables, print and dark styles) · JavaScript ES6+ (fetch, async) · Blade components · Bootstrap 5 · PWAs and service workers · Chart.js · Three.js</p></div><div><h3>Integrations</h3><p>Flutterwave and Paystack (checkout, verification, webhooks) · Mailgun · Twilio WhatsApp · Google sign-in · Anthropic API · Search Console</p></div><div><h3>Quality and security</h3><p>PHPUnit · scripted load tests · role-based access · signed URLs · tenant isolation tests · security headers · activity logging</p></div><div><h3>Delivery</h3><p>Git and GitHub · Linux deployment (Apache, PHP-FPM, cron, TLS, backups) · Inno Setup installers · documentation and playbooks</p></div><div><h3>Currently adding</h3><p>React and TypeScript</p></div></div>
+  </section>
+
+  <section class="band"><div class="wrap section about">
+    <div><h2>Education and training</h2>
+      <ul class="edu"><li><b>BSc Mathematics and Computer Science</b>, National Open University of Nigeria, 2021</li><li><b>Data Analysis</b>, ALX</li><li><b>Prompt Engineering</b>, ALX</li><li><b>Back-End Developer certificate</b>, ILID Institute</li></ul></div>
+    <ul class="facts"><li><b>Based in</b> Lagos, Nigeria</li><li><b>Open to</b> full-stack engineer roles, remote or on-site</li><li><b>Also see</b> <a href="index.html">the front-end view</a></li></ul>
+  </div></section>
+
+  <section id="contact" class="wrap section contact"><h2>Let’s talk</h2><p class="sub">I reply within a day.</p><p><a class="btn" href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a> <a class="btn ghost" href="https://github.com/ikjoel">github.com/ikjoel</a></p></section>
+</main>
+<footer class="wrap foot"><p>© <span id="y">2026</span> Egbujor Ikechukwu Joel. Screens use sample data. Server details are described at a high level on purpose.</p></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>

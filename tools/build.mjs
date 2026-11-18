@@ -13,6 +13,7 @@ import { SCREENS as BASE } from './screens.mjs';
 import { A } from './screens-studypat-a.mjs';
 import { B } from './screens-studypat-b.mjs';
 import { C } from './screens-chuvor.mjs';
+import { SWITCHER } from './switcher.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PROJECTS = {
@@ -121,9 +122,10 @@ const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Design library · Egbujor Ikechukwu Joel</title>
 <meta name="description" content="${built.length} screens across five products, each as a wireframe and a finished mockup, grouped by function.">
-<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="library.css"></head>
+<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="roles.css"><link rel="stylesheet" href="library.css"></head>
 <body><a class="skip" href="#lib">Skip to the library</a>
 <header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="index.html#contact">Contact</a></nav></div></header>
+${SWITCHER('')}
 <main id="lib" class="wrap section">
   <h1>Design library</h1>
   <p class="lede">${built.length} screens from five products, grouped by function. Each one is drawn twice: a grey wireframe for layout and flow, then the finished mockup. Everything uses <strong>sample data</strong>. Screens marked <span class="chip">Concept</span> are my proposed improvements, not built features.</p>

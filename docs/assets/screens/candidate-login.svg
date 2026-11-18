@@ -17,8 +17,8 @@
 <text x="720" y="477.25" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Find me</text>
 <line x1="456" y1="530" x2="984" y2="530" stroke="#DCE4EF" stroke-width="1"/>
 <text x="720" y="570" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#0f2f57" text-anchor="middle">Is this you?</text>
-<defs><linearGradient id="gafa5t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f2f57"/><stop offset="1" stop-color="#2f6fb5"/></linearGradient></defs>
-<rect x="630" y="590" width="120" height="140" rx="10" fill="url(#gafa5t)" opacity="0.92"/>
+<defs><linearGradient id="gjh2d3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f2f57"/><stop offset="1" stop-color="#2f6fb5"/></linearGradient></defs>
+<rect x="630" y="590" width="120" height="140" rx="10" fill="url(#gjh2d3)" opacity="0.92"/>
 <text x="690" y="664" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="12" font-weight="400" fill="#FFFFFF" text-anchor="middle" opacity="0.8">photo</text>
 <text x="800" y="640" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#0f2f57" text-anchor="start">Chinedu Obi</text>
 <text x="800" y="664" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" fill="#5B7090" text-anchor="start">JSS 3 · Seat B-01</text>

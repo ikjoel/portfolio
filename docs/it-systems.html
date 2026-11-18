@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IT Systems and Support Engineer · Egbujor Ikechukwu Joel</title>
+<meta name="description" content="I run the production servers behind my own products, design the networks that exam halls and offices depend on, and write the runbooks and tools that make support fast.">
+<meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="roles.css"></head>
+<body><a class="skip" href="#work">Skip to my work</a>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="#work">Work</a><a href="#skills">Skills</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="#contact">Contact</a></nav></div></header>
+<nav class="roles" aria-label="Portfolio views"><span>View this portfolio as:</span><a href="index.html">Front-end</a><a href="full-stack.html">Full-stack</a><a href="software-engineer.html">Software engineer</a><a href="it-systems.html" aria-current="page">IT and systems</a></nav>
+<main>
+  <section class="hero wrap">
+    <p class="eyebrow">IT Systems and Support Engineer</p>
+    <h1>I keep real systems running: servers, networks, backups, security, and the people who use them.</h1>
+    <p class="lede">I run the production servers behind my own products, design the networks that exam halls and offices depend on, and write the runbooks and tools that make support fast.</p>
+    <div class="cta"><a class="btn" href="#work">See the work</a> <a class="btn ghost" href="code.html">Read the code</a> <a class="btn ghost" href="https://github.com/ikjoel">GitHub</a></div>
+    <ul class="proof strong" aria-label="What I bring"><li><strong>Servers</strong><span>Production Linux (AlmaLinux): Apache, PHP-FPM, MariaDB on localhost only, firewall, intrusion banning, key-only SSH, security updates, and TLS including automatic certificates for customers’ own domains.</span></li><li><strong>Backups that restore</strong><span>Nightly encrypted database backups and weekly file backups with fixed retention, a copy of the key kept separately, and a restore tested into a scratch database before I trusted it.</span></li><li><strong>Networks and remote access</strong><span>LAN design for exam halls, and a private WireGuard network where each company is separated and computers can reach only what they should.</span></li><li><strong>Security and response</strong><span>A written audit of my own systems, an adaptive rate limiter with a flood alert, and a response runbook with levels, commands and message templates.</span></li></ul>
+  </section>
+
+  <section class="wrap section sum"><h2>About this role</h2><p>IT and systems engineer with hands-on experience running production Linux servers, setting up networks and secure remote access, protecting systems, backing them up and supporting the people who depend on them. I operate the infrastructure behind my own products, so I have lived with outages, attacks, certificates, updates and 2 a.m. problems, and I have written down what I learned.</p><p>I am a developer as well as an administrator, so I automate: backup and update routines, health checks, alerts, diagnostics for support, and installers for non-technical users. I explain technical problems in plain language and write short, clear guides for the person at the other end.</p><p>I hold a BSc in Mathematics and Computer Science and ALX certificates in Data Analysis and Prompt Engineering; I am working towards vendor certifications (for example CompTIA Network+ and Security+, or Microsoft Azure fundamentals).</p></section>
+
+  <section id="work" class="wrap section">
+    <h2>Selected work</h2>
+    <p class="sub">The same five products appear in every view of this portfolio; this page shows the parts that matter for this role.</p>
+    
+    <article class="rproj">
+      <p class="tags">AlmaLinux · Apache · PHP-FPM · MariaDB · Redis · firewalld · fail2ban · SELinux · cron</p>
+      <h3>Production hosting for StudyPat <span class="kind">· Server administration and security</span></h3>
+      <p class="when">2025 to present · <a href="https://studypat.com">studypat.com ↗</a></p>
+      <ul class="points"><li>Administer the production server: Apache with security headers and hidden version, PHP-FPM sized from measurements, MariaDB reachable only from the server itself, firewall with only the needed services, intrusion banning with a growing ban time, SSH with keys only, and regular security updates.</li><li>Designed and tested backups: nightly encrypted database dumps and weekly file archives with retention, a separate copy of the key, and a restore into a scratch database that matched row counts.</li><li>Measured the server (response time, CPU per visit, memory per worker), tuned PHP-FPM limits, estimated capacity per hardware size and wrote an upgrade plan for when more schools arrive.</li><li>Added defence in depth: an adaptive rate-limiting guard running in shadow mode before enforcement, jails that block repeat offenders at the firewall, flood limits in Apache, and an early-warning email alert.</li><li>Wrote a DDoS response runbook (four levels, commands, message templates) and a written security audit of my own system with a prioritised list of findings.</li><li>Built custom-domain onboarding: DNS checks, automatic certificates (Let’s Encrypt) and per-domain web server configuration, run by a scheduled job.</li></ul>
+      
+    </article>
+    <article class="rproj">
+      <p class="tags">WireGuard · Windows (RDP, firewall, spooler) · Linux hub · Node.js control panel</p>
+      <h3>Chuvor Client <span class="kind">· Secure remote access for companies</span></h3>
+      <p class="when">2026</p>
+      <ul class="points"><li>Designed a hub-and-spoke WireGuard network: every computer connects out to the hub, so customers need no public address and any router works; each company has its own address block and firewall rules.</li><li>Restricted Remote Desktop to the private network only, forced users into a single program, and kept sessions alive through internet cuts.</li><li>Built a fast print path from the company computer to each person’s own printer, with a speed test and a diagnostic tool that tells support what is slow and why.</li><li>Wrote setup scripts for the company computer (remote desktop, graphics, printing, power) and written guides for Windows Pro versus Windows Server with Remote Desktop licences.</li><li>Added a connection-quality grade (delay, jitter, loss) in plain words so support can tell whether the network or the program is the cause.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/04-chuvor-client">Case study</a><a href="code.html#c7">Code</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">Gigabit LAN · Windows 10/11 · SQL Server · Inno Setup</p>
+      <h3>Exam hall setup (Chuvor CBT) <span class="kind">· Networks and server sizing for exam centres</span></h3>
+      <p class="when">2026 · <a href="https://chuvorint.com">chuvorint.com ↗</a></p>
+      <ul class="points"><li>Set up local networks for exam halls: wired Gigabit switches in a star layout, a wired server, and a UPS, so hundreds of candidates can write offline.</li><li>Wrote hardware sizing guidance by number of candidates (from a 4 GB entry-level PC up to a 32 GB server for 500) and published it as the requirements page.</li><li>Packaged the software for non-technical staff with a Windows installer and a licence activation that works without internet.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/02-chuvor-cbt">Case study</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">Laravel · cron · email alerts · playbooks</p>
+      <h3>Support and monitoring systems <span class="kind">· Keeping customers working</span></h3>
+      <p class="when">2026</p>
+      <ul class="points"><li>Built a support desk that watches production: failed-sign-in bursts, repeated server errors, custom domains that fail, payments that were taken but not applied, and stale backups; three severity tiers, a daily digest, and 14 written playbooks.</li><li>Added an activity log and a school-health page that show who did what and which customers have gone quiet.</li><li>Built a self-diagnosing setup checker that repairs only what is provably safe and keeps an undo for 30 days.</li></ul>
+      
+    </article>
+  </section>
+
+  <section class="band"><div class="wrap section">
+    <h2>Operations practice</h2><p class="sub">The habits that keep a small team’s systems safe.</p>
+    <ul class="practice"><li>Change one thing at a time, keep a way back, and test the way back.</li><li>Take a backup before every change; test a restore before you need it.</li><li>Prefer fixing the cause to restarting the symptom, and write down what the cause was.</li><li>Start a new defence in monitoring-only mode before turning it on.</li><li>Explain every problem in words the user understands.</li><li>Keep runbooks short enough to use at 2 a.m.</li></ul>
+  </div></section>
+
+  <section id="skills" class="wrap section">
+    <h2>Skills</h2>
+    <div class="grid3"><div><h3>Linux and servers</h3><p>AlmaLinux / RHEL family · Apache · PHP-FPM · MariaDB / MySQL · Redis · systemd · cron · SELinux basics · firewalld · fail2ban · SSH hardening · package and security updates</p></div><div><h3>Networking</h3><p>TCP/IP · DNS (A records, propagation, custom domains) · Gigabit LAN design · WireGuard VPN · routing and NAT concepts · firewall rules (nftables, Windows Firewall) · QoS for printing</p></div><div><h3>Windows and virtualisation</h3><p>Windows 10/11 and Windows Server concepts · Remote Desktop and licensing · Group Policy settings · Proxmox VE and Hyper-V (VM per user design) · installers (Inno Setup)</p></div><div><h3>Security</h3><p>Hardening · TLS and certificates · rate limiting and abuse detection · audits and findings · backup encryption · access control and least privilege · incident runbooks</p></div><div><h3>Backup and recovery</h3><p>Encrypted backups · retention policy · restore drills · off-site copy planning</p></div><div><h3>Monitoring and support</h3><p>Logs and activity trails · alerts and digests · playbooks · diagnostic tools · plain-language user guides · WhatsApp and email support</p></div><div><h3>Scripting</h3><p>Bash · PowerShell · Python · PHP and JavaScript for automation</p></div><div><h3>Currently working towards</h3><p>CompTIA Network+ / Security+ or Microsoft Azure fundamentals (to add a vendor certificate to the hands-on experience)</p></div></div>
+  </section>
+
+  <section class="band"><div class="wrap section about">
+    <div><h2>Education and training</h2>
+      <ul class="edu"><li><b>BSc Mathematics and Computer Science</b>, National Open University of Nigeria, 2021</li><li><b>Data Analysis</b>, ALX</li><li><b>Prompt Engineering</b>, ALX</li><li><b>Back-End Developer certificate</b>, ILID Institute</li></ul></div>
+    <ul class="facts"><li><b>Based in</b> Lagos, Nigeria</li><li><b>Open to</b> it systems and support engineer roles, remote or on-site</li><li><b>Also see</b> <a href="index.html">the front-end view</a></li></ul>
+  </div></section>
+
+  <section id="contact" class="wrap section contact"><h2>Let’s talk</h2><p class="sub">I reply within a day.</p><p><a class="btn" href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a> <a class="btn ghost" href="https://github.com/ikjoel">github.com/ikjoel</a></p></section>
+</main>
+<footer class="wrap foot"><p>© <span id="y">2026</span> Egbujor Ikechukwu Joel. Screens use sample data. Server details are described at a high level on purpose.</p></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>

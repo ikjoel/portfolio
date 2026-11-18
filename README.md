@@ -13,6 +13,7 @@ This repository is my portfolio: **5 products, 61 screens, each drawn as a wiref
 | I want to… | Go to |
 |---|---|
 | See the work as a website | `docs/index.html` (publish with GitHub Pages: Settings → Pages → Branch `main`, folder `/docs`) |
+| See the portfolio for a specific role | `docs/index.html` (front-end), `docs/full-stack.html`, `docs/software-engineer.html`, `docs/it-systems.html`; every page has a "View this portfolio as" bar |
 | Browse every screen by category | [design/README.md](design/README.md) · `docs/design-library.html` |
 | Read how I think and what I decided | [projects](projects) (one case study per product) |
 | Read the real code behind the screens | [code/README.md](code/README.md) · `docs/code.html` |
@@ -69,6 +70,7 @@ tools/      the generator: node tools/build.mjs rebuilds everything
 ```
 node tools/build.mjs        # screens, Figma pages, tokens, design library
 node tools/build-code.mjs   # code page and code/README.md
+node tools/build-roles.mjs  # the full-stack, software-engineer and IT pages
 ```
 
 Needs Node 18 or newer, nothing to install.
