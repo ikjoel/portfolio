@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chuvor CBT · Case study · Ikechukwu Ikechukwu Egbujor</title>
+<meta name="description" content="An exam screen that never loses an answer, on a network that sometimes fails. Chuvor CBT runs computer-based exams on a local network with no internet. I built the candidate’s exam screen, the invigilator’s live monitor, question import, theory marking, reports and licensing.">
+<meta name="theme-color" content="#050b16">
+<meta property="og:title" content="Chuvor CBT · Case study · Ikechukwu Ikechukwu Egbujor"><meta property="og:description" content="An exam screen that never loses an answer, on a network that sometimes fails. Chuvor CBT runs computer-based exams on a local network with no internet. I built the candidate’s exam screen, the invigilator’s live monitor, question import, theory marking, reports and licensing."><meta property="og:type" content="website">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../site.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hd"><div class="wrap row">
+  <a class="logo" href="../../index.html" aria-label="Ikechukwu Egbujor, home"><i aria-hidden="true"></i>Ikechukwu Egbujor</a>
+  <nav class="nav" aria-label="Main"><a href="../../work/index.html" aria-current="page">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a></nav>
+  <div class="tools"><button class="icon-btn" id="theme" type="button" aria-label="Switch theme">☀</button><a class="btn" style="padding:10px 20px" href="../../contact/index.html">Start a project</a><button class="menu-btn" id="menu" type="button" aria-controls="sheet">Menu</button></div>
+</div></header>
+<div class="sheet" id="sheet" aria-hidden="true" role="dialog" aria-label="Menu"><button class="icon-btn close" id="closeMenu" type="button" aria-label="Close menu">✕</button>
+  <a href="../../index.html">Home</a><a href="../../work/index.html">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a><a href="../../code.html">Code</a><a href="../../design-library.html">Design library</a></div>
+<main id="main">
+
+<section class="cs-head"><div class="wrap">
+  <a class="tag" href="../../work/index.html" style="text-decoration:none">← All work</a>
+  <div class="chips" style="margin-top:22px"><span class="chip">(b)</span><span class="chip">Exams · Offline software</span><span class="chip live">Released</span></div>
+  <h1>Chuvor CBT</h1><p class="lede">Chuvor CBT runs computer-based exams on a local network with no internet. I built the candidate’s exam screen, the invigilator’s live monitor, question import, theory marking, reports and licensing.</p>
+  <dl class="meta"><div><dt>Year</dt><dd>2026</dd></div><div><dt>Category</dt><dd>Exams · Offline software</dd></div><div><dt>My role</dt><dd>Designer and engineer</dd></div><div><dt>Stack</dt><dd>ASP.NET Core · Razor Pages · SQL Server · JavaScript (fetch) · MathJax</dd></div><div><dt>Status</dt><dd>Released · <a href="https://chuvorint.com">Visit ↗</a></dd></div></dl>
+  <figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/cbt-candidate-exam-screen.svg" alt="The candidate exam screen" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-cbt-candidate-exam-screen.svg" alt="The candidate exam screen (wireframe)" loading="lazy" hidden><figcaption><span>The candidate exam screen</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure>
+</div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(01)</p><h2>Problem</h2></div><div class="rv"><ul class="pts"><li>Exam halls are stressful and the network is not perfect.</li><li>A lost answer or an accidental submit is a serious mistake for a young candidate.</li><li>The person in the hall must see every candidate at once and act fast.</li><li>Candidates should not be able to leave the exam page unnoticed.</li></ul><div class="led"><b>This led to</b>· Fear of losing work<br>· Invigilators guessing<br>· Little trust in the system</div></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(02)</p><h2>Solution</h2></div><div class="rv"><p style="font:500 clamp(1.2rem,2.2vw,1.7rem)/1.4 var(--display);margin:0">One question at a time with a numbered palette, a save queue that never gives up, a server-synchronised timer, and a live monitor that tells the truth about how fresh its picture is.</p></div></div></section>
+
+<section class="blk"><div class="wrap"><p class="lbl">(03)</p><h2 style="margin-bottom:10px">Key design decisions</h2>
+  <div class="dec rv"><div><span class="num">1.</span><h3>A save queue that never gives up</h3><ul class="pts"><li>Every answer is versioned and re-sent with exponential back-off until the server confirms.</li><li>A status line says “All answers saved”, “Saving” or “2 not saved, retrying”.</li><li>Anything that is not valid JSON (a login page, an error) counts as a failed save, so the answer is kept.</li></ul></div></div><div class="dec rv"><div><span class="num">2.</span><h3>A palette that says where you are</h3><ul class="pts"><li>Current, answered, unanswered and unsaved are four clearly different states, not colour alone.</li><li>The timer counts to a deadline and re-synchronises with the server clock every 20 seconds.</li><li>Mathematics shown with MathJax.</li></ul></div></div><div class="dec rv"><div><span class="num">3.</span><h3>A live monitor that is honest</h3><ul class="pts"><li>Refreshes every 3 seconds, one request at a time, slows to 8 seconds on a bad connection and shows a banner when the picture may be out of date.</li><li>Filtering and paging happen on the server so a large hall stays fast.</li><li>Actions such as ending an attempt or giving extra minutes say plainly what happened.</li></ul></div><div class="dmedia"><figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/cbt-live-exam-monitor.svg" alt="Live monitor" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-cbt-live-exam-monitor.svg" alt="Live monitor (wireframe)" loading="lazy" hidden><figcaption><span>Live monitor</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure></div></div><div class="dec rv"><div><span class="num">4.</span><h3>Integrity without drama</h3><ul class="pts"><li>Tab switches, copy and paste are reported; too many violations submit the exam automatically.</li><li>A phone’s screen is kept awake during the exam.</li><li>A lost violation report can never break the exam.</li></ul></div></div>
+</div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(04)</p><h2>Outcome</h2></div><div class="rv"><ul class="pts"><li>Released and sold as computer-tied licences.</li><li>Designed for hundreds of candidates at once and checked with a scripted load test before release.</li><li>Question import, theory marking and class reports built into the same product.</li></ul></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(05)</p><h2>My role</h2></div><div class="rv"><ul class="pts"><li>Exam screen and live monitor: interaction design and code.</li><li>Save queue, timer and integrity logic in JavaScript.</li><li>Back end, licensing and installer.</li></ul></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(06)</p><h2>Key takeaway</h2></div><div class="rv"><p class="take">In a high-stakes moment, the interface’s job is to remove doubt: say what is saved, say what is fresh, and never lose the user’s work.</p>
+  <div class="note"><b>Concept screens.</b> These are design ideas I have drawn but not built.</div><div class="concepts"><figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/candidate-login.svg" alt="Concept: sign-in with photo check" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-candidate-login.svg" alt="Concept: sign-in with photo check (wireframe)" loading="lazy" hidden><figcaption><span>Concept: sign-in with photo check</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure><figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/submit-review.svg" alt="Concept: review before submit" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-submit-review.svg" alt="Concept: review before submit (wireframe)" loading="lazy" hidden><figcaption><span>Concept: review before submit</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure><figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/result-slip.svg" alt="Concept: result slip with verification code" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-result-slip.svg" alt="Concept: result slip with verification code (wireframe)" loading="lazy" hidden><figcaption><span>Concept: result slip with verification code</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure></div>
+  <div class="codebox"><div><b>See the code</b><br><span style="color:var(--muted)">Real code from this product, with the problem it solves.</span></div><a class="btn ghost" href="../../code.html#c5">Read the save-queue code →</a></div>
+</div></div></section>
+
+<section class="sec alt"><div class="wrap"><div class="sh"><h2>More projects</h2><a class="more" href="../../work/index.html">View all →</a></div>
+  <div class="next"><a href="../../work/studypat/index.html" class="rv"><span class="lbl">(a) Education · SaaS</span><h3>StudyPat</h3><p style="color:var(--muted);margin:0">A school platform that parents, teachers and administrators actually understand.</p></a><a href="../../work/virtual-lab/index.html" class="rv"><span class="lbl">(e) Education · 3D · Prototype</span><h3>Virtual Lab</h3><p style="color:var(--muted);margin:0">Science practicals in a phone browser, for students who have no laboratory.</p></a></div></div></section>
+</main>
+<footer class="ft"><div class="wrap">
+  <div class="cols">
+    <div><a class="logo" href="../../index.html"><i aria-hidden="true"></i>Ikechukwu Egbujor</a><p style="color:var(--muted);margin-top:12px;max-width:30ch">Front-End Engineer in Lagos, Nigeria. Interfaces that people understand on the first try.</p></div>
+    <div><h4>Pages</h4><a href="../../index.html">Home</a><a href="../../work/index.html">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a></div>
+    <div><h4>More</h4><a href="../../code.html">Code samples</a><a href="../../design-library.html">Design library (61 screens)</a><a href="../../full-stack.html">Full-stack view</a><a href="../../software-engineer.html">Software engineer view</a><a href="../../it-systems.html">IT and systems view</a></div>
+    <div><h4>Elsewhere</h4><a href="https://github.com/ikjoel">GitHub</a><a href="https://github.com/ikjoel/portfolio">Portfolio repository</a><a href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a></div>
+  </div>
+  <div class="legal"><span>© <span id="y">2026</span> Ikechukwu Ikechukwu Egbujor. Screens use sample data.</span><span><a href="../../legal/privacy-policy/index.html">Privacy policy</a> · <a href="../../legal/terms-of-service/index.html">Terms of service</a></span></div>
+</div></footer>
+<script src="../../site.js" defer></script>
+</body></html>

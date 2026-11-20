@@ -120,11 +120,11 @@ const cards = (id) => [...new Set(built.filter((r) => r.project === id).map((r) 
       </section>`).join('');
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Design library · Egbujor Ikechukwu Joel</title>
+<title>Design library · Ikechukwu Ikechukwu Egbujor</title>
 <meta name="description" content="${built.length} screens across five products, each as a wireframe and a finished mockup, grouped by function.">
 <meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="roles.css"><link rel="stylesheet" href="library.css"></head>
 <body><a class="skip" href="#lib">Skip to the library</a>
-<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="index.html#contact">Contact</a></nav></div></header>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Ikechukwu Egbujor</a><nav aria-label="Main"><a href="index.html#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="index.html#contact">Contact</a></nav></div></header>
 ${SWITCHER('')}
 <main id="lib" class="wrap section">
   <h1>Design library</h1>

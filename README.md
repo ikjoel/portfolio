@@ -1,4 +1,4 @@
-# Egbujor Ikechukwu Joel · Front-End Engineer portfolio
+# Ikechukwu Ikechukwu Egbujor · Front-End Engineer portfolio
 
 Lagos, Nigeria · github.com/ikjoel
 

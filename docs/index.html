@@ -1,245 +1,105 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Egbujor Ikechukwu Joel · Front-End Engineer</title>
-<meta name="description" content="Front-end engineer portfolio: school management, computer-based exams, e-commerce, a Windows remote-access client and a 3D virtual lab. Wireframes, mockups and case studies.">
-<meta name="theme-color" content="#0f2f57">
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ikechukwu Ikechukwu Egbujor · Front-End Engineer</title>
+<meta name="description" content="Front-end engineer in Lagos. I design, build and ship fast, clear, accessible interfaces for schools, exam centres and small businesses. Selected work, live products and code.">
+<meta name="theme-color" content="#050b16">
+<meta property="og:title" content="Ikechukwu Ikechukwu Egbujor · Front-End Engineer"><meta property="og:description" content="Front-end engineer in Lagos. I design, build and ship fast, clear, accessible interfaces for schools, exam centres and small businesses. Selected work, live products and code."><meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="roles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-<a class="skip" href="#work">Skip to my work</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hd"><div class="wrap row">
+  <a class="logo" href="index.html" aria-label="Ikechukwu Egbujor, home"><i aria-hidden="true"></i>Ikechukwu Egbujor</a>
+  <nav class="nav" aria-label="Main"><a href="work/index.html">Work</a><a href="services/index.html">Services</a><a href="contact/index.html">Contact</a></nav>
+  <div class="tools"><button class="icon-btn" id="theme" type="button" aria-label="Switch theme">☀</button><a class="btn" style="padding:10px 20px" href="contact/index.html">Start a project</a><button class="menu-btn" id="menu" type="button" aria-controls="sheet">Menu</button></div>
+</div></header>
+<div class="sheet" id="sheet" aria-hidden="true" role="dialog" aria-label="Menu"><button class="icon-btn close" id="closeMenu" type="button" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a><a href="work/index.html">Work</a><a href="services/index.html">Services</a><a href="contact/index.html">Contact</a><a href="code.html">Code</a><a href="design-library.html">Design library</a></div>
+<main id="main">
 
-<header class="top">
-  <div class="wrap bar">
-    <a class="brand" href="#top" aria-label="Home"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a>
-    <nav aria-label="Main">
-      <a href="#work">Work</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a href="#process">Process</a><a href="#skills">Skills</a><a href="#about">About</a><a class="btn small" href="#contact">Contact</a>
-    </nav>
+<section class="hero"><span class="orb o1"></span><span class="orb o2"></span>
+  <div class="wrap">
+    <div class="intro">
+      <span class="pill"><b></b> Open to front-end engineer roles · Lagos, Nigeria · remote-friendly</span>
+      <h1>Building fast, clear and accessible <em class="grad">interfaces</em> people understand first time.</h1>
+      <p class="byline">Ikechukwu Ikechukwu Egbujor</p>
+      <p class="lede">I’m a front-end engineer who designs the screen, writes the HTML, CSS and JavaScript, and ships it. Five products, built for schools, exam centres and small businesses, used on inexpensive phones and in busy halls.</p>
+      <div class="cta"><a class="btn" href="work/index.html">See the work <span class="arr">→</span></a><a class="btn ghost" href="contact/index.html">Start a project</a><a class="btn ghost" href="https://github.com/ikjoel">GitHub</a></div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <div class="c c1"><img src="assets/screens/studypat-admin-dashboard.svg" alt=""></div>
+      <div class="c c2"><img src="assets/screens/cbt-candidate-exam-screen.svg" alt=""></div>
+      <div class="c c3"><img src="assets/screens/studypat-parent-results-mobile.svg" alt=""></div>
+    </div>
+    <div class="stats rv"><div><strong data-count="5">5</strong><span>products built and shipped</span></div><div><strong data-count="61">61</strong><span>screens designed, wireframe and mockup</span></div><div><strong data-count="20" data-suffix="+">20+</strong><span>schools registered on StudyPat</span></div><div><strong data-count="370" data-suffix="+">370+</strong><span>pages built and maintained</span></div></div>
   </div>
-</header>
-<nav class="roles" aria-label="Portfolio views"><span>View this portfolio as:</span><a href="index.html" aria-current="page">Front-end</a><a href="full-stack.html">Full-stack</a><a href="software-engineer.html">Software engineer</a><a href="it-systems.html">IT and systems</a></nav>
+</section>
 
-<main id="top">
-  <section class="hero wrap">
-    <p class="eyebrow">Front-End Engineer</p>
-    <h1>I build interfaces that real people can use on a slow phone, in a busy school office, or in an exam hall.</h1>
-    <p class="lede">I design the screens, write the HTML, CSS and JavaScript, connect them to the back end and keep them running. Everything below is built for schools, exam centres and small businesses in Nigeria. Each project says whether it is live, released or a prototype.</p>
-    <div class="cta">
-      <a class="btn" href="#work">See the work</a>
-      <a class="btn ghost" href="design-library.html">Design library</a> <a class="btn ghost" href="code.html">Code</a> <a class="btn ghost" href="https://github.com/ikjoel">GitHub</a>
-    </div>
-    <ul class="proof" aria-label="At a glance">
-      <li><strong>370+</strong><span>server-rendered pages built and maintained</span></li>
-      <li><strong>61</strong><span>screens designed as wireframes and mockups</span></li>
-      <li><strong>20+</strong><span>schools registered on StudyPat</span></li>
-      <li><strong>PWA</strong><span>installable on phones, offline page, per-school branding</span></li>
-    </ul>
-  </section>
+<section class="sec" id="work"><div class="wrap">
+  <div class="sh rv"><h2>Selected work</h2><a class="more" href="work/index.html">View all →</a></div>
+  <div class="plist">
+    <a class="prow rv" href="work/studypat/index.html"><span class="l">(a)</span><h3>StudyPat</h3><span class="cat">Education · SaaS</span><p>A school platform that parents, teachers and administrators actually understand.</p><span class="go" aria-hidden="true">→</span><span class="thumb" aria-hidden="true"><img src="assets/screens/studypat-admin-dashboard.svg" alt=""></span></a>
+    <a class="prow rv" href="work/chuvor-cbt/index.html"><span class="l">(b)</span><h3>Chuvor CBT</h3><span class="cat">Exams · Offline software</span><p>An exam screen that never loses an answer, on a network that sometimes fails.</p><span class="go" aria-hidden="true">→</span><span class="thumb" aria-hidden="true"><img src="assets/screens/cbt-candidate-exam-screen.svg" alt=""></span></a>
+    <a class="prow rv" href="work/cbt-licence-shop/index.html"><span class="l">(c)</span><h3>CBT Licence Shop</h3><span class="cat">E-commerce · Software</span><p>Sell a software licence online and deliver it with nobody in the loop.</p><span class="go" aria-hidden="true">→</span><span class="thumb" aria-hidden="true"><img src="assets/screens/licence-shop-pricing.svg" alt=""></span></a>
+    <a class="prow rv" href="work/chuvor-client/index.html"><span class="l">(d)</span><h3>Chuvor Client</h3><span class="cat">Remote access · SaaS</span><p>Secure access to one company program, for people who never want to see a network setting.</p><span class="go" aria-hidden="true">→</span><span class="thumb" aria-hidden="true"><img src="assets/screens/chuvor-client-app-window.svg" alt=""></span></a>
+    <a class="prow rv" href="work/virtual-lab/index.html"><span class="l">(e)</span><h3>Virtual Lab</h3><span class="cat">Education · 3D · Prototype</span><p>Science practicals in a phone browser, for students who have no laboratory.</p><span class="go" aria-hidden="true">→</span><span class="thumb" aria-hidden="true"><img src="assets/screens/virtual-lab-titration-desktop.svg" alt=""></span></a></div>
+</div></section>
 
-  <section id="work" class="wrap section">
-    <h2>Selected work</h2>
-    <p class="sub">Five products. Each card shows the finished design and a switch to the wireframe. <a href="design-library.html">Browse all 61 screens in the design library.</a> Use the switch on every card to compare them. Screens use <strong>sample data only</strong>; no real school, student or customer is shown. They are redrawn from the real products; a few are my proposed improvements and are marked <strong>concept</strong> in the design library.</p>
+<section class="sec alt"><div class="wrap">
+  <div class="sh rv"><div><h2>Live works</h2><p class="sub" style="margin:10px 0 0">Real products you can open today.</p></div></div>
+  <div class="cards"><a class="card rv" href="https://studypat.com"><span class="l">(a)</span><h3>StudyPat</h3><p>School management platform</p><span class="url">studypat.com ↗</span></a><a class="card rv" href="https://cbtlicense.chuvorint.com"><span class="l">(b)</span><h3>CBT Licence Shop</h3><p>Sells exam-software licences</p><span class="url">cbtlicense.chuvorint.com ↗</span></a><a class="card rv" href="https://chuvorint.com"><span class="l">(c)</span><h3>Chuvor International</h3><p>The company site</p><span class="url">chuvorint.com ↗</span></a></div>
+</div></section>
 
-    <article class="project" id="studypat" data-project>
-      <div class="shots">
-        <div class="shot" data-state="mock">
-          <img class="s-mock" src="assets/screens/studypat-admin-dashboard.svg" width="1440" height="900" alt="StudyPat admin dashboard mockup: a get-started checklist, four summary figures, a fees chart and recent payments" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-studypat-admin-dashboard.svg" width="1440" height="900" alt="StudyPat admin dashboard wireframe" loading="lazy" hidden>
-        </div>
-        <div class="shot phone" data-state="mock">
-          <img class="s-mock" src="assets/screens/studypat-parent-results-mobile.svg" width="390" height="844" alt="StudyPat parent result view on a phone: average, position and subject scores" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-studypat-parent-results-mobile.svg" width="390" height="844" alt="StudyPat parent result view wireframe" loading="lazy" hidden>
-        </div>
-      </div>
-      <div class="text">
-        <p class="tags">Laravel · Blade · Bootstrap 5 · JavaScript · PWA</p>
-        <h3>StudyPat <span class="live">live</span></h3>
-        <p>A school management platform: results, fees, parents, teachers, e-learning, exams and a website for every school. Each school gets its own address, colours and installable app.</p>
-        <ul class="points">
-          <li><b>Easy first run.</b> Schools said “after registering I don’t know what to do next”. I replaced a 7-step wizard with a Get Started card that always shows the one next step.</li>
-          <li><b>Parents first.</b> The result page opens on average and position, with subject detail below, and prints cleanly from the browser (print stylesheets on 12 pages).</li>
-          <li><b>Installable and branded.</b> A service worker and a manifest per school; page HTML is never cached, so personal data and form tokens are never stale.</li>
-          <li><b>A reusable UI kit.</b> Help, step, tip, next-step and empty-state components used across dozens of screens.</li>
-        </ul>
-        <div class="actions">
-          <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
-          <a href="https://studypat.com">Visit the live site ↗</a>
-          <a href="https://github.com/ikjoel/portfolio/tree/main/projects/01-studypat">Case study</a>
-          <a href="code.html#c0">Code</a>
-        </div>
-      </div>
-    </article>
+<section class="sec"><div class="wrap">
+  <div class="sh rv"><div><h2>Code &amp; components</h2><p class="sub" style="margin:10px 0 0">Real code from the products, with the problem each piece solves.</p></div><a class="more" href="code.html">All code samples →</a></div>
+  <div class="cards"><a class="card comp rv" href="code.html#c0"><h3>Help components</h3><p>Five Blade components and one save indicator used across dozens of screens</p><pre>&lt;x-ux.help tone="tip" dismiss="score-split"&gt;
+  Active divisions must add up to 100.
+&lt;/x-ux.help&gt;</pre></a><a class="card comp rv" href="code.html#c5"><h3>Answer save queue</h3><p>Versioned, retried with back-off until the server confirms</p><pre>dirty.set(qid, ++version);
+// ...
+retryTimer = setTimeout(flush,
+  Math.min(15000, 2000 * 2 ** (failCount - 1)));</pre></a><a class="card comp rv" href="code.html#c3"><h3>Service worker policy</h3><p>Pages always from the network; only static files cached</p><pre>if (request.mode === 'navigate') {
+  event.respondWith(
+    fetch(request).catch(() =&gt; caches.match(OFFLINE_URL)));
+}</pre></a><a class="card comp rv" href="code.html#c7"><h3>Connection quality</h3><p>Delay, jitter and loss turned into plain words</p><pre>var g = avgMs &lt;= 50 ? 0 : avgMs &lt;= 100 ? 1 : avgMs &lt;= 200 ? 2 : 3;
+if (jitter &gt; 150) g = Math.max(g, 2);</pre></a></div>
+</div></section>
 
-    <article class="project flip" id="cbt" data-project>
-      <div class="shots">
-        <div class="shot" data-state="mock">
-          <img class="s-mock" src="assets/screens/cbt-candidate-exam-screen.svg" width="1440" height="900" alt="Chuvor CBT candidate exam screen: a question with four options, a timer and a question palette" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-cbt-candidate-exam-screen.svg" width="1440" height="900" alt="Chuvor CBT candidate exam screen wireframe" loading="lazy" hidden>
-        </div>
-        <div class="shot" data-state="mock">
-          <img class="s-mock" src="assets/screens/cbt-live-exam-monitor.svg" width="1440" height="900" alt="Chuvor CBT live monitor: sixteen candidate cards with progress and status, and an alerts panel" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-cbt-live-exam-monitor.svg" width="1440" height="900" alt="Chuvor CBT live monitor wireframe" loading="lazy" hidden>
-        </div>
-      </div>
-      <div class="text">
-        <p class="tags">ASP.NET Core · Razor Pages · SQL Server · JavaScript</p>
-        <h3>Chuvor CBT <span class="live">released</span></h3>
-        <p>Offline computer-based exams for schools and exam centres: a calm candidate screen and a live monitor for the invigilator, designed for hundreds of candidates at once.</p>
-        <ul class="points">
-          <li><b>One question per screen</b>, large type, a question palette with answered, flagged and current states that never rely on colour alone.</li>
-          <li><b>A save queue that never loses an answer.</b> Every answer is versioned and re-sent until the server confirms; the screen always says “All answers saved”, “Saving” or “2 not saved, retrying”.</li>
-          <li><b>Live monitor.</b> Refreshes every 3 seconds, one request at a time, slows down and shows a banner when the connection is bad; who is writing, who left the exam tab, who is offline.</li>
-          <li><b>Maths that reads properly</b> with MathJax in the exam screen.</li>
-          <li><b>Proven under load</b> with a scripted load test before it reached an exam hall.</li>
-        </ul>
-        <div class="actions">
-          <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
-          <a href="https://chuvorint.com">Chuvor International ↗</a>
-          <a href="https://github.com/ikjoel/portfolio/tree/main/projects/02-chuvor-cbt">Case study</a>
-          <a href="code.html#c5">Code</a>
-        </div>
-      </div>
-    </article>
+<section class="sec alt" style="padding-bottom:0"><div class="wrap"><div class="sh rv"><div><h2>Design shots</h2><p class="sub" style="margin:10px 0 0">A few of the 61 screens I designed, each as a wireframe and a mockup.</p></div><a class="more" href="design-library.html">Open the design library →</a></div></div>
+  <div class="shotrow"><div class="shots" aria-hidden="true"><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/studypat-admin-dashboard.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/cbt-live-exam-monitor.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/licence-shop-pricing.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/chuvor-client-control-panel.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/virtual-lab-titration-desktop.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/report-card.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/score-input.svg" alt="" loading="lazy"></a><a class="ph" href="design-library.html" tabindex="-1"><img src="assets/screens/studypat-parent-results-mobile.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/studypat-admin-dashboard.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/cbt-live-exam-monitor.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/licence-shop-pricing.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/chuvor-client-control-panel.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/virtual-lab-titration-desktop.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/report-card.svg" alt="" loading="lazy"></a><a class="" href="design-library.html" tabindex="-1"><img src="assets/screens/score-input.svg" alt="" loading="lazy"></a><a class="ph" href="design-library.html" tabindex="-1"><img src="assets/screens/studypat-parent-results-mobile.svg" alt="" loading="lazy"></a></div></div>
+  <div class="marq" style="margin-top:46px" aria-hidden="true"><div class="track"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Blade</span><span>Bootstrap</span><span>Three.js</span><span>Chart.js</span><span>PWA</span><span>Figma</span><span>Laravel</span><span>ASP.NET Core</span><span>Node.js</span><span>MySQL</span><span>Git</span><span>Linux</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Blade</span><span>Bootstrap</span><span>Three.js</span><span>Chart.js</span><span>PWA</span><span>Figma</span><span>Laravel</span><span>ASP.NET Core</span><span>Node.js</span><span>MySQL</span><span>Git</span><span>Linux</span></div></div>
+</section>
 
-    <article class="project" id="shop" data-project>
-      <div class="shots">
-        <div class="shot" data-state="mock">
-          <img class="s-mock" src="assets/screens/licence-shop-pricing.svg" width="1440" height="900" alt="CBT licence shop pricing page with three plans" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-licence-shop-pricing.svg" width="1440" height="900" alt="CBT licence shop pricing wireframe" loading="lazy" hidden>
-        </div>
-        <div class="shot" data-state="mock">
-          <img class="s-mock" src="assets/screens/licence-shop-order-confirmation.svg" width="1440" height="900" alt="Order confirmation with payment steps and download buttons" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-licence-shop-order-confirmation.svg" width="1440" height="900" alt="Order confirmation wireframe" loading="lazy" hidden>
-        </div>
-      </div>
-      <div class="text">
-        <p class="tags">Laravel · Blade · Flutterwave · Mailgun</p>
-        <h3>CBT Licence Shop <span class="live">live</span></h3>
-        <p>An online shop that sells licences for the exam software and delivers them by email and download, with no human in the loop.</p>
-        <ul class="points">
-          <li><b>Pricing built to decide.</b> One main action, one quiet alternative, and a highlighted plan.</li>
-          <li><b>A confirmation page that answers “did it work?”</b> Finished steps, the file, the installer and a help button on one screen.</li>
-          <li><b>Safe by design.</b> Payment is verified on the server and checked again by a scheduled job, so a lost webhook never loses an order.</li>
-        </ul>
-        <div class="actions">
-          <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
-          <a href="https://cbtlicense.chuvorint.com">Visit the live shop ↗</a>
-          <a href="https://github.com/ikjoel/portfolio/tree/main/projects/03-cbt-licence-shop">Case study</a>
-        </div>
-      </div>
-    </article>
+<section class="sec"><div class="wrap about">
+  <div class="rv"><div class="mono-badge" aria-hidden="true">I</div><p class="lbl">(About me)</p>
+    <p class="big">Friction between people and software usually comes from needless complexity. I’m driven by <em>simplicity</em> and clarity.</p>
+    <p class="sub">I do it by starting with the user’s words, drawing the wireframe before any colour, building reusable components, and testing on a slow phone, with a keyboard, and in print. I have a BSc in Mathematics and Computer Science.</p>
+    <p class="big" style="font-size:1.5rem;margin-top:22px">And how? <em>Human-centred engineering.</em></p></div>
+  <div><p class="lbl rv">(Capabilities)</p><div class="caps"><div class="cap rv"><span class="l">(a)</span><h4>Front-end development</h4><p>Semantic HTML, modern CSS and JavaScript. Fast, responsive, accessible pages that work on inexpensive phones and in print.</p></div><div class="cap rv"><span class="l">(b)</span><h4>UI design and design systems</h4><p>Wireframes, mockups, design tokens and reusable components, built so design and code stay in step.</p></div><div class="cap rv"><span class="l">(c)</span><h4>Progressive web apps</h4><p>Installable apps with a manifest, service worker and a careful cache policy that keeps personal data fresh.</p></div><div class="cap rv"><span class="l">(d)</span><h4>Full-stack web applications</h4><p>Laravel, ASP.NET Core and Node.js with MySQL or SQL Server, payments, email and deployment.</p></div></div></div>
+</div></section>
 
-    <article class="project flip" id="client" data-project>
-      <div class="shots">
-        <div class="shot square" data-state="mock">
-          <img class="s-mock" src="assets/screens/chuvor-client-app-window.svg" width="1000" height="840" alt="Chuvor Client Windows app: connection status, open program button and printing panel" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-chuvor-client-app-window.svg" width="1000" height="840" alt="Chuvor Client app wireframe" loading="lazy" hidden>
-        </div>
-        <div class="shot" data-state="mock">
-          <img class="s-mock" src="assets/screens/chuvor-client-control-panel.svg" width="1440" height="900" alt="Chuvor Client control panel: computers table, add-a-computer code and settings" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-chuvor-client-control-panel.svg" width="1440" height="900" alt="Chuvor Client control panel wireframe" loading="lazy" hidden>
-        </div>
-      </div>
-      <div class="text">
-        <p class="tags">.NET · Windows Forms · Node.js · WireGuard</p>
-        <h3>Chuvor Client <span class="live">launched</span></h3>
-        <p>A secure remote-access product: staff open one company program from approved computers only, and receipts and documents print fast on their own printer.</p>
-        <ul class="points">
-          <li><b>Plain language everywhere.</b> Help text under every control and a live “Connection quality: Excellent” line, because the users are not technical.</li>
-          <li><b>High-DPI aware</b> desktop interface, one obvious action, and clear states: connected, expiring, unavailable.</li>
-          <li><b>An admin panel that explains itself.</b> Approve or revoke a computer, see subscription status at all times, and set the program with a Notepad test first.</li>
-        </ul>
-        <div class="actions">
-          <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
-          <a href="https://github.com/ikjoel/portfolio/tree/main/projects/04-chuvor-client">Case study</a>
-          <a href="code.html#c7">Code</a>
-        </div>
-      </div>
-    </article>
+<section class="sec alt"><div class="wrap">
+  <div class="sh rv"><h2>Work experience</h2></div>
+  <div class="exp"><div class="job rv"><span class="n">(01)</span><div><h3>Founder and Lead Software Developer</h3><span class="org">Chuvor International · 2025 to present</span></div><p>I own five products from design to deployment: StudyPat, Chuvor CBT, the CBT Licence Shop, Chuvor Client and Virtual Lab. I design the screens, write the front end and the back end, deploy, and support the users. I run the full loop: listen to complaints, sketch a wireframe, build it, test it on a low-end phone, and check whether the problem went away.</p></div><div class="job rv"><span class="n">(02)</span><div><h3>Product Manager and Back-End Developer</h3><span class="org">Fhope Technologies · 2023</span></div><p>I built the server-side logic, MySQL databases and REST APIs behind the company’s applications in PHP and Laravel, and worked as product manager alongside development, turning business needs into user stories and keeping the backlog in order.</p></div><div class="job rv"><span class="n">(03)</span><div><h3>Junior Software Engineering Intern</h3><span class="org">Leval International · 2021</span></div><p>My first professional role in software: I helped develop and debug software components and scripts, and gave technical support and hardware and software troubleshooting.</p></div></div>
+  <div class="edu"><div class="rv"><b>BSc Mathematics and Computer Science</b><span>National Open University of Nigeria · 2021</span></div><div class="rv"><b>Data Analysis</b><span>ALX</span></div><div class="rv"><b>Prompt Engineering</b><span>ALX</span></div><div class="rv"><b>Back-End Developer certificate</b><span>ILID Institute</span></div></div>
+</div></section>
 
-    <article class="project" id="lab" data-project>
-      <div class="shots">
-        <div class="shot" data-state="mock">
-          <img class="s-mock" src="assets/screens/virtual-lab-titration-desktop.svg" width="1440" height="900" alt="Virtual lab titration on desktop: a 3D burette and flask, steps, controls and readings" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-virtual-lab-titration-desktop.svg" width="1440" height="900" alt="Virtual lab desktop wireframe" loading="lazy" hidden>
-        </div>
-        <div class="shot phone" data-state="mock">
-          <img class="s-mock" src="assets/screens/virtual-lab-titration-mobile.svg" width="390" height="844" alt="Virtual lab titration on a phone with a bottom sheet of controls" loading="lazy">
-          <img class="s-wire" src="assets/screens/wire-virtual-lab-titration-mobile.svg" width="390" height="844" alt="Virtual lab phone wireframe" loading="lazy" hidden>
-        </div>
-      </div>
-      <div class="text">
-        <p class="tags">Three.js · WebGL · JavaScript</p>
-        <h3>Virtual Lab <span class="soon">prototype</span></h3>
-        <p>A 3D science practical (titration, Ohm’s law) that runs in the browser, so a student without a laboratory can still practise and be marked.</p>
-        <ul class="points">
-          <li><b>Built for cheap phones.</b> Render-on-demand and a Low graphics switch; the prototype holds 60 fps on an old Intel HD 520 laptop.</li>
-          <li><b>Honest marking.</b> Hidden values differ per student, readings are marked out of 20, and 21 automated checks cover the marking logic.</li>
-          <li><b>Guided, not crowded.</b> A step list, formulas only after a hint, and thumb-reachable controls in a bottom sheet.</li>
-        </ul>
-        <div class="actions">
-          <button class="toggle" type="button" aria-pressed="false">Show wireframe</button>
-          <a href="https://github.com/ikjoel/portfolio/tree/main/projects/05-virtual-lab">Case study</a>
-          <a href="code.html#c8">Code</a>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <section id="process" class="band">
-    <div class="wrap section">
-      <h2>How I work with design</h2>
-      <p class="sub">I am a front-end engineer who works closely with UI/UX. This is the loop I follow.</p>
-      <ol class="steps">
-        <li><h3>Understand</h3><p>Talk to the people who will use it. Write down what hurts today, in their words.</p></li>
-        <li><h3>Wireframe</h3><p>Grey boxes first: layout, content order and the one main action, before any colour.</p></li>
-        <li><h3>Design</h3><p>Colour, type and states in a small token set (colour, spacing, radius) that code can share.</p></li>
-        <li><h3>Build</h3><p>Semantic HTML, CSS variables, reusable components, mobile first, tested on a slow device.</p></li>
-        <li><h3>Check</h3><p>Keyboard, contrast, empty, loading and error states, print and small screens.</p></li>
-        <li><h3>Learn</h3><p>Watch real use, fix the real problem rather than the first request, and document it.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="skills" class="wrap section">
-    <h2>Skills</h2>
-    <div class="grid3">
-      <div><h3>Front end</h3><p>HTML5, CSS3 (Flexbox, Grid, variables, print and dark-mode styles), JavaScript (ES6+, fetch, DOM, events), Blade components, Bootstrap 5, responsive and mobile-first design, PWAs and service workers, Chart.js, Three.js, KaTeX/MathLive.</p></div>
-      <div><h3>Design and hand-off</h3><p>Wireframes, mockups, design tokens, component thinking, Figma hand-off, plain-language UX writing, accessibility basics (labels, focus, contrast, ARIA).</p></div>
-      <div><h3>Back end and tools</h3><p>Laravel and PHP, ASP.NET Core, REST APIs, MySQL, Git and GitHub, PHPUnit, Linux deployment, payments and email integrations, SEO and structured data.</p></div>
-    </div>
-    <p class="note">Currently adding: <strong>React and TypeScript</strong>, because component-based tooling is where front-end work is heading.</p>
-  </section>
-
-  <section id="about" class="band">
-    <div class="wrap section about">
-      <div>
-        <h2>About</h2>
-        <p>I am Egbujor Ikechukwu Joel, a software developer in Lagos, Nigeria, with a BSc in Mathematics and Computer Science (National Open University of Nigeria) and ALX certificates in Data Analysis and Prompt Engineering.</p>
-        <p>I have taken products from idea to real users on my own, from the database to the screen. I want to do that inside a team where design and engineering shape each other, and I enjoy turning a designer’s idea into something fast, accessible and dependable.</p>
-      </div>
-      <ul class="facts">
-        <li><b>Based in</b> Lagos, Nigeria</li>
-        <li><b>Open to</b> front-end roles, remote or on-site</li>
-        <li><b>Languages</b> English</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact" class="wrap section contact">
-    <h2>Let’s talk</h2>
-    <p class="sub">I reply within a day.</p>
-    <p><a class="btn" href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a> <a class="btn ghost" href="https://github.com/ikjoel">github.com/ikjoel</a></p>
-  </section>
+<section class="cta-big"><span class="orb o1" style="top:-200px;right:auto;left:20%"></span><div class="wrap" style="position:relative">
+  <p class="lbl">(Contact)</p><h2 class="rv">Let’s build something <em class="grad">clear</em> together.</h2>
+  <div class="row"><a class="btn" href="contact/index.html">Start a project <span class="arr">→</span></a><a class="btn ghost" href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a></div>
+</div></section>
 </main>
-
-<footer class="wrap foot">
-  <p>© <span id="y">2026</span> Egbujor Ikechukwu Joel. All screens use sample data. Product names belong to their owners. This site is plain HTML, CSS and a little JavaScript, and loads no external fonts or trackers.</p>
-</footer>
-<script src="app.js" defer></script>
-</body>
-</html>
+<footer class="ft"><div class="wrap">
+  <div class="cols">
+    <div><a class="logo" href="index.html"><i aria-hidden="true"></i>Ikechukwu Egbujor</a><p style="color:var(--muted);margin-top:12px;max-width:30ch">Front-End Engineer in Lagos, Nigeria. Interfaces that people understand on the first try.</p></div>
+    <div><h4>Pages</h4><a href="index.html">Home</a><a href="work/index.html">Work</a><a href="services/index.html">Services</a><a href="contact/index.html">Contact</a></div>
+    <div><h4>More</h4><a href="code.html">Code samples</a><a href="design-library.html">Design library (61 screens)</a><a href="full-stack.html">Full-stack view</a><a href="software-engineer.html">Software engineer view</a><a href="it-systems.html">IT and systems view</a></div>
+    <div><h4>Elsewhere</h4><a href="https://github.com/ikjoel">GitHub</a><a href="https://github.com/ikjoel/portfolio">Portfolio repository</a><a href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a></div>
+  </div>
+  <div class="legal"><span>© <span id="y">2026</span> Ikechukwu Ikechukwu Egbujor. Screens use sample data.</span><span><a href="legal/privacy-policy/index.html">Privacy policy</a> · <a href="legal/terms-of-service/index.html">Terms of service</a></span></div>
+</div></footer>
+<script src="site.js" defer></script>
+</body></html>

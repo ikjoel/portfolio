@@ -12,11 +12,11 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 for (const r of ROLES) {
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(r.title)} · Egbujor Ikechukwu Joel</title>
+<title>${esc(r.title)} · Ikechukwu Ikechukwu Egbujor</title>
 <meta name="description" content="${esc(r.lede)}">
 <meta name="theme-color" content="#0f2f57"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="roles.css"></head>
 <body><a class="skip" href="#work">Skip to my work</a>
-<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Joel Egbujor</a><nav aria-label="Main"><a href="#work">Work</a><a href="#skills">Skills</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="#contact">Contact</a></nav></div></header>
+<header class="top"><div class="wrap bar"><a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>Ikechukwu Egbujor</a><nav aria-label="Main"><a href="#work">Work</a><a href="#skills">Skills</a><a href="design-library.html">Design library</a><a href="code.html">Code</a><a class="btn small" href="#contact">Contact</a></nav></div></header>
 ${SWITCHER(r.id)}
 <main>
   <section class="hero wrap">
@@ -60,7 +60,7 @@ ${SWITCHER(r.id)}
 
   <section id="contact" class="wrap section contact"><h2>Let’s talk</h2><p class="sub">I reply within a day.</p><p><a class="btn" href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a> <a class="btn ghost" href="https://github.com/ikjoel">github.com/ikjoel</a></p></section>
 </main>
-<footer class="wrap foot"><p>© <span id="y">2026</span> Egbujor Ikechukwu Joel. Screens use sample data. Server details are described at a high level on purpose.</p></footer>
+<footer class="wrap foot"><p>© <span id="y">2026</span> Ikechukwu Ikechukwu Egbujor. Screens use sample data. Server details are described at a high level on purpose.</p></footer>
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body></html>
 `;

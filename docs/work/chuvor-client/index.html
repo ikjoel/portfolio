@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chuvor Client · Case study · Ikechukwu Ikechukwu Egbujor</title>
+<meta name="description" content="Secure access to one company program, for people who never want to see a network setting. Staff open one company program from approved computers only, and receipts and documents print quickly on their own printer. It is sold as a subscription to many companies. I designed the Win">
+<meta name="theme-color" content="#050b16">
+<meta property="og:title" content="Chuvor Client · Case study · Ikechukwu Ikechukwu Egbujor"><meta property="og:description" content="Secure access to one company program, for people who never want to see a network setting. Staff open one company program from approved computers only, and receipts and documents print quickly on their own printer. It is sold as a subscription to many companies. I designed the Win"><meta property="og:type" content="website">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../site.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hd"><div class="wrap row">
+  <a class="logo" href="../../index.html" aria-label="Ikechukwu Egbujor, home"><i aria-hidden="true"></i>Ikechukwu Egbujor</a>
+  <nav class="nav" aria-label="Main"><a href="../../work/index.html" aria-current="page">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a></nav>
+  <div class="tools"><button class="icon-btn" id="theme" type="button" aria-label="Switch theme">☀</button><a class="btn" style="padding:10px 20px" href="../../contact/index.html">Start a project</a><button class="menu-btn" id="menu" type="button" aria-controls="sheet">Menu</button></div>
+</div></header>
+<div class="sheet" id="sheet" aria-hidden="true" role="dialog" aria-label="Menu"><button class="icon-btn close" id="closeMenu" type="button" aria-label="Close menu">✕</button>
+  <a href="../../index.html">Home</a><a href="../../work/index.html">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a><a href="../../code.html">Code</a><a href="../../design-library.html">Design library</a></div>
+<main id="main">
+
+<section class="cs-head"><div class="wrap">
+  <a class="tag" href="../../work/index.html" style="text-decoration:none">← All work</a>
+  <div class="chips" style="margin-top:22px"><span class="chip">(d)</span><span class="chip">Remote access · SaaS</span><span class="chip live">Launched</span></div>
+  <h1>Chuvor Client</h1><p class="lede">Staff open one company program from approved computers only, and receipts and documents print quickly on their own printer. It is sold as a subscription to many companies. I designed the Windows app and the control panels and built the platform behind them.</p>
+  <dl class="meta"><div><dt>Year</dt><dd>2026</dd></div><div><dt>Category</dt><dd>Remote access · SaaS</dd></div><div><dt>My role</dt><dd>Designer and engineer</dd></div><div><dt>Stack</dt><dd>.NET (Windows Forms) · Node.js · WireGuard · Inno Setup</dd></div><div><dt>Status</dt><dd>Launched</dd></div></dl>
+  <figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/chuvor-client-app-window.svg" alt="The Windows app" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-chuvor-client-app-window.svg" alt="The Windows app (wireframe)" loading="lazy" hidden><figcaption><span>The Windows app</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure>
+</div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(01)</p><h2>Problem</h2></div><div class="rv"><ul class="pts"><li>The users are shop and office staff, not IT people.</li><li>The administrator must approve or remove a computer in one click.</li><li>The owner needs many companies on one platform with expiry that cannot go wrong.</li><li>Support needs to know quickly whether “slow” is the network or the program.</li></ul><div class="led"><b>This led to</b>· Fear of settings<br>· Slow, uncertain support<br>· Risk of access after expiry</div></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(02)</p><h2>Solution</h2></div><div class="rv"><p style="font:500 clamp(1.2rem,2.2vw,1.7rem)/1.4 var(--display);margin:0">One large button, a status in a sentence, help under every control, and a control plane where state is computed from dates and every refused action is tested.</p></div></div></section>
+
+<section class="blk"><div class="wrap"><p class="lbl">(03)</p><h2 style="margin-bottom:10px">Key design decisions</h2>
+  <div class="dec rv"><div><span class="num">1.</span><h3>One obvious action</h3><ul class="pts"><li>A large “Open your program” button with two lines under it saying what happens next.</li><li>Status in a sentence: “Connected to your company computer”.</li></ul></div></div><div class="dec rv"><div><span class="num">2.</span><h3>Quality in plain words</h3><ul class="pts"><li>The last eight delay measurements become Excellent, Good, Fair or Poor, with a sentence on what to try.</li><li>Jitter and lost messages are counted, not just the average.</li></ul></div></div><div class="dec rv"><div><span class="num">3.</span><h3>A control panel that explains itself</h3><ul class="pts"><li>Computers table with plain statuses and one button per row.</li><li>One-time codes to add a computer, with their rules written beside them.</li><li>Every switch says what it does and what “off” means.</li></ul></div><div class="dmedia"><figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/chuvor-client-control-panel.svg" alt="Company control panel" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-chuvor-client-control-panel.svg" alt="Company control panel (wireframe)" loading="lazy" hidden><figcaption><span>Company control panel</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure></div></div><div class="dec rv"><div><span class="num">4.</span><h3>State from dates, never stored</h3><ul class="pts"><li>Active, ending soon, grace, expired, suspended and pending are computed every time.</li><li>The same function feeds the app, the admin panel and the access check.</li></ul></div><div class="dmedia"><figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/platform-customers.svg" alt="Platform owner’s customers view" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-platform-customers.svg" alt="Platform owner’s customers view (wireframe)" loading="lazy" hidden><figcaption><span>Platform owner’s customers view</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure></div></div>
+</div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(04)</p><h2>Outcome</h2></div><div class="rv"><ul class="pts"><li>Launched and in use.</li><li>143 automated checks on the platform, including that one company can never see another’s data.</li><li>One test exposed a real bug (a refused request still ran), which I fixed.</li></ul></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(05)</p><h2>My role</h2></div><div class="rv"><ul class="pts"><li>Interface design for the app and panels.</li><li>Windows Forms app, control panel and API.</li><li>Network, installer and documentation.</li></ul></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(06)</p><h2>Key takeaway</h2></div><div class="rv"><p class="take">Non-technical users need fewer choices, not more explanations. Design the one path, and make everything else safe.</p>
+  
+  <div class="codebox"><div><b>See the code</b><br><span style="color:var(--muted)">Real code from this product, with the problem it solves.</span></div><a class="btn ghost" href="../../code.html#c7">Read the connection-quality code →</a></div>
+</div></div></section>
+
+<section class="sec alt"><div class="wrap"><div class="sh"><h2>More projects</h2><a class="more" href="../../work/index.html">View all →</a></div>
+  <div class="next"><a href="../../work/cbt-licence-shop/index.html" class="rv"><span class="lbl">(c) E-commerce · Software</span><h3>CBT Licence Shop</h3><p style="color:var(--muted);margin:0">Sell a software licence online and deliver it with nobody in the loop.</p></a><a href="../../work/virtual-lab/index.html" class="rv"><span class="lbl">(e) Education · 3D · Prototype</span><h3>Virtual Lab</h3><p style="color:var(--muted);margin:0">Science practicals in a phone browser, for students who have no laboratory.</p></a></div></div></section>
+</main>
+<footer class="ft"><div class="wrap">
+  <div class="cols">
+    <div><a class="logo" href="../../index.html"><i aria-hidden="true"></i>Ikechukwu Egbujor</a><p style="color:var(--muted);margin-top:12px;max-width:30ch">Front-End Engineer in Lagos, Nigeria. Interfaces that people understand on the first try.</p></div>
+    <div><h4>Pages</h4><a href="../../index.html">Home</a><a href="../../work/index.html">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a></div>
+    <div><h4>More</h4><a href="../../code.html">Code samples</a><a href="../../design-library.html">Design library (61 screens)</a><a href="../../full-stack.html">Full-stack view</a><a href="../../software-engineer.html">Software engineer view</a><a href="../../it-systems.html">IT and systems view</a></div>
+    <div><h4>Elsewhere</h4><a href="https://github.com/ikjoel">GitHub</a><a href="https://github.com/ikjoel/portfolio">Portfolio repository</a><a href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a></div>
+  </div>
+  <div class="legal"><span>© <span id="y">2026</span> Ikechukwu Ikechukwu Egbujor. Screens use sample data.</span><span><a href="../../legal/privacy-policy/index.html">Privacy policy</a> · <a href="../../legal/terms-of-service/index.html">Terms of service</a></span></div>
+</div></footer>
+<script src="../../site.js" defer></script>
+</body></html>

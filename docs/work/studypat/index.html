@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyPat · Case study · Ikechukwu Ikechukwu Egbujor</title>
+<meta name="description" content="A school platform that parents, teachers and administrators actually understand. StudyPat runs results, fees, parents, e-learning, exams and a website for each school. I designed and built the interface for administrators, teachers, parents and students, and made every school’s p">
+<meta name="theme-color" content="#050b16">
+<meta property="og:title" content="StudyPat · Case study · Ikechukwu Ikechukwu Egbujor"><meta property="og:description" content="A school platform that parents, teachers and administrators actually understand. StudyPat runs results, fees, parents, e-learning, exams and a website for each school. I designed and built the interface for administrators, teachers, parents and students, and made every school’s p"><meta property="og:type" content="website">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../../site.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hd"><div class="wrap row">
+  <a class="logo" href="../../index.html" aria-label="Ikechukwu Egbujor, home"><i aria-hidden="true"></i>Ikechukwu Egbujor</a>
+  <nav class="nav" aria-label="Main"><a href="../../work/index.html" aria-current="page">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a></nav>
+  <div class="tools"><button class="icon-btn" id="theme" type="button" aria-label="Switch theme">☀</button><a class="btn" style="padding:10px 20px" href="../../contact/index.html">Start a project</a><button class="menu-btn" id="menu" type="button" aria-controls="sheet">Menu</button></div>
+</div></header>
+<div class="sheet" id="sheet" aria-hidden="true" role="dialog" aria-label="Menu"><button class="icon-btn close" id="closeMenu" type="button" aria-label="Close menu">✕</button>
+  <a href="../../index.html">Home</a><a href="../../work/index.html">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a><a href="../../code.html">Code</a><a href="../../design-library.html">Design library</a></div>
+<main id="main">
+
+<section class="cs-head"><div class="wrap">
+  <a class="tag" href="../../work/index.html" style="text-decoration:none">← All work</a>
+  <div class="chips" style="margin-top:22px"><span class="chip">(a)</span><span class="chip">Education · SaaS</span><span class="chip live">Live</span></div>
+  <h1>StudyPat</h1><p class="lede">StudyPat runs results, fees, parents, e-learning, exams and a website for each school. I designed and built the interface for administrators, teachers, parents and students, and made every school’s portal an installable app in its own colours.</p>
+  <dl class="meta"><div><dt>Year</dt><dd>2025 to now</dd></div><div><dt>Category</dt><dd>Education · SaaS</dd></div><div><dt>My role</dt><dd>Designer and front-end engineer (also back end)</dd></div><div><dt>Stack</dt><dd>Blade · Bootstrap 5 · JavaScript · CSS variables · PWA · Laravel</dd></div><div><dt>Status</dt><dd>Live · <a href="https://studypat.com">Visit ↗</a></dd></div></dl>
+  <figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/studypat-admin-dashboard.svg" alt="Administrator dashboard with the Get Started card" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-studypat-admin-dashboard.svg" alt="Administrator dashboard with the Get Started card (wireframe)" loading="lazy" hidden><figcaption><span>Administrator dashboard with the Get Started card</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure>
+</div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(01)</p><h2>Problem</h2></div><div class="rv"><ul class="pts"><li>After registering, new schools did not know what to do next; a seven-step wizard put “Students” last.</li><li>Help text was written again on every page, in a different style each time.</li><li>Parents use inexpensive phones on slow, expensive data and want one answer: how did my child do?</li><li>Server-made PDF report cards were slow and heavy.</li></ul><div class="led"><b>This led to</b>· New schools stalling at setup<br>· Inconsistent, hard-to-find help<br>· Slow report cards on busy days</div></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(02)</p><h2>Solution</h2></div><div class="rv"><p style="font:500 clamp(1.2rem,2.2vw,1.7rem)/1.4 var(--display);margin:0">I replaced the wizard with one card that always shows the single next step, wrote the help once as reusable components, made the parent’s result page lead with the answer, and turned every portal into an installable app that never caches personal pages.</p></div></div></section>
+
+<section class="blk"><div class="wrap"><p class="lbl">(03)</p><h2 style="margin-bottom:10px">Key design decisions</h2>
+  <div class="dec rv"><div><span class="num">1.</span><h3>One clear next step</h3><ul class="pts"><li>A Get Started card with a progress bar, a checklist and the one button to press next.</li><li>One-click presets for grading and score divisions, so a school can begin before designing rules.</li><li>Empty quick actions hidden until they can work.</li></ul></div></div><div class="dec rv"><div><span class="num">2.</span><h3>Help written once, as components</h3><ul class="pts"><li>Five Blade components (help, steps, tip, next-step, empty-state) plus one shared “Saving… / All changes saved” indicator.</li><li>Callouts that can be closed and stay closed.</li><li>Used across dozens of screens, each batch covered by page checks for every role.</li></ul></div><div class="dmedia"><figure class="shot" style="margin:0"><img class="s-mock" src="../../assets/screens/score-divisions.svg" alt="Score divisions with a live “adds up to 100” check" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-score-divisions.svg" alt="Score divisions with a live “adds up to 100” check (wireframe)" loading="lazy" hidden><figcaption><span>Score divisions with a live “adds up to 100” check</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure></div></div><div class="dec rv"><div><span class="num">3.</span><h3>Designed for the parent on a phone</h3><ul class="pts"><li>The result page leads with average and position; subject detail comes second.</li><li>Print-first report cards: 12 print stylesheets; parents print or “Save as PDF” in their own browser.</li><li>A report-card page costs about 0.03 s and 14 MB against about 1.2 s and 46 MB for a server PDF.</li></ul></div><div class="dmedia"><figure class="shot phone" style="margin:0"><img class="s-mock" src="../../assets/screens/studypat-parent-results-mobile.svg" alt="Parent result view on a phone" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-studypat-parent-results-mobile.svg" alt="Parent result view on a phone (wireframe)" loading="lazy" hidden><figcaption><span>Parent result view on a phone</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure></div></div><div class="dec rv"><div><span class="num">4.</span><h3>An installable app for every school</h3><ul class="pts"><li>A manifest, icons and a service worker generated per school, in the school’s name and colour.</li><li>Install prompt on Android; two-tap help on iPhone.</li><li>A deliberate rule: page HTML is never cached, so personal data and form tokens are never stale.</li></ul></div><div class="dmedia"><figure class="shot phone" style="margin:0"><img class="s-mock" src="../../assets/screens/install-app-pwa.svg" alt="Install card on a phone" loading="lazy"><img class="s-wire" src="../../assets/screens/wire-install-app-pwa.svg" alt="Install card on a phone (wireframe)" loading="lazy" hidden><figcaption><span>Install card on a phone</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure></div></div>
+</div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(04)</p><h2>Outcome</h2></div><div class="rv"><ul class="pts"><li>20+ schools registered.</li><li>Report cards that open fast on a cheap phone, with no server PDF load.</li><li>Google page one for target searches within weeks (average position 9.3 over 28 days in Search Console, October 2026).</li><li>A reusable help library the whole product now uses.</li></ul></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(05)</p><h2>My role</h2></div><div class="rv"><ul class="pts"><li>Interface design: wireframes, mockups, tokens and UX writing.</li><li>Front end: Blade components, CSS, JavaScript, PWA and service worker.</li><li>Back end, data, payments and deployment, because I own the product.</li></ul></div></div></section>
+
+<section class="blk"><div class="wrap two"><div><p class="lbl">(06)</p><h2>Key takeaway</h2></div><div class="rv"><p class="take">People do not need more features on screen. They need to know what to do next, and to trust that what they see is current.</p>
+  
+  <div class="codebox"><div><b>See the code</b><br><span style="color:var(--muted)">Real code from this product, with the problem it solves.</span></div><a class="btn ghost" href="../../code.html#c0">Read the help-component code →</a></div>
+</div></div></section>
+
+<section class="sec alt"><div class="wrap"><div class="sh"><h2>More projects</h2><a class="more" href="../../work/index.html">View all →</a></div>
+  <div class="next"><a href="../../work/chuvor-cbt/index.html" class="rv"><span class="lbl">(b) Exams · Offline software</span><h3>Chuvor CBT</h3><p style="color:var(--muted);margin:0">An exam screen that never loses an answer, on a network that sometimes fails.</p></a><a href="../../work/cbt-licence-shop/index.html" class="rv"><span class="lbl">(c) E-commerce · Software</span><h3>CBT Licence Shop</h3><p style="color:var(--muted);margin:0">Sell a software licence online and deliver it with nobody in the loop.</p></a></div></div></section>
+</main>
+<footer class="ft"><div class="wrap">
+  <div class="cols">
+    <div><a class="logo" href="../../index.html"><i aria-hidden="true"></i>Ikechukwu Egbujor</a><p style="color:var(--muted);margin-top:12px;max-width:30ch">Front-End Engineer in Lagos, Nigeria. Interfaces that people understand on the first try.</p></div>
+    <div><h4>Pages</h4><a href="../../index.html">Home</a><a href="../../work/index.html">Work</a><a href="../../services/index.html">Services</a><a href="../../contact/index.html">Contact</a></div>
+    <div><h4>More</h4><a href="../../code.html">Code samples</a><a href="../../design-library.html">Design library (61 screens)</a><a href="../../full-stack.html">Full-stack view</a><a href="../../software-engineer.html">Software engineer view</a><a href="../../it-systems.html">IT and systems view</a></div>
+    <div><h4>Elsewhere</h4><a href="https://github.com/ikjoel">GitHub</a><a href="https://github.com/ikjoel/portfolio">Portfolio repository</a><a href="mailto:ikjoel231@gmail.com">ikjoel231@gmail.com</a></div>
+  </div>
+  <div class="legal"><span>© <span id="y">2026</span> Ikechukwu Ikechukwu Egbujor. Screens use sample data.</span><span><a href="../../legal/privacy-policy/index.html">Privacy policy</a> · <a href="../../legal/terms-of-service/index.html">Terms of service</a></span></div>
+</div></footer>
+<script src="../../site.js" defer></script>
+</body></html>

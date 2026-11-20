@@ -68,7 +68,7 @@ Rules: say "I", name the trade-off, never claim what is not done (Virtual Lab is
 ## 7. Suggested GitHub profile README
 
 ```md
-### Hi, I'm Joel 👋
+### Hi, I'm Ikechukwu 👋
 Front-end engineer in Lagos. I build interfaces for schools, exam centres and small businesses in Nigeria.
 
 - 🏫 **StudyPat**: school management platform, studypat.com
