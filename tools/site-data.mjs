@@ -7,6 +7,7 @@ export const PERSON = {
 };
 
 const S = (slug, caption) => ({ mock: `assets/screens/${slug}.svg`, wire: `assets/screens/wire-${slug}.svg`, caption });
+const L = (mock, wire, caption) => ({ mock: `assets/livora/${mock}`, wire: wire ? `assets/livora/${wire}` : null, caption });
 
 export const PROJECTS = [
   /* ───────────────────────── StudyPat ───────────────────────── */
@@ -31,6 +32,33 @@ export const PROJECTS = [
     takeaway: 'People do not need more features on screen. They need to know what to do next, and to trust that what they see is current.',
     code: { href: 'code.html#c0', label: 'Read the help-component code' },
     more: ['chuvor-cbt', 'cbt-licence-shop'],
+  },
+
+
+  /* ───────────────────────── Livora Suites ───────────────────────── */
+  {
+    slug: 'livora-suites', letter: 'b', category: 'Hospitality · Windows and web', name: 'Livora Suites', tagline: 'One hotel system that a cook, a receptionist and an owner each see differently.',
+    year: '2026', role: 'Designer and front-end engineer (web and Windows)', stack: 'JavaScript (ES modules) · PWA · C# / .NET 8 WinForms · SQLite · Node.js', status: 'Built', live: '',
+    intro: 'Livora Suites is a hotel management system for independent hotels, resorts and small groups. I designed and built both front ends: a native Windows application that works offline, and a responsive web app that lets owners check any property from a phone. They share one design language, one feature set and 17 interface languages.',
+    hero: L('mockups/desktop-app/desktop-dashboard.png', 'wireframes/01-dashboard.svg', 'Windows app dashboard (demo hotel)'),
+    problem: {
+      points: ['A hotel needs reservations, front desk, housekeeping, maintenance, billing, point of sale, kitchen and bar, reports and channel management, used by people with very different jobs.', 'Existing tools are either built for big chains or too thin for a real hotel.', 'The interface had to be learnable in minutes by a new receptionist and readable at a glance by a manager.', 'It had to be safe for a cook with greasy hands on a touch screen, usable in any language and currency, and fast on an old PC and on a phone.'],
+      led: ['Software built for chains, or too thin', 'Staff with very little time to learn', 'One system, very different jobs'],
+    },
+    solution: 'Design around roles, not pages. Each person lands on their own screen and sees only what they can use. Both front ends share one design-token system, language and recovery are treated as first-class features, and the screenshot test runs every page in every language.',
+    decisions: [
+      { title: 'Role-aware navigation', bullets: ['Owner, front desk, housekeeping, kitchen and bar, waiter and accountant each get their own navigation and landing page.', 'Plan-locked web features are shown with a lock rather than hidden, so owners can see what an upgrade adds.', 'Kitchen and bar staff land on their board right after sign-in.'], shot: L('mockups/desktop-app/desktop-dashboard.png', 'wireframes/01-dashboard.svg', 'Dashboard for the owner: colour-coded KPIs') },
+      { title: 'Colour means something, but never alone', bullets: ['Each KPI family and status has its own accent, so scanning beats reading on a busy front desk.', 'Chips and labels repeat the state in words, so it works for colour-blind users and in black-and-white print.', 'One primary action per screen or dialog, always in the same place.'], shot: L('mockups/desktop-app/desktop-reservations.png', 'wireframes/02-reservations.svg', 'Reservations with search, filters and status chips') },
+      { title: 'Safe for a busy kitchen', bullets: ['A dedicated board with big buttons, oldest tickets first.', 'Auto-refresh and a sound for new orders.', 'Allergy notes have their own highlighted row, because safety-critical text must stand out.'], shot: L('mockups/desktop-app/desktop-kitchen-bar-board.png', 'wireframes/04-kitchen-bar-board.svg', 'Kitchen and bar board') },
+      { title: 'Language as a first-class setting', bullets: ['17 interface languages. Picking one suggests a country and currency; nothing is locked in.', 'Arabic mirrors the whole layout; it is not just right-aligned.', 'A screenshot self-test opens every page and dialog in all 17 languages and catches truncation, overlap and mirroring bugs.'], shot: L('mockups/desktop-app/desktop-arabic-rtl-dashboard.png', null, 'The dashboard in Arabic, mirrored') },
+      { title: 'Recovery and licensing on the first screen', bullets: ['“Restore from a backup” sits on the sign-in screen, because after a reinstall it is the first thing a hotel needs.', 'The license page shows what is used, the computer code, and a one-click transfer to a new computer.'], shot: L('mockups/desktop-app/desktop-license-team.png', 'wireframes/07-license.svg', 'License page with transfer') },
+    ],
+    outcome: ['Two front ends, Windows and web, built from one design-token system, with eight user roles.', '17 languages including mirrored Arabic, and country-based currency choice.', 'An automated screenshot test over every page and dialog in all 17 languages, plus hundreds of automated logic checks.', 'An end-to-end test against a real license server, and a simulated “reinstall the computer and restore from backup” disaster test.', 'An installable web app (PWA) with light and dark themes and live updates.'],
+    myRole: ['Information architecture, ten wireframes and the design tokens.', 'Web client: ES modules, CSS custom properties, PWA, live updates and internationalisation.', 'Windows client: C# WinForms with custom-drawn, DPI-safe controls and a right-to-left helper.', 'The screenshot self-test and the logic tests.'],
+    takeaway: 'Designing for roles first, not pages first, removes most of the clutter.',
+    gallery: [{ title: 'Windows app', dir: 'mockups/desktop-app' }, { title: 'Web app', dir: 'mockups/web-app' }, { title: 'Wireframes', dir: 'wireframes' }],
+    code: null,
+    more: ['studypat', 'chuvor-cbt'],
   },
 
   /* ───────────────────────── Chuvor CBT ───────────────────────── */
@@ -132,6 +160,7 @@ export const PROJECTS = [
   },
 ];
 
+PROJECTS.forEach((p, i) => { p.letter = String.fromCharCode(97 + i); });   // (a), (b), (c) ... follow the order above
 export const BY_SLUG = Object.fromEntries(PROJECTS.map((p) => [p.slug, p]));
 
 export const LIVE = [
@@ -155,7 +184,7 @@ export const CAPABILITIES = [
 ];
 
 export const EXPERIENCE = [
-  { n: '01', role: 'Founder and Lead Software Developer', org: 'Chuvor International', when: '2025 to present', text: 'I own five products from design to deployment: StudyPat, Chuvor CBT, the CBT Licence Shop, Chuvor Client and Virtual Lab. I design the screens, write the front end and the back end, deploy, and support the users. I run the full loop: listen to complaints, sketch a wireframe, build it, test it on a low-end phone, and check whether the problem went away.' },
+  { n: '01', role: 'Founder and Lead Software Developer', org: 'Chuvor International', when: '2025 to present', text: 'I own six products from design to deployment: StudyPat, Livora Suites, Chuvor CBT, the CBT Licence Shop, Chuvor Client and Virtual Lab. I design the screens, write the front end and the back end, deploy, and support the users. I run the full loop: listen to complaints, sketch a wireframe, build it, test it on a low-end phone, and check whether the problem went away.' },
   { n: '02', role: 'Product Manager and Back-End Developer', org: 'Fhope Technologies', when: '2023', text: 'I built the server-side logic, MySQL databases and REST APIs behind the company’s applications in PHP and Laravel, and worked as product manager alongside development, turning business needs into user stories and keeping the backlog in order.' },
   { n: '03', role: 'Junior Software Engineering Intern', org: 'Leval International', when: '2021', text: 'My first professional role in software: I helped develop and debug software components and scripts, and gave technical support and hardware and software troubleshooting.' },
 ];

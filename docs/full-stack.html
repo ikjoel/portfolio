@@ -19,7 +19,7 @@
 
   <section id="work" class="wrap section">
     <h2>Selected work</h2>
-    <p class="sub">The same five products appear in every view of this portfolio; this page shows the parts that matter for this role.</p>
+    <p class="sub">The same products appear in every view of this portfolio; this page shows the parts that matter for this role.</p>
     
     <article class="rproj">
       <p class="tags">Laravel 13 · PHP 8 · MySQL · Blade · JavaScript · Flutterwave · Mailgun · Twilio WhatsApp</p>
@@ -27,6 +27,13 @@
       <p class="when">2025 to present · <a href="https://studypat.com">studypat.com ↗</a></p>
       <ul class="points"><li>Designed the data model for results, continuous assessment, fees, billing, parents and staff for many schools in one database, with every school-facing route protected by a tenant check and covered by tests.</li><li>Modelled money carefully: fee ledgers with term-to-term carry-forward, a “paid equals recorded” rule, billing by term or by whole session (5% off), partner commissions, and nightly audits that confirm every school’s books balance.</li><li>Integrated Flutterwave end to end: hosted checkout, server-side verification, webhook handling and a scheduled reconciliation job so a payment is never lost; plus Mailgun email, Twilio WhatsApp, Google sign-in and PDF invoices and report cards.</li><li>Built custom-domain onboarding: a school points its domain, a scheduled job checks DNS, obtains a certificate and switches the domain on, with white-label branding behind a per-school switch.</li><li>Automated support: onboarding emails, a setup checker that finds common mistakes and repairs the safe ones with undo, bulk upload tools with validation, and a support desk with three severity tiers and written playbooks.</li><li>Built AI-assisted comment suggestions for report cards (teacher accepts, edits or removes) with usage limits that scale by plan.</li><li>Found and fixed a password-reset vulnerability and an open photo endpoint (signed URLs); added role-based permissions, security headers and an activity log.</li></ul>
       <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/01-studypat">Case study</a><a href="code.html#c0">Code</a></p>
+    </article>
+    <article class="rproj">
+      <p class="tags">JavaScript (ES modules) · Node.js · SQLite / PostgreSQL · JWT · C# / .NET 8</p>
+      <h3>Livora Suites <span class="kind">· Hotel management system</span></h3>
+      <p class="when">2026</p>
+      <ul class="points"><li>Built a hotel management system with two front ends, a Windows app and a responsive web app, on a shared feature set: reservations, room calendar, housekeeping, maintenance, point of sale, kitchen and bar, reports and channel management.</li><li>Supporting back end on Node.js with SQLite or PostgreSQL, JWT authentication, HMAC-signed webhooks, server-sent live updates and a generated OpenAPI specification.</li><li>Per-branch databases, encrypted one-file backups, and a license that can be moved between computers online, verified by an end-to-end test against a real license server.</li><li>17 interface languages with country-based currency, and a simulated “reinstall the computer and restore from backup” disaster test.</li></ul>
+      <p class="actions"><a href="https://github.com/ikjoel/portfolio/tree/main/projects/06-livora-suites">Case study</a></p>
     </article>
     <article class="rproj">
       <p class="tags">Laravel · Blade · Flutterwave · Mailgun · scheduled jobs</p>

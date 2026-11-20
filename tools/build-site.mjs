@@ -1,6 +1,6 @@
 // node tools/build-site.mjs
 // Builds the portfolio website in the "designer portfolio" format: Home, Work, a case study per product, Services, Contact, legal pages.
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readdirSync, cpSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { PERSON, PROJECTS, BY_SLUG, LIVE, COMPONENTS, CAPABILITIES, EXPERIENCE, EDUCATION, TOOLS, SERVICES, PROCESS } from './site-data.mjs';
@@ -56,13 +56,24 @@ ${body(R)}
   writeFileSync(out, html);
 }
 
-const statusChip = (p) => `<span class="chip ${p.status === 'Prototype' ? 'warn' : 'live'}">${esc(p.status)}</span>`;
+const statusChip = (p) => `<span class="chip ${p.status === 'Prototype' ? 'warn' : ['Live', 'Released', 'Launched'].includes(p.status) ? 'live' : ''}">${esc(p.status)}</span>`;
 const fig = (R, shot, extra = '') => {
   const ph = PHONE.has(slugOf(shot)) ? ' phone' : '';
-  return `<figure class="shot${ph}${extra}" style="margin:0"><img class="s-mock" src="${R}${shot.mock}" alt="${esc(shot.caption)}" loading="lazy"><img class="s-wire" src="${R}${shot.wire}" alt="${esc(shot.caption)} (wireframe)" loading="lazy" hidden><figcaption><span>${esc(shot.caption)}</span><button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button></figcaption></figure>`;
+  return `<figure class="shot${ph}${extra}" style="margin:0"><img class="s-mock" src="${R}${shot.mock}" alt="${esc(shot.caption)}" loading="lazy">${shot.wire ? `<img class="s-wire" src="${R}${shot.wire}" alt="${esc(shot.caption)} (wireframe)" loading="lazy" hidden>` : ''}<figcaption><span>${esc(shot.caption)}</span>${shot.wire ? '<button class="tg" type="button" data-toggle aria-pressed="false">Show wireframe</button>' : ''}</figcaption></figure>`;
 };
 const rows = (R, list) => list.map((p) => `
     <a class="prow rv" href="${R}work/${p.slug}/index.html"><span class="l">(${p.letter})</span><h3>${esc(p.name)}</h3><span class="cat">${esc(p.category)}</span><p>${esc(p.tagline)}</p><span class="go" aria-hidden="true">→</span><span class="thumb" aria-hidden="true"><img src="${R}${p.hero.mock}" alt=""></span></a>`).join('');
+
+// Livora Suites ships real screenshots: copy them next to the site and list them as a gallery
+const LIV_SRC = join(root, '..', 'projects', '06-livora-suites');
+if (existsSync(LIV_SRC)) for (const d of ['mockups', 'wireframes', 'branding']) cpSync(join(LIV_SRC, d), join(root, 'assets', 'livora', d), { recursive: true });
+const nice = (f) => { const t = f.replace(/\.[a-z]+$/, '').replace(/^(desktop|web)-/, '').replace(/^\d+-/, '').replace(/-/g, ' '); return t[0].toUpperCase() + t.slice(1); };
+function gallery(R, p) {
+  return `<section class="blk"><div class="wrap"><p class="lbl">(07)</p><h2 style="margin-bottom:8px">All screens</h2><p class="sub">Screenshots of the running apps with demo data (a sample hotel), and the wireframes. Select any image to open it full size.</p>${p.gallery.map((g) => {
+    const files = readdirSync(join(LIV_SRC, g.dir)).filter((f) => /\.(png|svg)$/.test(f)).sort();
+    return `<h3 style="margin-top:34px">${esc(g.title)} <span class="tag">${files.length}</span></h3><div class="gal">${files.map((f) => `<a class="gi" href="${R}assets/livora/${g.dir}/${f}"><img src="${R}assets/livora/${g.dir}/${f}" alt="${esc(g.title)}: ${esc(nice(f))}" loading="lazy"><span>${esc(nice(f))}</span></a>`).join('')}</div>`;
+  }).join('')}</div></section>`;
+}
 
 /* ───────────────────────── HOME ───────────────────────── */
 page({
@@ -74,7 +85,7 @@ page({
       <span class="pill"><b></b> Open to front-end engineer roles · ${esc(PERSON.city)} · remote-friendly</span>
       <h1>Building fast, clear and accessible <em class="grad">interfaces</em> people understand first time.</h1>
       <p class="byline">${esc(PERSON.name)}</p>
-      <p class="lede">I’m a front-end engineer who designs the screen, writes the HTML, CSS and JavaScript, and ships it. Five products, built for schools, exam centres and small businesses, used on inexpensive phones and in busy halls.</p>
+      <p class="lede">I’m a front-end engineer who designs the screen, writes the HTML, CSS and JavaScript, and ships it. Six products, built for schools, exam centres, hotels and small businesses, used on inexpensive phones and in busy halls.</p>
       <div class="cta"><a class="btn" href="${R}work/index.html">See the work <span class="arr">→</span></a><a class="btn ghost" href="${R}contact/index.html">Start a project</a><a class="btn ghost" href="${PERSON.github}">GitHub</a></div>
     </div>
     <div class="collage" aria-hidden="true">
@@ -82,7 +93,7 @@ page({
       <div class="c c2"><img src="${R}assets/screens/cbt-candidate-exam-screen.svg" alt=""></div>
       <div class="c c3"><img src="${R}assets/screens/studypat-parent-results-mobile.svg" alt=""></div>
     </div>
-    <div class="stats rv"><div><strong data-count="5">5</strong><span>products built and shipped</span></div><div><strong data-count="61">61</strong><span>screens designed, wireframe and mockup</span></div><div><strong data-count="20" data-suffix="+">20+</strong><span>schools registered on StudyPat</span></div><div><strong data-count="370" data-suffix="+">370+</strong><span>pages built and maintained</span></div></div>
+    <div class="stats rv"><div><strong data-count="6">6</strong><span>products designed and built</span></div><div><strong data-count="61">61</strong><span>screens designed, wireframe and mockup</span></div><div><strong data-count="20" data-suffix="+">20+</strong><span>schools registered on StudyPat</span></div><div><strong data-count="370" data-suffix="+">370+</strong><span>pages built and maintained</span></div></div>
   </div>
 </section>
 
@@ -102,7 +113,7 @@ page({
 </div></section>
 
 <section class="sec alt" style="padding-bottom:0"><div class="wrap"><div class="sh rv"><div><h2>Design shots</h2><p class="sub" style="margin:10px 0 0">A few of the 61 screens I designed, each as a wireframe and a mockup.</p></div><a class="more" href="${R}design-library.html">Open the design library →</a></div></div>
-  <div class="shotrow"><div class="shots" aria-hidden="true">${[...Array(2)].map(() => ['studypat-admin-dashboard', 'cbt-live-exam-monitor', 'licence-shop-pricing', 'chuvor-client-control-panel', 'virtual-lab-titration-desktop', 'report-card', 'score-input', 'studypat-parent-results-mobile'].map((s) => `<a class="${s.includes('mobile') ? 'ph' : ''}" href="${R}design-library.html" tabindex="-1"><img src="${R}assets/screens/${s}.svg" alt="" loading="lazy"></a>`).join('')).join('')}</div></div>
+  <div class="shotrow"><div class="shots" aria-hidden="true">${[...Array(2)].map(() => ['livora:mockups/desktop-app/desktop-dashboard.png', 'livora:mockups/web-app/web-mobile-dashboard.png', 'studypat-admin-dashboard', 'cbt-live-exam-monitor', 'licence-shop-pricing', 'chuvor-client-control-panel', 'virtual-lab-titration-desktop', 'report-card', 'score-input', 'studypat-parent-results-mobile'].map((s) => s.startsWith('livora:') ? `<a class="${s.includes('mobile') ? 'ph' : ''}" href="${R}work/livora-suites/index.html" tabindex="-1"><img src="${R}assets/livora/${s.slice(7)}" alt="" loading="lazy"></a>` : `<a class="${s.includes('mobile') ? 'ph' : ''}" href="${R}design-library.html" tabindex="-1"><img src="${R}assets/screens/${s}.svg" alt="" loading="lazy"></a>`).join('')).join('')}</div></div>
   <div class="marq" style="margin-top:46px" aria-hidden="true"><div class="track">${[...TOOLS, ...TOOLS].map((t) => `<span>${esc(t)}</span>`).join('')}</div></div>
 </section>
 
@@ -128,9 +139,9 @@ page({
 
 /* ───────────────────────── WORK ───────────────────────── */
 page({
-  file: 'work/index.html', depth: 1, title: `Work · ${PERSON.name}`, desc: 'Five products designed and built end to end: a school platform, an exam system, a licence shop, a remote-access client and a 3D lab.', active: 'Work',
+  file: 'work/index.html', depth: 1, title: `Work · ${PERSON.name}`, desc: 'Six products designed and built end to end: a school platform, a hotel system, an exam system, a licence shop, a remote-access client and a 3D lab.', active: 'Work',
   body: (R) => `
-<section class="cs-head"><div class="wrap"><p class="lbl">(Work)</p><h1>Five products, <em class="grad">designed</em> and built end to end.</h1><p class="lede">Each case study follows the same path: the problem, the solution, the key design decisions, the outcome, my role and what I took away.</p></div></section>
+<section class="cs-head"><div class="wrap"><p class="lbl">(Work)</p><h1>Six products, <em class="grad">designed</em> and built end to end.</h1><p class="lede">Each case study follows the same path: the problem, the solution, the key design decisions, the outcome, my role and what I took away.</p></div></section>
 <section class="sec" style="padding-top:20px"><div class="wrap"><div class="plist">${rows(R, PROJECTS)}</div>
   <div class="codebox rv"><div><b>Want every screen?</b><br><span style="color:var(--muted)">61 screens, each as a wireframe and a mockup, grouped by function.</span></div><a class="btn ghost" href="${R}design-library.html">Open the design library</a></div></div></section>`,
 });
@@ -165,6 +176,7 @@ for (const p of PROJECTS) {
   ${p.code ? `<div class="codebox"><div><b>See the code</b><br><span style="color:var(--muted)">Real code from this product, with the problem it solves.</span></div><a class="btn ghost" href="${R}${p.code.href}">${esc(p.code.label)} →</a></div>` : ''}
 </div></div></section>
 
+${p.gallery ? gallery(R, p) : ''}
 <section class="sec alt"><div class="wrap"><div class="sh"><h2>More projects</h2><a class="more" href="${R}work/index.html">View all →</a></div>
   <div class="next">${p.more.map((s) => { const q = BY_SLUG[s]; return `<a href="${R}work/${q.slug}/index.html" class="rv"><span class="lbl">(${q.letter}) ${esc(q.category)}</span><h3>${esc(q.name)}</h3><p style="color:var(--muted);margin:0">${esc(q.tagline)}</p></a>`; }).join('')}</div></div></section>`,
   });
@@ -211,4 +223,4 @@ page({
 <h2>Links</h2><p>The site links to other websites. I am not responsible for their content.</p>
 <h2>Work with me</h2><p>Any project work is agreed separately, in writing, before it starts.</p></div></section>`,
 });
-console.log('site built: home, work, 5 case studies, services, contact, 2 legal pages');
+console.log('site built: home, work, 6 case studies, services, contact, 2 legal pages');

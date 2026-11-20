@@ -249,3 +249,10 @@ html.js .rv:not(.in){opacity:0;transform:translateY(26px)}
 
 /* small screens: keep the header on one line */
 @media (max-width:640px){.tools .btn{display:none}.logo{font-size:1rem}.hero{padding-top:120px}.stats div{padding:16px}}
+
+/* screenshot galleries */
+.gal{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));margin-top:16px}
+.gi{display:block;text-decoration:none;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface);transition:transform .3s,border-color .3s}
+.gi:hover{transform:translateY(-4px);border-color:var(--gold)}
+.gi img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top left;background:var(--bg2)}
+.gi span{display:block;padding:10px 14px;font-size:.88rem;color:var(--muted)}

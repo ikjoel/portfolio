@@ -14,7 +14,7 @@ The site is `docs/index.html` (home) plus `docs/design-library.html`.
 |---|---|---|
 | **Header** | Orientation | Name, Work, Process, Skills, About, Contact |
 | **Hero** | Say who you are in one sentence | "I build interfaces that real people can use on a slow phone, in a busy school office, or in an exam hall." Two buttons: See the work, GitHub |
-| **Proof strip** | Numbers a reader can trust | 370+ pages, 5 products, 20+ schools, installable PWA |
+| **Proof strip** | Numbers a reader can trust | 370+ pages, 6 products, 20+ schools, installable PWA |
 | **Selected work** | The core | One card per product: finished mockup, switch to wireframe, 3–4 decisions, links to the live site and case study |
 | **How I work with design** | Shows you fit a team with a UI/UX engineer | The six-step loop: understand, wireframe, design, build, check, learn |
 | **Design library** | Depth for those who want it | 61 screens, filter by product, wireframe/mockup switch |

@@ -39,6 +39,17 @@ export const ROLES = [
         see: [['Case study', CASE('01-studypat')], ['Code', CODE('c0')]],
       },
       {
+        name: 'Livora Suites', kind: 'Hotel management system', when: '2026', link: '',
+        stack: 'JavaScript (ES modules) · Node.js · SQLite / PostgreSQL · JWT · C# / .NET 8',
+        bullets: [
+          'Built a hotel management system with two front ends, a Windows app and a responsive web app, on a shared feature set: reservations, room calendar, housekeeping, maintenance, point of sale, kitchen and bar, reports and channel management.',
+          'Supporting back end on Node.js with SQLite or PostgreSQL, JWT authentication, HMAC-signed webhooks, server-sent live updates and a generated OpenAPI specification.',
+          'Per-branch databases, encrypted one-file backups, and a license that can be moved between computers online, verified by an end-to-end test against a real license server.',
+          '17 interface languages with country-based currency, and a simulated “reinstall the computer and restore from backup” disaster test.',
+        ],
+        see: [['Case study', CASE('06-livora-suites')]],
+      },
+      {
         name: 'CBT licence shop', kind: 'E-commerce for software licences', when: '2026', link: 'cbtlicense.chuvorint.com',
         stack: 'Laravel · Blade · Flutterwave · Mailgun · scheduled jobs',
         bullets: [
@@ -133,6 +144,16 @@ export const ROLES = [
           'Found and fixed a password-reset vulnerability and an open photo endpoint; wrote a written security audit of my own system.',
         ],
         see: [['Case study', CASE('01-studypat')], ['Code', CODE('c1')]],
+      },
+      {
+        name: 'Livora Suites', kind: 'Hotel system: Windows and web clients', when: '2026', link: '',
+        stack: 'C# 12 / .NET 8 WinForms · Dapper · SQLite · JavaScript · Node.js',
+        bullets: [
+          'Built a native Windows client with custom-drawn controls, a DPI-safe pixel-scaling helper and a right-to-left mirroring helper, keeping the interface responsive while messaging, sync and backups run in the background.',
+          'Wrote an automated screenshot test that opens every page and dialog in all 17 languages, and logic tests (hundreds of checks) including an end-to-end test against a real license server and a simulated reinstall-and-restore disaster.',
+          'Designed a license that can be moved between computers online, and per-branch databases with encrypted one-file backups.',
+        ],
+        see: [['Case study', CASE('06-livora-suites')]],
       },
       {
         name: 'Virtual Lab', kind: '3D practicals with fair marking', when: '2026', link: '',

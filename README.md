@@ -4,7 +4,7 @@ Lagos, Nigeria · github.com/ikjoel
 
 I build interfaces that real people can use on a slow phone, in a busy school office or in an exam hall: I design the screens, write the HTML, CSS and JavaScript, connect them to the back end and keep them running.
 
-This repository is my portfolio: **5 products, 61 screens, each drawn as a wireframe and as a finished mockup**, with case studies, design tokens and files ready for Figma.
+This repository is my portfolio: **6 products**, with case studies, **61 designed screens** (each drawn as a wireframe and as a finished mockup), the Livora Suites hotel system (10 wireframes, 42 screenshots), design tokens, real code samples and files ready for Figma.
 
 > All screens use **sample data**. No real school, student or customer appears here. The screens are redrawn from the real products; a few are my proposed improvements and are marked **concept**. The full source code of the products is private; the [code](code) folder holds real excerpts.
 
@@ -26,6 +26,7 @@ This repository is my portfolio: **5 products, 61 screens, each drawn as a wiref
 | # | Product | What it is | Screens | Live |
 |---|---|---|---|---|
 | 1 | [StudyPat](projects/01-studypat/README.md) | School management platform: results, fees, parents, e-learning, website, PWA | 32 | studypat.com |
+| 6 | [Livora Suites](projects/06-livora-suites/README.md) | Hotel management: Windows app and web app, 8 roles, 17 languages | 10 wireframes, 42 screenshots | private |
 | 2 | [Chuvor CBT](projects/02-chuvor-cbt/README.md) | Offline computer-based exams with a live monitor | 11 | chuvorint.com |
 | 3 | [CBT Licence Shop](projects/03-cbt-licence-shop/README.md) | Sells and delivers exam-software licences | 5 | cbtlicense.chuvorint.com |
 | 4 | [Chuvor Client](projects/04-chuvor-client/README.md) | Secure remote access to one company program (launched) | 7 | private |

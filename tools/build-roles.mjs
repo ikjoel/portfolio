@@ -31,7 +31,7 @@ ${SWITCHER(r.id)}
 
   <section id="work" class="wrap section">
     <h2>Selected work</h2>
-    <p class="sub">The same five products appear in every view of this portfolio; this page shows the parts that matter for this role.</p>
+    <p class="sub">The same products appear in every view of this portfolio; this page shows the parts that matter for this role.</p>
     ${r.projects.map((p) => `
     <article class="rproj">
       <p class="tags">${esc(p.stack)}</p>
