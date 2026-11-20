@@ -2,7 +2,7 @@
 // Facts only: everything here comes from the products, their code and tests. No invented results.
 
 export const PERSON = {
-  name: 'Ikechukwu Ikechukwu Egbujor', short: 'Ikechukwu Egbujor', role: 'Front-End Engineer', city: 'Lagos, Nigeria',
+  name: 'Ikechukwu Joel Egbujor', short: 'Ikechukwu Egbujor', role: 'Front-End Engineer', city: 'Lagos, Nigeria',
   email: 'ikjoel231@gmail.com', github: 'https://github.com/ikjoel', repo: 'https://github.com/ikjoel/portfolio',
 };
 

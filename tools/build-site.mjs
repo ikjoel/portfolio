@@ -30,7 +30,7 @@ function page({ file, depth, title, desc, body, active = '' }) {
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="hd"><div class="wrap row">
-  <a class="logo" href="${R}index.html" aria-label="${esc(PERSON.short)}, home"><i aria-hidden="true"></i>${esc(PERSON.short)}</a>
+  <a class="logo" href="${R}index.html" aria-label="${esc(PERSON.short)}, home"><img class="mk" src="${R}assets/brand/logo-mark.svg" alt="" width="30" height="30">${esc(PERSON.short)}</a>
   <nav class="nav" aria-label="Main">${nav.map(([l, h]) => `<a href="${R}${h}"${active === l ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
   <div class="tools"><button class="icon-btn" id="theme" type="button" aria-label="Switch theme">☀</button><a class="btn" style="padding:10px 20px" href="${R}contact/index.html">Start a project</a><button class="menu-btn" id="menu" type="button" aria-controls="sheet">Menu</button></div>
 </div></header>
@@ -41,7 +41,7 @@ ${body(R)}
 </main>
 <footer class="ft"><div class="wrap">
   <div class="cols">
-    <div><a class="logo" href="${R}index.html"><i aria-hidden="true"></i>${esc(PERSON.short)}</a><p style="color:var(--muted);margin-top:12px;max-width:30ch">${esc(PERSON.role)} in ${esc(PERSON.city)}. Interfaces that people understand on the first try.</p></div>
+    <div><a class="logo" href="${R}index.html"><img class="mk" src="${R}assets/brand/logo-mark.svg" alt="" width="30" height="30">${esc(PERSON.short)}</a><p style="color:var(--muted);margin-top:12px;max-width:30ch">${esc(PERSON.role)} in ${esc(PERSON.city)}. Interfaces that people understand on the first try.</p></div>
     <div><h4>Pages</h4><a href="${R}index.html">Home</a><a href="${R}work/index.html">Work</a><a href="${R}services/index.html">Services</a><a href="${R}contact/index.html">Contact</a></div>
     <div><h4>More</h4><a href="${R}code.html">Code samples</a><a href="${R}design-library.html">Design library (61 screens)</a><a href="${R}full-stack.html">Full-stack view</a><a href="${R}software-engineer.html">Software engineer view</a><a href="${R}it-systems.html">IT and systems view</a></div>
     <div><h4>Elsewhere</h4><a href="${PERSON.github}">GitHub</a><a href="${PERSON.repo}">Portfolio repository</a><a href="mailto:${PERSON.email}">${esc(PERSON.email)}</a></div>
